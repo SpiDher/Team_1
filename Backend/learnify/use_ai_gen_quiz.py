@@ -4,7 +4,7 @@ chat_session = model.start_chat(history=[])
 
 # pass in the extrated text from the pdf to "extracted_text"
 extracted_text = "Introduction to computer Science"
-# pass in the difficult level selected by the user
+# pass in the difficult level selected by the user [HARD, MEDIUM, EASY]
 difficult_level = "HARD"
 
 # takes difficult level in a new line for the model to understand
