@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    color: white;
+    background: black;
+    padding: 2rem;
+}
+#Learn{
+    background-color: orange;
+    color: black;
+}
+nav ul{
+    display: flex;
+    /* border: 2px solid white; */
+    justify-content: space-between;
+    width: 50vw;
+}
+nav ul p{
+    font-size: 24px;
+    transition: 0.3s;
+    cursor: pointer;
+
+    
+}
+
+nav ul p:hover{
+    color: orange;
+}
+header{
+    margin:  2rem 0 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.HomeContent1{
+    /* border: 1px solid wheat; */
+    height: 5rem;
+}
+.Lectures-Overview{
+    margin:  2rem 0 2rem 0;
+    /* border: 1px solid white; */
+    
+}
+
+.templates{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.template1{
+    width: 17rem;
+    height: 10rem;
+    margin: 10px;
+    background: rgb(38, 31, 31);
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 1rem;
+    justify-content: space-between;
+    font-size: 20px;
+    align-items: left;
+}
+img{
+    width: 20px;
+    
+}
+.readmore{
+    position: relative;
+    width: 7rem;
+    height: 2rem;
+    background: black;
+    color: white;
+    font-size: 12px;
+    border: none;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+    left: 50%;
+}
