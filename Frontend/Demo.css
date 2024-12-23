@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    
+    font-family: Monteserrat;
 }
 body{
     color: white;
@@ -10,22 +10,23 @@ body{
     font-family: "Roboto";
     padding: 2rem;
 }
-@font-face {
-    font-family:"Roboto" ;
-    src: url(/Team_1/Frontend/Roboto_Slab/Roboto_Slab/static/RobotoSlab-Medium.ttf);
-}
 #Learn{
     background-color: orange;
     color: black;
+    font-family: Monteserrat-Black;
+}
+
+header h1 {
+    font-family: Monteserrat-Black;
 }
 nav ul{
     display: flex;
     /* border: 2px solid white; */
-    justify-content: space-between;
+    justify-content: space-around;
     width: 50vw;
 }
 nav ul p{
-    font-size: 24px;
+    font-size: 1em;
     transition: 0.3s;
     cursor: pointer;
 
@@ -36,7 +37,7 @@ nav ul p:hover{
     color: orange;
 }
 header{
-    margin:  2rem 0 2rem 0;
+    margin:  0 0 2rem 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -165,4 +166,92 @@ img{
         flex-direction: column;
         height: 7rem;
     }
+}
+
+.GoBack {
+    display: flex;
+    justify-content: space-between;
+}
+
+.GoBack .goBackButton {
+    background: none;
+    color: #fff;
+    border: none;
+}
+
+.GoBack .quizButton {
+padding: .3em .5em;
+border: 1px solid orange;
+background: none;
+color: orange;
+}
+
+section.content {
+    margin-top: 3em;
+}
+
+section.content .cos {
+    font-family: Monteserrat-Light;
+}
+
+section.content h3 {
+    font-family: Monteserrat;
+}
+
+
+section.content h2{
+    margin-top: .3em;
+    margin-bottom: 1em;
+    font-family: Monteserrat-Black;
+}
+
+section p {
+    font-family: Monteserrat-Light;
+}
+
+section.content ol{
+    margin-top: 3em;
+}
+
+section.content ol ul li{
+    margin-top: 1em;
+    list-style-type:lower-roman;
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3em;
+}
+
+.pagination .prev {
+width: 30%;
+text-align: right;
+padding: .2em .5em;
+border: 1px solid #fff;
+background: none;
+color: #fff;
+border-radius: 5px;
+}
+
+.pagination .next {
+width: 30%;
+text-align: left;
+padding: .2em .5em;
+border: 1px solid orange;
+background: none;
+color: orange;
+border-radius: 5px;
+}
+/* 
+.pagination .prev span {
+text-align: left;
+width: 10%;
+} */
+
+@media only screen and (min-width: 992px){
+    
+section.content {
+    max-width: 70%;
+}
 }
