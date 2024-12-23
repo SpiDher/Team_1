@@ -7,7 +7,12 @@
 body{
     color: white;
     background: black;
+    font-family: "Roboto";
     padding: 2rem;
+}
+@font-face {
+    font-family:"Roboto" ;
+    src: url(/Team_1/Frontend/Roboto_Slab/Roboto_Slab/static/RobotoSlab-Medium.ttf);
 }
 #Learn{
     background-color: orange;
@@ -45,16 +50,43 @@ header{
     /* border: 1px solid white; */
     
 }
+.lectures-overview-header{
+    /* border: 1px solid white; */
+    display: flex;
+    height: 4rem;
+    margin: 0 0 1rem 0;
+    align-items: center;
+    justify-content: space-between;
+}
+.module-quiz{
+    width: 10rem;
+    height: 3rem;
+    background-color: transparent;
+    color: orange;
+    font-size: 20px;
+    cursor: pointer;
+    border: 4px solid orange;
+    border-radius: 30px;
+    transition: .3s;
+}
+.module-quiz:hover{
+    width: 11rem;
+    background-color: orange;
+    color: black;
+    font-weight: bold;
+}
 
 .templates{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    /* border: 1px solid; */
 }
 .template1{
-    width: 17rem;
+    width: 18rem;
     height: 10rem;
-    margin: 10px;
     background: rgb(38, 31, 31);
+    margin: .5rem 0 0.5rem 0;
     display: flex;
     flex-direction: column;
     border-radius: 20px;
@@ -62,6 +94,11 @@ header{
     justify-content: space-between;
     font-size: 20px;
     align-items: left;
+    transition: .3s;
+    cursor: pointer;
+}
+.template1:hover{
+    transform: scale(1.05);
 }
 img{
     width: 20px;
@@ -81,4 +118,50 @@ img{
     padding: 10px;
     justify-content: space-between;
     left: 50%;
+    cursor: pointer;
+}
+.readmore:hover{
+   background-color: orange;
+   color: black;
+   font-weight: bold;
+}
+
+
+/* mediaquery part @sisco😌 */
+/* I decided to work on the media query like you asked */
+
+@media screen and (max-width:1300px) {
+    body{
+    }
+    .templates{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .template1{
+        width: 15rem;
+    }
+    .lectures-overview-header{
+        flex-direction: column;
+        height: 7rem;
+    }
+}
+
+
+
+
+
+
+
+@media screen and (max-width:700px) {
+    body{
+    }
+    .templates{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .template1{
+        width: 15rem;
+    }
+    .lectures-overview-header{
+        flex-direction: column;
+        height: 7rem;
+    }
 }
