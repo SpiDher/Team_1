@@ -138,6 +138,7 @@ img{
     }
     .template1{
         width: 15rem;
+        padding: 14px;
     }
     .lectures-overview-header{
         flex-direction: column;
@@ -158,6 +159,7 @@ img{
     }
     .template1{
         width: 15rem;
+        padding: 14px;
     }
     .lectures-overview-header{
         flex-direction: column;
