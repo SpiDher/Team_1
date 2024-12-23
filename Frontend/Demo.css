@@ -10,6 +10,23 @@ body{
     font-family: "Roboto";
     padding: 2rem;
 }
+
+@font-face {
+    font-family: Monteserrat;
+    src: url(./Fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: Monteserrat-Black;
+    src: url(./Fonts/Montserrat-Black.ttf);
+}
+@font-face {
+    font-family: Monteserrat-Light;
+    src: url(./Fonts/Montserrat-Light.ttf);
+}
+@font-face {
+    font-family: Monteserrat;
+    src: url(./Fonts/Montserrat-Regular.ttf);
+}
 #Learn{
     background-color: orange;
     color: black;
