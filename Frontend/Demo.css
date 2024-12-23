@@ -23,10 +23,7 @@ body{
     font-family: Monteserrat-Light;
     src: url(./Fonts/Montserrat-Light.ttf);
 }
-@font-face {
-    font-family: Monteserrat;
-    src: url(./Fonts/Montserrat-Regular.ttf);
-}
+
 #Learn{
     background-color: orange;
     color: black;
@@ -42,12 +39,15 @@ nav ul{
     justify-content: space-around;
     width: 50vw;
 }
-nav ul p{
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li p{
     font-size: 1em;
     transition: 0.3s;
-    cursor: pointer;
-
-    
+    cursor: pointer;    
 }
 
 nav ul p:hover{
@@ -59,6 +59,23 @@ header{
     align-items: center;
     justify-content: space-between;
 }
+
+header .hamburger > div{
+width: 50px;
+height: 3px;
+background-color: #fff;
+}
+
+header .hamburger > div:nth-child(2) {
+    margin-top: .3em;
+    margin-bottom: .3em;
+}
+
+header .hamburger {
+    display: none;
+    cursor: pointer;
+}
+
 .HomeContent1{
     /* border: 1px solid wheat; */
     height: 5rem;
@@ -87,11 +104,12 @@ header{
     border-radius: 30px;
     transition: .3s;
 }
-.module-quiz:hover{
-    width: 11rem;
+.quizButton:hover{
+    padding: .5em .8em;
     background-color: orange;
     color: black;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .templates{
@@ -101,8 +119,7 @@ header{
     /* border: 1px solid; */
 }
 .template1{
-    width: 18rem;
-    height: 10rem;
+    width: 90%;
     background: rgb(38, 31, 31);
     margin: .5rem 0 0.5rem 0;
     display: flex;
@@ -110,11 +127,17 @@ header{
     border-radius: 20px;
     padding: 1rem;
     justify-content: space-between;
-    font-size: 20px;
+    font-size: 1em;
     align-items: left;
     transition: .3s;
     cursor: pointer;
 }
+
+.template1 p{
+    font-family: Monteserrat-Light;
+    margin: .8em 0;
+}
+
 .template1:hover{
     transform: scale(1.05);
 }
@@ -144,46 +167,60 @@ img{
    font-weight: bold;
 }
 
+.readmore a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 
 /* mediaquery part @sisco😌 */
 /* I decided to work on the media query like you asked */
 
-@media screen and (max-width:1300px) {
-    body{
-    }
+@media only screen and (max-width:1300px) {
+
     .templates{
         grid-template-columns: repeat(2, 1fr);
     }
-    .template1{
-        width: 15rem;
+    /* .template1{
+        width: 90%;
         padding: 14px;
-    }
-    .lectures-overview-header{
+    } */
+    /* .lectures-overview-header{
         flex-direction: column;
         height: 7rem;
-    }
+    } */
 }
 
 
-
-
-
-
-
-@media screen and (max-width:700px) {
-    body{
-    }
+@media only screen and (max-width:768px) {
     .templates{
         grid-template-columns: repeat(1, 1fr);
     }
-    .template1{
+
+    header nav ul {
+       display: none;
+    }
+
+    header .hamburger {
+        display: block;
+    }
+
+    .readmore{
+        left: 70%;
+    }
+    /* .template1{
         width: 15rem;
         padding: 14px;
-    }
-    .lectures-overview-header{
+    } */
+    /* .lectures-overview-header{
         flex-direction: column;
         height: 7rem;
-    }
+    } */
+
+
 }
 
 .GoBack {
@@ -197,11 +234,12 @@ img{
     border: none;
 }
 
-.GoBack .quizButton {
+ .quizButton {
 padding: .3em .5em;
 border: 1px solid orange;
 background: none;
 color: orange;
+transition: .3s;
 }
 
 section.content {
@@ -250,6 +288,9 @@ border: 1px solid #fff;
 background: none;
 color: #fff;
 border-radius: 5px;
+display: flex;
+justify-content: space-between;
+align-items: center;
 }
 
 .pagination .next {
@@ -260,6 +301,9 @@ border: 1px solid orange;
 background: none;
 color: orange;
 border-radius: 5px;
+display: flex;
+justify-content: space-between;
+align-items: center;
 }
 /* 
 .pagination .prev span {
