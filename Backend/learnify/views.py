@@ -7,14 +7,17 @@ from Backend import settings
 @csrf_exempt
 def gen_quiz(request):
     if request.method == "POST" and request.FILES.get('file'):
-        file = request.FILES['file']
+        file = request.FILES.get['file']
         level = request.POST.get('level', None)
+        desc=request.POST.get('quiz-desc',None)
 
         # Create an instance of the ExtractEngine
-        extractor = ExtractEngine(file)
-
-        # Process the extracted text to generate a quiz (you can customize this as needed)
-        quiz = quiz_engine(extractor, level)
+        if file:
+            extractor = ExtractEngine(file)
+            # Process the extracted text to generate a quiz (you can customize this as needed)
+            quiz = quiz_engine(extractor, level)
+        else:
+            quiz= quiz_engine(desc,level)
 
         return JsonResponse({'quiz': quiz}, status=200)
 
