@@ -1,4 +1,4 @@
-from ai_gen_quiz_model import *
+from .ai_gen_quiz_model import *
 
 def quiz_engine(extracted_text=None,difficult_level=None):
     chat_session = model.start_chat(history=[])
@@ -15,4 +15,4 @@ def quiz_engine(extracted_text=None,difficult_level=None):
 
 
     return response.text
-print(quiz_engine(extracted_text:=input('ENter text:')))
+
