@@ -16,9 +16,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from learnify.views import gen_quiz
+from learnify.views import gen_quiz,home,content,topic_material
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('quiz/',gen_quiz,name='quiz_engine')
+    path('',home),
+    path('quiz/',gen_quiz,name='quiz_engine'),
+    path('content/',content,name='content'),
+    path('materials/',topic_material,name='materials')
 ]
