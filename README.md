@@ -1,20 +1,26 @@
-# SEN PROJECT FOR GROUP 1 🚀
+SEN Project for Group 1 🚀
+
+Django Course Content and Quiz API
+
+This project provides an API built with Django for extracting course content, generating quizzes, and serving downloadable course materials. It leverages custom utilities for file processing, OCR, and AI-based quiz generation.
+
+
+---
+
+Features
+
+Course Content Extraction: Fetches course content from a JSON file (cos.json) in a structured format.
+
+Quiz Generation: Generates quizzes based on uploaded files (e.g., PDFs) or input descriptions.
+
+Material Download: Serves downloadable course materials (PDFs or other files).
 
 
 
-# Django Course Content and Quiz API
+---
 
-This Django project provides an API to extract course content from a JSON file (`cos.json`), generate quizzes based on extracted text, and serve downloadable course materials. It uses a custom utility class to handle file extraction, OCR, and quiz generation.
+Project Structure
 
-## Features
-
-- **Course Content**: Fetches course content from a JSON file (`cos.json`) and returns it in a structured format.
-- **Quiz Generation**: Accepts a file (e.g., PDF), processes the content, and generates quizzes based on the extracted text.
-- **Topic Material Download**: Allows downloading course material (PDF files) via a file path.
-  
-## Project Structure
-
-```
 Backend/
 │
 ├── Backend/
@@ -34,35 +40,130 @@ Backend/
 │       └── use_ai_gen_quiz.py  # AI logic for quiz generation
 │
 └── manage.py
-```
 
-Here is the full documentation with the requested details:
 
 ---
 
-# Backend API Documentation
+API Documentation
 
-This backend API is designed for quiz generation, file retrieval, and course content handling. Below are the available endpoints and how to interact with them using JavaScript.
+1. GET /
 
-# API Documentation
+Description: Returns a welcome message.
+Response:
 
-## Overview
-This document provides a comprehensive overview of the API endpoints available in the project. Each endpoint is described with its method, purpose, input parameters, and expected responses.
+Welcome
+
 
 ---
 
-## Endpoints
+2. POST /api/quiz/
 
-### 1. `GET /`
-- **Description**: Returns a welcome message.
-- **Response**:
-  - **Status**: 200
-  - **Body**: Plain text message: `Welcome`
-  async function generateQuiz(file, level, desc) {
+Description: Generates a quiz based on a provided file or description.
+Parameters:
+
+file (optional): File to generate quiz content.
+
+level (optional): Difficulty level of the quiz.
+
+quiz-desc (optional): Quiz description if no file is provided.
+
+
+Response:
+
+Success:
+
+{
+  "quiz": {
+    "name": "Quiz Title",
+    "questions": [...]
+  }
+}
+
+Error:
+
+{
+  "error": "No file provided"
+}
+
+
+
+---
+
+3. GET /api/content/
+
+Description: Retrieves course data from the backend.
+Response:
+
+{
+  "course_data": { ... }
+}
+
+
+---
+
+4. GET /api/materials/
+
+Description: Downloads a specific material file.
+Parameters:
+
+filename: Name of the file to retrieve.
+
+
+Response:
+
+Success: File download.
+
+Error:
+
+{
+  "error": "File not found"
+}
+
+
+
+---
+
+5. GET /api/ran_quiz/
+
+Description: Generates a quiz based on a randomly selected file.
+Parameters:
+
+level (optional): Difficulty level of the quiz.
+
+
+Response:
+
+{
+  "quiz": {
+    "name": "Quiz Title",
+    "questions": [...]
+  }
+}
+
+
+---
+
+6. GET /api/list/
+
+Description: Lists all available materials in the media directory.
+Response:
+
+{
+  "Materials": ["file1.pdf", "file2.docx", ...]
+}
+
+
+---
+
+Example JavaScript Usage
+
+Generate Quiz
+
+async function generateQuiz(file, level, desc) {
   const formData = new FormData();
-  formData.append('file', file);
-  formData.append('level', level);
-  formData.append('quiz-desc', desc);
+  if (file) formData.append('file', file);
+  if (level) formData.append('level', level);
+  if (desc) formData.append('quiz-desc', desc);
 
   try {
     const response = await fetch('/api/quiz/', {
@@ -72,7 +173,7 @@ This document provides a comprehensive overview of the API endpoints available i
 
     if (response.ok) {
       const data = await response.json();
-      console.log('Quiz:', data.quiz);
+      console.log('Generated Quiz:', data.quiz);
     } else {
       console.error('Failed to generate quiz:', await response.json());
     }
@@ -81,38 +182,9 @@ This document provides a comprehensive overview of the API endpoints available i
   }
 }
 
+Fetch Course Content
 
----
-
-### 2. `POST /api/quiz/`
-- **Description**: Generates a quiz based on a provided file or description.
-- **Request**:
-  - **Method**: POST
-  - **Headers**: `Content-Type: multipart/form-data`
-  - **Parameters**:
-    - `file` (optional, file): A file containing content to generate a quiz.
-    - `level` (optional, string): Difficulty level of the quiz.
-    - `quiz-desc` (optional, string): Description of the quiz if no file is provided.
-- **Response**:
-  - **Status**: 200
-  - **Body**:
-    ```json
-    {
-      "quiz": {
-        "name": "Quiz Title",
-        "questions": [...]
-      }
-    }
-    ```
-  - **Error Response**:
-    - **Status**: 400
-    - **Body**:
-      ```json
-      {
-        "error": "No file provided"
-      }
-      ```
-      async function fetchContent() {
+async function fetchCourseContent() {
   try {
     const response = await fetch('/api/content/');
 
@@ -120,29 +192,16 @@ This document provides a comprehensive overview of the API endpoints available i
       const data = await response.json();
       console.log('Course Content:', data.course_data);
     } else {
-      console.error('Failed to fetch content:', await response.json());
+      console.error('Failed to fetch course content:', await response.json());
     }
   } catch (error) {
     console.error('Error:', error);
   }
 }
 
+Download Material
 
----
-
-### 3. `GET /api/content/`
-- **Description**: Retrieves course data from the backend.
-- **Request**:
-  - **Method**: GET
-- **Response**:
-  - **Status**: 200
-  - **Body**:
-    ```json
-    {
-      "course_data": { ... }
-    }
-    ```
-    async function downloadMaterial(filename) {
+async function downloadMaterial(filename) {
   try {
     const response = await fetch(`/api/materials/?filename=${filename}`);
 
@@ -163,28 +222,9 @@ This document provides a comprehensive overview of the API endpoints available i
   }
 }
 
+Generate Random Quiz
 
----
-
-### 4. `GET /api/materials/`
-- **Description**: Retrieves a specific topic material file.
-- **Request**:
-  - **Method**: GET
-  - **Parameters**:
-    - `filename` (string): Name of the file to retrieve.
-- **Response**:
-  - **Status**: 200 (if file exists)
-  - **Headers**: `Content-Disposition: attachment; filename="<filename>"`
-  - **Body**: File content as a binary stream.
-  - **Error Response**:
-    - **Status**: 400
-    - **Body**:
-      ```json
-      {
-        "error": "file not found"
-      }
-      ```
-      async function generateRandomQuiz(level) {
+async function generateRandomQuiz(level) {
   try {
     const response = await fetch(`/api/ran_quiz/?level=${level}`);
 
@@ -192,7 +232,24 @@ This document provides a comprehensive overview of the API endpoints available i
       const data = await response.json();
       console.log('Random Quiz:', data.quiz);
     } else {
-      console.error('Failed to fetch random quiz:', await response.json());
+      console.error('Failed to generate random quiz:', await response.json());
+    }
+  } catch (error) {
+    console.error('Error:', error);
+  }
+}
+
+List Materials
+
+async function listAvailableMaterials() {
+  try {
+    const response = await fetch('/api/list/');
+
+    if (response.ok) {
+      const data = await response.json();
+      console.log('Available Materials:', data.Materials);
+    } else {
+      console.error('Failed to fetch materials:', await response.json());
     }
   } catch (error) {
     console.error('Error:', error);
@@ -202,163 +259,48 @@ This document provides a comprehensive overview of the API endpoints available i
 
 ---
 
-### 5. `GET /api/ran_quiz/`
-- **Description**: Generates a quiz based on a randomly selected file.
-- **Request**:
-  - **Method**: GET
-  - **Parameters**:
-    - `level` (optional, string): Difficulty level of the quiz.
-- **Response**:
-  - **Status**: 200
-  - **Body**:
-    ```json
-    {
-      "quiz": {
-        "name": "Quiz Title",
-        "questions": [...]
-      }
-    }
-    ```
-    async function listFiles() {
-  try {
-    const response = await fetch('/api/list/');
+Backend JSON Response Documentation
 
-    if (response.ok) {
-      const data = await response.json();
-      console.log('File List:', data.Materials);
-    } else {
-      console.error('Failed to fetch file list:', await response.json());
-    }
-  } catch (error) {
-    console.error('Error:', error);
-  }
-}
+Overview
 
+The backend JSON provides data for rendering quizzes dynamically, including questions, options, correct answers, and feedback.
 
----
+Example JSON
 
-### 6. `GET /api/list/`
-- **Description**: Returns a list of all available materials in the media directory.
-- **Request**:
-  - **Method**: GET
-- **Response**:
-  - **Status**: 200
-  - **Body**:
-    ```json
-    {
-      "Materials": ["file1.pdf", "file2.docx", ...]
-    }
-    ```
-    async function listFiles() {
-  try {
-    const response = await fetch('/api/list/');
-
-    if (response.ok) {
-      const data = await response.json();
-      console.log('File List:', data.Materials);
-    } else {
-      console.error('Failed to fetch file list:', await response.json());
-    }
-  } catch (error) {
-    console.error('Error:', error);
-  }
-}
-
-
-
-# Documentation for Backend JSON Response
-
-## Overview
-This document describes the structure and content of the JSON object returned by the backend for a functional programming quiz. The JSON provides all the necessary information for rendering a quiz in a frontend application, including questions, options, correct answers, and feedback.
-
-## JSON Structure
-
-### Root Object
-- **`quiz`**: Contains the quiz data as a JSON string. The content is formatted as a nested JSON object with quiz details.
-
-### Nested Structure
-#### **Quiz Details**
-- **`name`** *(string)*: The title of the quiz.
-
-#### **Questions**
-- **`questions`** *(array)*: A list of quiz questions. Each question object includes details such as the question text, multiple-choice options, the correct answer, and feedback.
-
-#### **Question Object**
-Each question object contains the following fields:
-
-1. **`question`** *(string)*:
-   - The text of the question being asked.
-
-2. **`options`** *(array of strings)*:
-   - A list of possible answers. Each option is represented as a string.
-
-3. **`correctAnswer`** *(string)*:
-   - The correct answer to the question. This value should match one of the strings in the `options` array.
-
-4. **`feedBack`** *(string)*:
-   - Additional explanation or clarification provided after the user answers the question.
-
-## Example JSON
-```json
 {
   "quiz": {
-    "name": "COS2 Mastery Quiz",
+    "name": "Sample Quiz",
     "questions": [
       {
-        "question": "Explain the concept of 'referential transparency' in the context of functional programming and provide a specific example illustrating its benefits.",
-        "options": [
-          "Referential transparency means that a function's output depends only on its input, regardless of execution order. This allows for easier reasoning and optimization, but it's computationally expensive.",
-          "Referential transparency is a property where the order of function execution matters. It increases code complexity but provides more efficient execution.",
-          "Referential transparency means that a function's output depends only on its input, regardless of execution order. This allows for easier reasoning, optimization, and parallelization. For example, `add(2, 3)` always returns 5, regardless of when it's called.",
-          "Referential transparency is primarily used for error handling. It helps prevent crashes but can reduce code readability."
-        ],
-        "correctAnswer": "Referential transparency means that a function's output depends only on its input, regardless of execution order. This allows for easier reasoning, optimization, and parallelization. For example, `add(2, 3)` always returns 5, regardless of when it's called.",
-        "feedBack": "Referential transparency ensures that a function always produces the same output for the same input, making code easier to understand, optimize, and parallelize. The example highlights this consistent behavior."
+        "question": "What is Django?",
+        "options": ["A framework", "A database", "A programming language"],
+        "correctAnswer": "A framework",
+        "feedBack": "Django is a high-level Python web framework."
       },
       {
-        "question": "Discuss the trade-offs involved in choosing between eager and lazy evaluation strategies in functional programming. Provide scenarios where one approach would be significantly more efficient than the other.",
-        "options": [
-          "Eager evaluation is always faster than lazy evaluation.",
-          "Lazy evaluation is always better because it avoids unnecessary computations.",
-          "Eager evaluation is best for situations where all data is readily available. Lazy evaluation is more efficient when dealing with potentially infinite data streams or situations where not all results are needed.",
-          "There are no significant trade-offs; both approaches are equivalent in performance."
-        ],
-        "correctAnswer": "Eager evaluation is best for situations where all data is readily available. Lazy evaluation is more efficient when dealing with potentially infinite data streams or situations where not all results are needed.",
-        "feedBack": "The choice between eager and lazy evaluation depends heavily on the nature of the data and the required computations. Lazy evaluation excels when dealing with large or potentially infinite datasets, while eager evaluation is preferable when all data is readily available and immediate results are crucial."
+        "question": "Which database does Django use by default?",
+        "options": ["MySQL", "SQLite", "PostgreSQL"],
+        "correctAnswer": "SQLite",
+        "feedBack": "Django uses SQLite as its default database."
       }
-      // Additional questions...
     ]
   }
 }
-```
 
-## Notes
-1. **Data Format**:
-   - Ensure all string fields are properly escaped when serializing to JSON.
 
-2. **Validation**:
-   - Verify that each `correctAnswer` matches one of the `options` for consistency.
-   - Validate that `questions` is an array with at least one element.
+---
 
-3. **Feedback Integration**:
-   - Feedback should provide meaningful insights to help the user understand the concept better.
+Notes
 
-4. **Expandability**:
-   - The structure allows adding more questions and modifying existing ones with ease.
+1. Frontend Integration: Ensure CORS settings allow access from your frontend.
 
-5. **Use Case**:
-   - Ideal for functional programming quizzes or educational purposes requiring dynamic rendering of questions and answers.
 
-## Backend Responsibilities
-- Ensure the JSON is dynamically generated based on a database or predefined logic.
-- Maintain consistency between `options` and `correctAnswer` fields.
-- Provide meaningful and constructive feedback for all questions.
+2. Validation: Validate API responses and display appropriate error messages.
 
-## Frontend Responsibilities
-- Parse the JSON and render the quiz UI dynamically.
-- Display feedback immediately after the user answers a question.
-- Allow navigation between questions in the quiz.
+
+3. Expandability: Add new features or endpoints by extending the views.py or utils.py modules.
 
 
 
-This document provides detailed instructions on how to interact with the backend API via JavaScript fetch requests.
+This README provides complete documentation for both backend and frontend integration. Let me know if anything else needs to be added!
+
