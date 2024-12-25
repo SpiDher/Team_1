@@ -27,33 +27,5 @@
       }
     ]
   }
-  {
-    "version": 2,
-    "env": {
-      "PYTHON_VERSION": "3.9"
-    },
-    "builds": [
-      {
-        "src": "Backend/Backend/wsgi.py",
-        "use": "@vercel/python",
-        "config": {
-          "installCommand": "pip install -r Backend/requirements.txt"
-        }
-      },
-      {
-        "src": "Frontend/**/*",
-        "use": "@vercel/static"
-      }
-    ],
-    "routes": [
-      {
-        "src": "/api/(.*)",
-        "dest": "Backend/Backend/wsgi.py"
-      },
-      {
-        "src": "/(.*)",
-        "dest": "Frontend/$1"
-      }
-    ]
-  }
+
     
