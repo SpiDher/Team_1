@@ -12,7 +12,7 @@ def gen_quiz(request):
         level = request.POST.get('level', None)
         desc=request.POST.get('quiz-desc',None)
 
-        # Create an instance and parse it of the ExtractEngine
+        # Create an instance and parse to the ExtractEngine
         if file:
             extractor = ExtractEngine(file)
             # Process the extracted text to generate a quiz (you can customize this as needed)
