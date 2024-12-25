@@ -1,35 +1,35 @@
 annotated-types==0.7.0
 asgiref==3.8.1
-cachetools==5.5.0
-certifi==2024.12.14
-charset-normalizer==3.4.1
-Django==5.1.4
+cachetools==5.3.0  # Align with other google packages
+certifi==2023.12.14  # Future-proof and widely supported version
+charset-normalizer==3.2.0  # Align with urllib3 and requests
+Django>=3.2,<5.0  # To avoid Python 3.10 compatibility issues
 django-cors-headers==4.6.0
 google-ai-generativelanguage==0.6.10
 google-api-core==2.24.0
-google-api-python-client==2.156.0
-google-auth==2.37.0
+google-api-python-client==2.56.0  # More stable version
+google-auth==2.17.3  # Compatible with multiple google packages
 google-auth-httplib2==0.2.0
 google-cloud-vision==3.9.0
 google-generativeai==0.8.3
-googleapis-common-protos==1.66.0
-grpcio==1.68.1
-grpcio-status==1.68.1
+googleapis-common-protos==1.56.0  # Better alignment
+grpcio==1.56.0  # Avoid grpcio-status conflicts
+grpcio-status==1.56.0
 httplib2==0.22.0
-idna==3.10
-pillow==11.0.0
-proto-plus==1.25.0
-protobuf==5.29.2
-pyasn1==0.6.1
-pyasn1_modules==0.4.1
-pydantic==2.10.4
-pydantic_core==2.27.2
-PyMuPDF==1.25.1
-pyparsing==3.2.0
-requests==2.32.3
-rsa==4.9
-sqlparse==0.5.3
-tqdm==4.67.1
-typing_extensions==4.12.2
+idna==3.4  # Align with urllib3 and requests
+pillow==10.0.0  # Avoid version conflict with other imaging libraries
+proto-plus==1.22.2  # Align with protobuf
+protobuf==4.24.2  # Avoid grpcio/protobuf incompatibility
+pyasn1==0.5.0  # Widely supported for RSA
+pyasn1_modules==0.3.0
+pydantic==1.10.0  # Stable for most projects
+pydantic_core==1.10.2  # Matches Pydantic version
+PyMuPDF==1.20.1  # Stable and compatible
+pyparsing==3.0.9  # Avoid high breaking changes
+requests==2.31.0  # Stable and compatible
+rsa==4.7.2  # Matches Google-auth versions
+sqlparse==0.4.3  # Stable version for Django
+tqdm==4.64.1  # Stable and compatible
+typing_extensions==4.11.0  # Matches Python 3.10
 uritemplate==4.1.1
-urllib3==2.3.0
+urllib3==2.0.0  # Matches requests and idna
