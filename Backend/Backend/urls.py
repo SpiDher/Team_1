@@ -20,9 +20,9 @@ from learnify.views import gen_quiz,home,content,topic_material,ran_quiz,file_na
 
 urlpatterns = [
     path('',home),
-    path('quiz/',gen_quiz,name='quiz_engine'),
-    path('content/',content,name='content'),
-    path('materials/',topic_material,name='materials'),
-    path('ran_quiz/',ran_quiz,name='random quiz'),
-    path('list/',file_names,name='file list'),
+    path('api/quiz/',gen_quiz,name='quiz_engine'),
+    path('api/content/',content,name='content'),
+    path('api/materials/',topic_material,name='materials'),
+    path('api/ran_quiz/',ran_quiz,name='random quiz'),
+    path('api/list/',file_names,name='file list'),
 ]
