@@ -2,10 +2,10 @@
     "version": 2,
     "builds": [
       {
-        "src": "Backend/Backend/wsgi.py",
+        "src": "pip install -r Backend/requirements.txt && python Backend/Backend/wsgi.py",
         "use": "@vercel/python",
         "config": {
-          "buildCommand": "pip install -r Backend/requirements.txt && python Backend/Backend/wsgi.py",
+          "buildCommand": "Backend/Backend/wsgi.py",
           "runtime": "python3.9"
         }
       },
