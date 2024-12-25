@@ -6,7 +6,7 @@
         "use": "@vercel/python",
         "config": {
           "buildCommand": "pip install -r Backend/requirements.txt && python Backend/Backend/wsgi.py",
-          "runtime": "python3.12"
+          "runtime": "python3.9"
         }
       },
       {
