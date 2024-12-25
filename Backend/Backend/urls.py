@@ -19,7 +19,7 @@ from django.urls import path
 from learnify.views import gen_quiz,home,content,topic_material,ran_quiz,file_names
 
 urlpatterns = [
-    path('',home),
+    path('api/',home),
     path('api/quiz/',gen_quiz,name='quiz_engine'),
     path('api/content/',content,name='content'),
     path('api/materials/',topic_material,name='materials'),
