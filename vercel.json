@@ -2,8 +2,11 @@
     "version": 2,
     "builds": [
       {
-        "src": "Backend/wsgi.py",
-        "use": "@vercel/python"
+        "src": "Backend/Backend/wsgi.py",
+        "use": "@vercel/python",
+        "config": {
+          "runtime": "python3.9"
+        }
       },
       {
         "src": "Frontend/**/*",
