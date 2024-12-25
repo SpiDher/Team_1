@@ -67,10 +67,7 @@ class ExtractEngine:
             return text
         return self.extract_text_from_image()
     
-class Course:
-    def __init__(self,topic):
-        self.topic = topic
-        
+#get json file content
 def text_content():
     file_path = os.path.join(settings.MEDIA_ROOT, 'cos.json')
     with open(file_path,'r') as f:

@@ -52,22 +52,133 @@ This backend API is designed for quiz generation, file retrieval, and course con
 
 ---
 
-## **1. Generate Quiz (`/gen_quiz/`)**
 
-### Description
-This endpoint accepts a POST request with the text and level to generate a quiz. The request should contain the `level` and `text` fields. The level could be values like "beginner", "intermediate", or "advanced". The `text` should be the content from which quiz questions are generated.
 
-### Request Method: `POST`
+### 1. `/gen_quiz/` - Generate Quiz
 
-### Request Body
-```json
+This endpoint generates a quiz from either a file or a text description.
+
+#### Method: `POST`
+
+#### Request Body (JSON format):
+
+- **`file`** *(optional)*: The file to process (a PDF or image) to generate quiz questions. This can be uploaded using `multipart/form-data`.
+- **`level`** *(optional)*: The difficulty level of the quiz. Possible values can be `"beginner"`, `"intermediate"`, `"advanced"`.
+- **`quiz-desc`** *(optional)*: A custom description (text) to generate quiz questions from. If this is provided, the system will generate the quiz from the description instead of the file.
+
+#### Example Request (with file):
+
+```bash
+POST /gen_quiz/
+Content-Type: multipart/form-data
+
 {
-    "level": "beginner",  // Example level (can be "beginner", "intermediate", etc.)
-    "text": "This is a sample text to generate quiz questions from."  // Sample text for quiz generation
+    "file": <file>,  # A PDF or image file uploaded
+    "level": "beginner",
+    "quiz-desc": "A sample description for quiz generation"
 }
 ```
 
-### Example Usage (JavaScript)
+#### Example Request (with description only):
+
+```bash
+POST /gen_quiz/
+Content-Type: application/json
+
+{
+    "quiz-desc": "This is a sample text to generate quiz questions from.",
+    "level": "beginner"
+}
+```
+
+#### Example Request (with no file or description):
+
+```bash
+POST /gen_quiz/
+Content-Type: application/json
+
+{
+    "level": "intermediate"
+}
+```
+
+#### Example Response:
+
+```json
+{
+    "quiz": [
+        {
+            "question": "What is the capital of France?",
+            "options": ["Paris", "London", "Rome"],
+            "answer": "Paris"
+        },
+        {
+            "question": "What is 2 + 2?",
+            "options": ["3", "4", "5"],
+            "answer": "4"
+        }
+    ]
+}
+```
+
+#### Notes:
+
+- The file is **optional**. If no file is uploaded, the system will generate the quiz based on the provided description.
+- If neither a file nor description is provided, the system will return an error.
+
+---
+
+### 2. `/materials/` - Download Material
+
+This endpoint allows you to download a material (such as a PDF).
+
+#### Method: `GET`
+
+#### Request Parameters:
+
+- **`filename`** *(required)*: The name of the file you want to download. Example: `pdf-test.pdf`.
+
+#### Example Request:
+
+```bash
+GET /materials/?filename=pdf-test.pdf
+```
+
+#### Example Response:
+
+The file will be returned as a downloadable attachment.
+
+---
+
+## Error Responses
+
+### 1. Missing File or Description in `/gen_quiz/`:
+
+If neither a file nor description is provided, the API will return a 400 error:
+
+```json
+{
+    "error": "No file or description provided"
+}
+```
+
+### 2. Invalid Request Method:
+
+If the wrong HTTP method is used, the API will return a 400 error:
+
+```json
+{
+    "error": "Invalid request method"
+}
+```
+
+---
+
+## Example Usage
+
+### Using JavaScript Fetch to Send Data to `/gen_quiz/`
+
+You can send a POST request to the `/gen_quiz/` endpoint using JavaScript's `fetch` API. Here's an example that sends a description instead of a file:
 
 ```javascript
 fetch('/gen_quiz/', {
@@ -77,15 +188,48 @@ fetch('/gen_quiz/', {
     },
     body: JSON.stringify({
         level: 'beginner',  // Example level (can be "beginner", "intermediate", etc.)
-        text: 'This is a sample text to generate quiz questions from.'  // Sample text for quiz generation
+        quiz-desc: 'This is a sample text to generate quiz questions from.'  // Sample text for quiz generation
     })
 })
 .then(response => response.json())
-.then(data => console.log('Quiz generated:', data.quiz))
-.catch(error => console.error('Error:', error));
+.then(data => {
+    console.log(data);  // Handle the quiz data
+})
+.catch(error => {
+    console.error('Error:', error);  // Handle errors
+});
+```
+
+### Handling File Upload with JavaScript
+
+If you'd like to upload a file instead of sending a description, you can use the `FormData` API:
+
+```javascript
+const formData = new FormData();
+formData.append('file', fileInput.files[0]);
+formData.append('level', 'beginner');  // Optional level
+formData.append('quiz-desc', '');  // Optional description (empty string if not used)
+
+fetch('/gen_quiz/', {
+    method: 'POST',
+    body: formData
+})
+.then(response => response.json())
+.then(data => {
+    console.log(data);  // Handle the quiz data
+})
+.catch(error => {
+    console.error('Error:', error);  // Handle errors
+});
 ```
 
 ---
+
+## Conclusion
+
+This API provides a flexible way to generate quizzes from either a file or a description, making it easy to integrate quiz generation into any application. Whether you're uploading a file or sending a description, the system will process your request and return a quiz based on the provided content.
+
+
 
 ## **2. Retrieve Course Content (`/content/`)**
 

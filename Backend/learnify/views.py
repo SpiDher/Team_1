@@ -3,6 +3,7 @@ from django.views.decorators.csrf import csrf_exempt
 from .utils import ExtractEngine,text_content
 from .ai.use_ai_gen_quiz import quiz_engine
 import os
+import random
 from Backend import settings
 @csrf_exempt
 def gen_quiz(request):
@@ -34,7 +35,7 @@ def content(request):
 
 @csrf_exempt
 def topic_material(request):
-    filename= request.GET.get('filename').lower()
+    filename= request.GET.get('filename')
     file_path = os.path.join(settings.MEDIA_ROOT, filename)
     if os.path.exists(file_path):
         file= open(file_path,'rb')
@@ -45,6 +46,21 @@ def topic_material(request):
             pass
     return JsonResponse({'error':'file not found'})
 
+@csrf_exempt
+def ran_quiz(request):
+    level = request.GET.get('level')
+    file_name = os.listdir(settings.MEDIA_ROOT)
+    ran_file= random.choice(file_name)
+    extractor = ExtractEngine(ran_file)
+    if level:
+        quiz = quiz_engine(extracted_text=extractor,difficult_level=level)
+        return JsonResponse({'quiz':quiz})
+    quiz = quiz_engine(extracted_text=ran_file)
+    return JsonResponse({'quiz':quiz})
 
+@csrf_exempt
+def file_names(request):
+    file_list = os.listdir(settings.MEDIA_ROOT)
+    return JsonResponse({'Materials':file_list})
 
 
