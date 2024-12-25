@@ -5,8 +5,7 @@
         "src": "Backend/Backend/wsgi.py",
         "use": "@vercel/python",
         "config": {
-          "installCommand": "pip install -r Backend/requirements.txt",
-          "runtime": "python3.12"
+          "installCommand": "pip install -r Backend/requirements.txt"
         }
       },
       {
