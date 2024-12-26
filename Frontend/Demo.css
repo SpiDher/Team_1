@@ -9,6 +9,7 @@ body{
     background: black;
     font-family: "Roboto";
     padding: 2rem;
+    position: relative;
 }
 
 @font-face {
@@ -30,63 +31,119 @@ body{
     font-family: Monteserrat-Black;
 }
 
-header h1 {
+header.desktop-nav h1 {
     font-family: Monteserrat-Black;
 }
-nav ul{
+header.desktop-nav nav ul{
     display: flex;
     /* border: 2px solid white; */
     justify-content: space-around;
     width: 50vw;
 }
 
-nav ul li {
+header.desktop-nav nav ul li {
     list-style-type: none;
 }
 
-nav ul li p{
+header.desktop-nav nav ul li{
     font-size: 1em;
     transition: 0.3s;
     cursor: pointer;    
 }
 
-nav ul p:hover{
+header.desktop-nav nav ul li:hover{
     color: orange;
 }
-header{
+header.desktop-nav {
     margin:  0 0 2rem 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-header .hamburger > div{
+header.desktop-nav .hamburger > div{
 width: 50px;
 height: 3px;
 background-color: #fff;
 }
 
-header .hamburger > div:nth-child(2) {
+header.desktop-nav .hamburger > div:nth-child(2) {
     margin-top: .3em;
     margin-bottom: .3em;
 }
 
-header .hamburger {
+header.desktop-nav .reverse-hamburger > div{
+    width: 50px;
+    height: 3px;
+    background-color: #fff;
+    }
+    
+header.desktop-nav .reverse-hamburger > div:nth-child(1) {
+    transform:rotate(-35deg);
+}
+
+header.desktop-nav .reverse-hamburger > div:nth-child(2) {
+    transform:rotate(35deg);
+}
+
+header.desktop-nav .hamburger {
     display: none;
     cursor: pointer;
 }
 
+header.desktop-nav .reverse-hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+.mobile-nav nav{
+    height: 100vh;
+    position: absolute;
+    background-color: #000;
+    width: 100%;
+    left: 0;
+    /* top: 0; */
+    z-index: 999;
+    animation: animateNav .5s;
+}
+
+@keyframes animateNav {
+    0% {
+        transform: translateX(-100%);
+    }
+    
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+
+.mobile-nav nav ul li {
+    color: #fff;
+    list-style-type: none;
+    margin: 2em 2em;
+    display: flex;
+    justify-content: space-between;
+    transition: .3s;
+}
+
+.mobile-nav nav ul li:hover {
+    color: orange;
+    cursor: pointer;
+}
+
 .HomeContent1{
-    /* border: 1px solid wheat; */
     height: 5rem;
 }
 .Lectures-Overview{
     margin:  2rem 0 2rem 0;
-    /* border: 1px solid white; */
     
 }
 .lectures-overview-header{
-    /* border: 1px solid white; */
     display: flex;
     height: 4rem;
     margin: 0 0 1rem 0;
@@ -141,9 +198,13 @@ header .hamburger {
 .template1:hover{
     transform: scale(1.05);
 }
-img{
+
+.templates .template1 img{
+    width: 100%;    
+}
+
+.templates .template1 img.svg{
     width: 20px;
-    
 }
 .readmore{
     position: relative;
@@ -184,14 +245,6 @@ img{
     .templates{
         grid-template-columns: repeat(2, 1fr);
     }
-    /* .template1{
-        width: 90%;
-        padding: 14px;
-    } */
-    /* .lectures-overview-header{
-        flex-direction: column;
-        height: 7rem;
-    } */
 }
 
 
@@ -200,31 +253,20 @@ img{
         grid-template-columns: repeat(1, 1fr);
     }
 
-    header nav ul {
+    header.desktop-nav  nav ul {
        display: none;
     }
 
-    header .hamburger {
-        display: block;
+.showOnMobile {
+        display: block !important;
     }
 
     .readmore{
         left: 50%;
     }
-    /* .template1{
-        width: 15rem;
-        padding: 14px;
-    } */
-    /* .lectures-overview-header{
-        flex-direction: column;
-        height: 7rem;
-    } */
     section.question-area {
-        /* display: block !important; */
         flex-direction: column;
     }
-    
-
 }
 
 .GoBack {
@@ -382,7 +424,6 @@ section.question-area .answered-questions{
 section.question-area .answered-questions div{
 width: 35px;
 height: 35px;
-/* background-color: lime; */
 border: 1px solid #777;
 margin-top: .5em;
 text-align: center;
