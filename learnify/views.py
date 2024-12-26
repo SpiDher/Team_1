@@ -31,7 +31,7 @@ def home(request):
 @csrf_exempt
 def content(request):
     course_data = text_content()
-    return JsonResponse({'course_data':course_data}, status=400)
+    return JsonResponse({'course_data':course_data}, status=200)
 
 @csrf_exempt
 def topic_material(request):
@@ -56,7 +56,7 @@ def ran_quiz(request):
         quiz = quiz_engine(extracted_text=extractor,difficult_level=level)
         return JsonResponse({'quiz':quiz})
     quiz = quiz_engine(extracted_text=ran_file)
-    return JsonResponse({'quiz':quiz})
+    return JsonResponse({'quiz':quiz},status= 200)
 
 @csrf_exempt
 def file_names(request):
