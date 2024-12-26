@@ -16,7 +16,7 @@ class ExtractEngine:
         doc = fitz.open(self.file)  # Open the PDF
         text = ""
         for page in doc:
-            text += page.get_text()  # Extract text from each page and return
+            text += page.get_text()  # Extract text from each page
         return text or None
 
     
