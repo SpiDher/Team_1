@@ -1,4 +1,3 @@
-from google.cloud import vision
 import io
 import os
 import fitz  # PyMuPDF
@@ -11,7 +10,7 @@ class ExtractEngine:
     
     
     def __str__(self):
-        return self.text_result()
+        return self.extract_text_from_pdf()
     
     def extract_text_from_pdf(self):
         doc = fitz.open(self.file)  # Open the PDF
@@ -20,52 +19,6 @@ class ExtractEngine:
             text += page.get_text()  # Extract text from each page
         return text or None
 
-
-    def pdf_to_image(self):
-        doc = fitz.open(self.file)
-        images = []
-        
-        # Iterate through the pages
-        for page_num in range(len(doc)):
-            page = doc.load_page(page_num)
-            
-            # Render page to a pixmap (image)
-            pix = page.get_pixmap()
-            
-            # Convert pixmap to image
-            img = Image.open(io.BytesIO(pix.tobytes()))
-            images.append(img)
-        
-        return images
-    
-    def extract_text_from_image(self):
-        # Initialize the Vision API client
-        client = vision.ImageAnnotatorClient.from_service_account_json(os.path.join('cloud_key.json'))
-
-        # Convert the image to a byte stream
-        byte_io = io.BytesIO()
-        image = self.pdf_to_image(self.file)
-        image.save(byte_io, format='PNG')
-        byte_io.seek(0)
-
-        # Construct an image instance for Vision API
-        vision_image = vision.Image(content=byte_io.read())
-
-        # Perform text detection
-        response = client.text_detection(image=vision_image)
-        texts = response.text_annotations
-
-        if texts:
-            return texts[0].description  # Return the detected text
-        else:
-            return None
-
-    # Function to convert PDF to images
-    def text_result(self):
-        text = self.extract_text_from_pdf()
-        if text is not None:
-            return text
-        return self.extract_text_from_image()
     
 #get json file content
 def text_content():
