@@ -7,23 +7,41 @@
     <link rel="stylesheet" href="Demo.css">
 </head>
 <body>
-    <header>
+    <header class="desktop-nav">
         <h1><span id="Learn">Learn</span>ify</h1>
         <nav>
             <ul>
-                <li><p>Home</p></li>
-                <li><p>Topics</p></li>
-                <li><p>Module Quiz</p></li>
-                <li><p>About/Feedback</p></li>
+              <li>Home</li>
+                <li>Topics</li>
+                <li>Module Quiz</li>
+                <li>About/Feedback</li>
             </ul>
         </nav>
-        <div class="hamburger">
+
+        <div class="hamburger showOnMobile" onclick="showNav()">
             <div></div>
             <div></div>
             <div></div>
         </div>
+
+        <div class="reverse-hamburger" onclick="hideNav()">
+            <div></div>
+            <div></div>
+            <!-- <div></div> -->
+        </div>
     </header>
 
+    <div class="mobile-nav">
+        <nav>
+            <ul>
+              <li>Home <span>></span></li>
+                <li>Topics <span>></span></li>
+                <li>Module Quiz <span>></span></li>
+                <li>About/Feedback <span>></span></li>
+            </ul>
+        </nav>
+
+    </div>
 <div class="GoBack">
 <a href="index.html"><button class="goBackButton">< Go back</button></a>
 <a href="Quiz.html"><button class="quizButton"> Module quiz</button></a>
@@ -53,5 +71,7 @@
 <button class="next">Next Lecture <span>></span></button>
 </div>
 </section>
+
+<script src="App.js"></script>
 </body>
 </html>

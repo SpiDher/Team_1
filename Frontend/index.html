@@ -10,23 +10,40 @@
 
 <body>
     <!-- The header is meant to cover the nav bar too, including the logo -->
-    <header>
+    <header class="desktop-nav">
         <h1><span id="Learn">Learn</span>ify</h1>
         <nav>
             <ul>
-              <li><p>Home</p></li>
-                <li><p>Topics</p></li>
-                <li><p>Module Quiz</p></li>
-                <li><p>About/Feedback</p></li>
+              <li>Home</li>
+                <li>Topics</li>
+                <li>Module Quiz</li>
+                <li>About/Feedback</li>
             </ul>
         </nav>
 
-        <div class="hamburger">
+        <div class="hamburger showOnMobile" onclick="showNav()">
             <div></div>
             <div></div>
             <div></div>
         </div>
+
+        <div class="reverse-hamburger" onclick="hideNav()">
+            <div></div>
+            <div></div>
+        </div>
     </header>
+
+    <div class="mobile-nav">
+        <nav>
+            <ul>
+              <li>Home <span>></span></li>
+                <li>Topics <span>></span></li>
+                <li>Module Quiz <span>></span></li>
+                <li>About/Feedback <span>></span></li>
+            </ul>
+        </nav>
+
+    </div>
 
     <div class="HomeContent1">
         <h1>COS 111</h1>
@@ -45,59 +62,59 @@
         <div class="templates">
 
             <div class="template1">
-                <img src="book-open-svgrepo-com.svg" alt="">
+                <img src="Img1.jpg" alt="">
                 <p>Innovations In Artificial Intelligence and human Interaction </p>
 
-                <button class="readmore"><a href="Details.html">Read More <img src="arrow-right-svgrepo-com.svg" alt=""></a></button>
+                <button class="readmore"><a href="Details.html">Read More <img src="arrow-right-svgrepo-com.svg" class="svg" alt=""></a></button>
             </div>
 
             <div class="template1">
-                <img src="book-open-svgrepo-com.svg" alt="">
+                <img src="Img2.jpg" alt="">
                 <p>Innovations In Artificial Intelligence and human Interaction </p>
 
-                <button class="readmore">Read More <img src="arrow-right-svgrepo-com.svg" alt=""></button>
+                <button class="readmore">Read More <img src="arrow-right-svgrepo-com.svg" class="svg"  alt=""></button>
             </div>
 
             <div class="template1">
-                <img src="book-open-svgrepo-com.svg" alt="">
+                <img src="Img3.jpg" alt="">
                 <p>Innovations In Artificial Intelligence and human Interaction </p>
 
-                <button class="readmore">Read More <img src="arrow-right-svgrepo-com.svg" alt=""></button>
+                <button class="readmore">Read More <img src="arrow-right-svgrepo-com.svg" class="svg"  alt=""></button>
             </div>
 
             <div class="template1">
-                <img src="book-open-svgrepo-com.svg" alt="">
+                <img src="Img4.jpg" alt="">
                 <p>Innovations In Artificial Intelligence and human Interaction </p>
 
-                <button class="readmore">Read More <img src="arrow-right-svgrepo-com.svg" alt=""></button>
+                <button class="readmore">Read More <img src="arrow-right-svgrepo-com.svg" class="svg"  alt=""></button>
             </div>
 
             <div class="template1">
-                <img src="book-open-svgrepo-com.svg" alt="">
+                <img src="Img5.jpg" alt="">
                 <p>Innovations In Artificial Intelligence and human Interaction </p>
 
-                <button class="readmore">Read More <img src="arrow-right-svgrepo-com.svg" alt=""></button>
+                <button class="readmore">Read More <img src="arrow-right-svgrepo-com.svg" class="svg"  alt=""></button>
             </div>
 
             <div class="template1">
-                <img src="book-open-svgrepo-com.svg" alt="">
+                <img src="Img6.jpg" alt="">
                 <p>Innovations In Artificial Intelligence and human Interaction </p>
 
-                <button class="readmore">Read More <img src="arrow-right-svgrepo-com.svg" alt=""></button>
+                <button class="readmore">Read More <img src="arrow-right-svgrepo-com.svg" class="svg" alt=""></button>
             </div>
 
             <div class="template1">
-                <img src="book-open-svgrepo-com.svg" alt="">
+                <img src="Img1.jpg" alt="">
                 <p>Innovations In Artificial Intelligence and human Interaction </p>
 
-                <button class="readmore">Read More <img src="arrow-right-svgrepo-com.svg" alt=""></button>
+                <button class="readmore">Read More <img src="arrow-right-svgrepo-com.svg" class="svg"  alt=""></button>
             </div>
 
             <div class="template1">
-                <img src="book-open-svgrepo-com.svg" alt="">
+                <img src="Img2.jpg" alt="">
                 <p>Innovations In Artificial Intelligence and human Interaction </p>
 
-                <button class="readmore">Read More <img src="arrow-right-svgrepo-com.svg" alt=""></button>
+                <button class="readmore">Read More <img src="arrow-right-svgrepo-com.svg" class="svg"  alt=""></button>
             </div>
 
 
@@ -105,6 +122,8 @@
         </div>
 
     </div>
+
+    <script src="App.js"></script>
 </body>
 
 </html>
