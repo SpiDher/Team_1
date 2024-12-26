@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Demo App</title>
     <link rel="stylesheet" href="Demo.css">
+    <link rel="stylesheet" href="footer.css">
 </head>
 
 <body>
+    <div class="body">
     <!-- The header is meant to cover the nav bar too, including the logo -->
     <header class="desktop-nav">
         <h1><span id="Learn">Learn</span>ify</h1>
@@ -21,18 +23,21 @@
             </ul>
         </nav>
 
+        
         <div class="hamburger showOnMobile" onclick="showNav()">
             <div></div>
             <div></div>
             <div></div>
         </div>
-
+        
         <div class="reverse-hamburger" onclick="hideNav()">
             <div></div>
             <div></div>
         </div>
     </header>
-
+    
+    <div class="content">
+        <!-- The mobile nav comes with a fixed position -->
     <div class="mobile-nav">
         <nav>
             <ul>
@@ -45,6 +50,8 @@
 
     </div>
 
+
+    
     <div class="HomeContent1">
         <h1>COS 111</h1>
         <p>(Intoduction to computing)</p>
@@ -54,7 +61,7 @@
     <div class="Lectures-Overview">
         <div class="lectures-overview-header">
             <h2>Lectures Overview</h2>
-
+            <!-- The button now has border radius -->
             <button class="quizButton">Module Quiz</button>
 
         </div>
@@ -122,8 +129,43 @@
         </div>
 
     </div>
+</div>
+</div>
 
-    <script src="App.js"></script>
+<!-- i created a footer with a different css -->
+<footer>
+
+    <div class="footer1">
+     
+            <div class="footer-container">
+              <div class="footer-column">
+                <h1 class="footerH1"><span id="Learn">Learn</span>ify</h1>
+                <p>&copy; 2025 Learnify. All rights reserved.</p>
+              </div>
+              <div class="footer-column">
+                <h3>Contact Us</h3>
+                <p>Email: sengroup1@gmail.com</p>
+                <p>Phone: +123 456 7890</p>
+                <p>Address:University Of Uyo, Nwagiba, Uyo, Nigeria</p>
+              </div>
+
+              <div class="footer-column ">
+                <h3>Follow Us</h3>
+                <ul class="social-media">
+                  <li><a href="#">Facebook</a></li>
+                  <li><a href="#">Twitter</a></li>
+                  <li><a href="#">Instagram</a></li>
+                </ul>
+              </div>
+            </div>
+  
+          
+    </div>
+
+    
+</footer>
+<script src="App.js"></script>
+
 </body>
 
 </html>

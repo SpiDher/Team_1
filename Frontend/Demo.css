@@ -8,8 +8,11 @@ body{
     color: white;
     background: black;
     font-family: "Roboto";
-    padding: 2rem;
     position: relative;
+}
+.body{
+    padding: 2rem;
+    
 }
 
 @font-face {
@@ -23,6 +26,10 @@ body{
 @font-face {
     font-family: Monteserrat-Light;
     src: url(./Fonts/Montserrat-Light.ttf);
+}
+.content{
+    width: 100%;
+    padding-top: 5rem;
 }
 
 #Learn{
@@ -56,6 +63,12 @@ header.desktop-nav nav ul li:hover{
 }
 header.desktop-nav {
     margin:  0 0 2rem 0;
+    width: 99%;
+    position: fixed; top: 0;
+    z-index: 1000;
+    background: black;
+    padding: 1rem 0;
+    /* border: 2px solid; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -97,11 +110,16 @@ header.desktop-nav .reverse-hamburger {
 }
 
 .mobile-nav {
+    position: fixed;
+    z-index: 1000;
+    background: black;
+    width: 95%;
+    top: 5%;
     display: none;
 }
 
 .mobile-nav nav{
-    height: 100vh;
+    height: 50vh;
     position: absolute;
     background-color: #000;
     width: 100%;
@@ -245,16 +263,21 @@ header.desktop-nav .reverse-hamburger {
     .templates{
         grid-template-columns: repeat(2, 1fr);
     }
+    header.desktop-nav{
+        width: 97%;
+    }
 }
 
-
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:890px) {
     .templates{
         grid-template-columns: repeat(1, 1fr);
     }
 
     header.desktop-nav  nav ul {
        display: none;
+    }
+    header.desktop-nav{
+        width: 90%;
     }
 
 .showOnMobile {
@@ -283,7 +306,8 @@ header.desktop-nav .reverse-hamburger {
 
  .quizButton {
 padding: .3em .5em;
-border: 1px solid orange;
+border: 2px solid orange;
+border-radius: 10px;
 background: none;
 color: orange;
 transition: .3s;
