@@ -16,13 +16,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from learnify.views import gen_quiz,home,content,topic_material,ran_quiz,file_names
+from learnify.views import gen_quiz,home,content,topic_material,ran_quiz,file_list
 
 urlpatterns = [
     path('api/',home),
     path('api/quiz/',gen_quiz,name='quiz_engine'),
     path('api/content/',content,name='content'),
     path('api/materials/',topic_material,name='materials'),
-    path('api/ran_quiz/',ran_quiz,name='random quiz'),
-    path('api/list/',file_names,name='file list'),
+    path('api/ran_quiz/',ran_quiz,name='random_quiz'),
+    path('api/list/',file_list,name='file_list'),
 ]
