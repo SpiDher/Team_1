@@ -19,5 +19,10 @@
       "src": "/(.*)",
       "dest": "Frontend/$1"
     }
-  ]
+  ],
+  "functions": {
+    "api/*.py": {
+      "maxDuration": 30
+    }
+  }
 }
