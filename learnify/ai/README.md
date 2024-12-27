@@ -24,7 +24,7 @@ example output
     ]
 }
 
--used data schema to help prevent the output from going out of structure as it might cause the quiz to fail
+- used data schema to help prevent the output from going out of structure as it might cause the quiz to fail
 schema Used:
 "response_schema": content.Schema(
     type = content.Type.OBJECT,
