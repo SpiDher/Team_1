@@ -1,5 +1,5 @@
 # Quiz generator model 
--Generated quiz from text 
+-Generate quiz from text 
 
 ## Schema, inputs type and format of quiz
 - An asychrinous function that takes 2 inputs (Extracted text from pdf and the diffuculty leve)
