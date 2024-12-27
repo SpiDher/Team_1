@@ -7,12 +7,7 @@
 body{
     color: white;
     background: black;
-    font-family: "Roboto";
     position: relative;
-}
-.body{
-    padding: 2rem;
-    
 }
 
 @font-face {
@@ -26,10 +21,6 @@ body{
 @font-face {
     font-family: Monteserrat-Light;
     src: url(./Fonts/Montserrat-Light.ttf);
-}
-.content{
-    width: 100%;
-    padding-top: 5rem;
 }
 
 #Learn{
@@ -62,13 +53,9 @@ header.desktop-nav nav ul li:hover{
     color: orange;
 }
 header.desktop-nav {
-    margin:  0 0 2rem 0;
-    width: 99%;
-    position: fixed; top: 0;
-    z-index: 1000;
+    padding:  0 1rem;
     height: 7rem;
-    background: black;
-    padding: 1rem 0 2rem 0;
+    background: #000;
     /* border: 2px solid; */
     display: flex;
     align-items: center;
@@ -111,22 +98,14 @@ header.desktop-nav .reverse-hamburger {
 }
 
 .mobile-nav {
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    background: black;
-    width: 100%;
-    top: 10%;
     display: none;
 }
 
 .mobile-nav nav{
-    height: 50vh;
     position: absolute;
+    height: 100vh;
     background-color: #000;
     width: 100%;
-    left: 0;
-    /* top: 0; */
     z-index: 999;
     animation: animateNav .5s;
 }
@@ -158,9 +137,10 @@ header.desktop-nav .reverse-hamburger {
 
 .HomeContent1{
     height: 5rem;
+    padding: 2em;
 }
 .Lectures-Overview{
-    margin:  2rem 0 2rem 0;
+    padding: 2rem;
     
 }
 .lectures-overview-header{
@@ -248,7 +228,7 @@ header.desktop-nav .reverse-hamburger {
    font-weight: bold;
 }
 
-.readmore a {
+.template1 a {
     color: #fff;
     text-decoration: none;
     display: flex;
@@ -270,16 +250,13 @@ header.desktop-nav .reverse-hamburger {
     }
 }
 
-@media only screen and (max-width:890px) {
+@media only screen and (max-width:768px) {
     .templates{
         grid-template-columns: repeat(1, 1fr);
     }
 
     header.desktop-nav  nav ul {
        display: none;
-    }
-    header.desktop-nav{
-        width: 90%;
     }
 
 .showOnMobile {
@@ -297,6 +274,7 @@ header.desktop-nav .reverse-hamburger {
 .GoBack {
     display: flex;
     justify-content: space-between;
+    padding: 0 2em;
 }
 
 .GoBack .goBackButton {
@@ -306,10 +284,9 @@ header.desktop-nav .reverse-hamburger {
     cursor: pointer;
 }
 
- .quizButton {
+.quizButton {
 padding: .3em .5em;
-border: 2px solid orange;
-border-radius: 10px;
+border: 1px solid orange;
 background: none;
 color: orange;
 transition: .3s;
@@ -317,6 +294,7 @@ transition: .3s;
 
 section.content {
     margin-top: 3em;
+    padding: 0 2em;
 }
 
 section.content .cos {
@@ -351,6 +329,7 @@ section.content ol ul li{
     display: flex;
     justify-content: space-between;
     margin-top: 3em;
+    padding: 0 2em;
 }
 
 .pagination .prev {
@@ -394,6 +373,7 @@ section.question-area {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 2em;
 }
 
 section.question-area .options div {

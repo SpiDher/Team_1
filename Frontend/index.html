@@ -4,12 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demo App</title>
+    <title>COS111</title>
     <link rel="stylesheet" href="Demo.css">
 </head>
 
 <body>
-    <div class="body">
     <!-- The header is meant to cover the nav bar too, including the logo -->
     <header class="desktop-nav">
         <h1><span id="Learn">Learn</span>ify</h1>
@@ -35,7 +34,6 @@
         </div>
     </header>
     
-    <div class="content">
         <!-- The mobile nav comes with a fixed position -->
     <div class="mobile-nav">
         <nav>
@@ -46,9 +44,7 @@
                 <li>About/Feedback <span>></span></li>
             </ul>
         </nav>
-
-    </div>
-
+        </div>
 
     
     <div class="HomeContent1">
@@ -69,16 +65,16 @@
 
             <div class="template1">
                 <img src="Img1.jpg" alt="">
-                <p>Innovations In Artificial Intelligence and human Interaction </p>
+                <p>Introduction to Computer Organization and Systems (COS) </p>
 
-                <button class="readmore"><a href="Details.html">Read More <img src="arrow-right-svgrepo-com.svg" class="svg" alt=""></a></button>
+                <a onclick="fetchCourseContent('Introduction To COS111')" id="contentOne" ><button class="readmore">Read More <img src="arrow-right-svgrepo-com.svg" class="svg" alt=""></button></a>
             </div>
 
             <div class="template1">
                 <img src="Img2.jpg" alt="">
                 <p>Innovations In Artificial Intelligence and human Interaction </p>
 
-                <button class="readmore">Read More <img src="arrow-right-svgrepo-com.svg" class="svg"  alt=""></button>
+             <a onclick="fetchCourseContent('Concept of Computer System'.content)"> <button class="readmore">Read More <img src="arrow-right-svgrepo-com.svg" class="svg"  alt=""></button></a>
             </div>
 
             <div class="template1">
@@ -129,7 +125,6 @@
 
     </div>
 </div>
-</div>
 
 <!-- i created a footer with a different css -->
 <footer>
@@ -163,8 +158,9 @@
 
     
 </footer>
-<script src="App.js"></script>
 
+    <script src="App.js"></script>
+    <script src="API.js"></script>
 </body>
 
 </html>
