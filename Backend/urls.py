@@ -23,6 +23,6 @@ urlpatterns = [
     path('api/quiz/',gen_quiz,name='quiz_engine'),
     path('api/content/',content,name='content'),
     path('api/materials/',topic_material,name='materials'),
-    path('api/ran_quiz/',ran_quiz,name='random quiz'),
-    path('api/list/',file_list,name='file list'),
+    path('api/ran_quiz/',ran_quiz,name='random_quiz'),
+    path('api/list/',file_list,name='file_list'),
 ]
