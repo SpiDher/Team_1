@@ -2,7 +2,7 @@
 - An asychrinous function that takes 2 inputs (Extracted text from pdf and the diffuculty leve)
 - Then generates 20 quiz using from the text passed to it as input 
 produces output in json format 
-example output
+###example output
 {
     "name": "Creative Quiz Title",
     "questions": [
@@ -22,7 +22,7 @@ example output
 }
 
 -used data schema to help prevent the output from going out of structure as it might cause the quiz to fail
-schema Used:
+###schema Used:
 "response_schema": content.Schema(
     type = content.Type.OBJECT,
     enum = [],
