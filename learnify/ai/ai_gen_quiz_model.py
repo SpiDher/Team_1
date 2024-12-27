@@ -1,6 +1,15 @@
 import os
 import google.generativeai as genai
 import asyncio
+from google.ai.generativelanguage_v1beta.types import content
+import absl.logging
+
+# Suppress gRPC logging
+os.environ["GRPC_VERBOSITY"] = "NONE"
+
+# Suppress absl logging
+absl.logging.set_verbosity(absl.logging.ERROR)
+absl.logging.use_absl_handler()
 
 api_key = os.getenv("GEN_API_KEY")
 if not api_key:
@@ -9,12 +18,48 @@ genai.configure(api_key=api_key)
 
 # Create the model
 generation_config = {
-    "temperature": 1.2,
-    "top_p": 0.9,
-    "top_k": 40,
-    "max_output_tokens": 3000,
-    "response_mime_type": "application/json",
+  "temperature": 1.35,
+  "top_p": 0.7,
+  "top_k": 40,
+  "max_output_tokens": 5000,
+  "response_schema": content.Schema(
+    type = content.Type.OBJECT,
+    enum = [],
+    required = ["name", "questions"],
+    properties = {
+      "name": content.Schema(
+        type = content.Type.STRING,
+      ),
+      "questions": content.Schema(
+        type = content.Type.ARRAY,
+        items = content.Schema(
+          type = content.Type.OBJECT,
+          enum = [],
+          required = ["question", "options", "correctAnswer", "feedBack"],
+          properties = {
+            "question": content.Schema(
+              type = content.Type.STRING,
+            ),
+            "options": content.Schema(
+              type = content.Type.ARRAY,
+              items = content.Schema(
+                type = content.Type.STRING,
+              ),
+            ),
+            "correctAnswer": content.Schema(
+              type = content.Type.STRING,
+            ),
+            "feedBack": content.Schema(
+              type = content.Type.STRING,
+            ),
+          },
+        ),
+      ),
+    },
+  ),
+  "response_mime_type": "application/json",
 }
+
 
 model = genai.GenerativeModel(
     model_name="gemini-1.5-flash",
