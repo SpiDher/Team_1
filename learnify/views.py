@@ -59,7 +59,7 @@ def ran_quiz(request):
     return JsonResponse({'quiz':quiz},status= 200)
 
 @csrf_exempt
-def file_names(request):
+def file_list(request):
     file_list = os.listdir(settings.MEDIA_ROOT)
     return JsonResponse({'Materials':file_list})
 
