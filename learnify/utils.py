@@ -48,7 +48,7 @@ def contingency():
 def quiz_result(text,level='MEDIUM'):
     quiz = asyncio.run(quiz_engine(extracted_text=text,difficult_level=level))
     if quiz is not None:
-        #save_quiz(quiz)
+        #save_quiz(quiz) #Only remove this comment in development 
         return quiz
     return contingency()
     
