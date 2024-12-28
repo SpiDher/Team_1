@@ -11,7 +11,7 @@ os.environ["GRPC_VERBOSITY"] = "NONE"
 absl.logging.set_verbosity(absl.logging.ERROR)
 absl.logging.use_absl_handler()
 
-api_key = os.getenv("GEN_API_KEY")
+api_key = os.getenv("GEM_API_KEY")
 if not api_key:
     raise ValueError("API key not found")
 genai.configure(api_key=api_key)
