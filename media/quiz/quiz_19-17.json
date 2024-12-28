@@ -1,0 +1,225 @@
+{
+    "name": "COS111 Comprehensive Quiz",
+    "questions": [
+        {
+            "correctAnswer": "B",
+            "feedBack": "The CPU is the brain of the computer, responsible for processing instructions and performing calculations.",
+            "options": [
+                "To store data",
+                "To perform calculations and execute instructions",
+                "To provide input/output operations",
+                "To manage memory"
+            ],
+            "question": "What is the primary function of the Central Processing Unit (CPU) in a computer system?"
+        },
+        {
+            "correctAnswer": "C",
+            "feedBack": "First-generation computers relied on vacuum tubes for their electronic components.",
+            "options": [
+                "Transistors",
+                "Integrated Circuits",
+                "Vacuum Tubes",
+                "Microprocessors"
+            ],
+            "question": "Which of the following is considered the first generation of computers?"
+        },
+        {
+            "correctAnswer": "C",
+            "feedBack": "The binary number system uses only two digits, 0 and 1, to represent numbers.",
+            "options": [
+                "Base 8",
+                "Base 10",
+                "Base 2",
+                "Base 16"
+            ],
+            "question": "What is the binary number system based on?"
+        },
+        {
+            "correctAnswer": "B",
+            "feedBack": "Python's clear syntax and extensive libraries make it beginner-friendly.",
+            "options": [
+                "Java",
+                "Python",
+                "C++",
+                "BASIC"
+            ],
+            "question": "Which programming language is known for its simplicity and is often taught to beginners?"
+        },
+        {
+            "correctAnswer": "C",
+            "feedBack": "The Internet Protocol (IP) addresses devices on a network, enabling communication.",
+            "options": [
+                "To provide security",
+                "To manage data transmission",
+                "To assign IP addresses",
+                "To provide error correction"
+            ],
+            "question": "What is the primary function of the Internet Protocol (IP) in networking?"
+        },
+        {
+            "correctAnswer": "B",
+            "feedBack": "Worms are self-replicating and spread without user intervention, unlike other viruses.",
+            "options": [
+                "Trojan",
+                "Worm",
+                "Spyware",
+                "Adware"
+            ],
+            "question": "What type of computer virus is designed to replicate itself and spread to other computers?"
+        },
+        {
+            "correctAnswer": "C",
+            "feedBack": "A network connects devices to share resources and communicate.",
+            "options": [
+                "Internet",
+                "Intranet",
+                "Network",
+                "Database"
+            ],
+            "question": "What is the term for a group of computers connected together to share resources?"
+        },
+        {
+            "correctAnswer": "B",
+            "feedBack": "First-generation computers were characterized by the use of vacuum tubes.",
+            "options": [
+                "Used integrated circuits",
+                "Used vacuum tubes",
+                "Used transistors",
+                "Used microprocessors"
+            ],
+            "question": "Which of the following is a characteristic of a first-generation computer?"
+        },
+        {
+            "correctAnswer": "D",
+            "feedBack": "Malware is a broad term encompassing various types of malicious software designed to harm systems.",
+            "options": [
+                "Virus",
+                "Worm",
+                "Trojan",
+                "Malware"
+            ],
+            "question": "What is the term for a program that is designed to damage or disrupt a computer system?"
+        },
+        {
+            "correctAnswer": "A",
+            "feedBack": "Java's platform independence allows code to run on various systems without modification.",
+            "options": [
+                "Java",
+                "Python",
+                "C++",
+                "BASIC"
+            ],
+            "question": "Which of the following programming languages is known for its platform independence?"
+        },
+        {
+            "correctAnswer": "A",
+            "feedBack": "Ada Lovelace is credited with writing the first algorithm intended for processing by a machine.",
+            "options": [
+                "Ada Lovelace",
+                "Charles Babbage",
+                "Alan Turing",
+                "Grace Hopper"
+            ],
+            "question": "Who is considered to be the first computer programmer?"
+        },
+        {
+            "correctAnswer": "C",
+            "feedBack": "The invention of the integrated circuit significantly advanced computer technology.",
+            "options": [
+                "Vacuum tubes",
+                "Transistors",
+                "Integrated circuits",
+                "Microprocessors"
+            ],
+            "question": "Which technological advancement marked the beginning of the third generation of computers?"
+        },
+        {
+            "correctAnswer": "B",
+            "feedBack": "The development of microprocessors led to smaller, more powerful computers.",
+            "options": [
+                "The invention of the internet",
+                "The development of microprocessors",
+                "The creation of the first programming language",
+                "The use of transistors in computers"
+            ],
+            "question": "What technological advancement was crucial to the development of personal computers?"
+        },
+        {
+            "correctAnswer": "A",
+            "feedBack": "High-level languages offer increased abstraction from machine code, simplifying programming.",
+            "options": [
+                "High-level languages",
+                "Low-level languages",
+                "Assembly languages",
+                "Machine code"
+            ],
+            "question": "Which type of programming language is generally easier to learn and use?"
+        },
+        {
+            "correctAnswer": "D",
+            "feedBack": "A WAN spans a wide geographical area, connecting networks across cities or countries.",
+            "options": [
+                "LAN",
+                "MAN",
+                "WLAN",
+                "WAN"
+            ],
+            "question": "What type of network covers a large geographical area, such as a country or continent?"
+        },
+        {
+            "correctAnswer": "C",
+            "feedBack": "A router forwards data packets between different networks based on their destination IP addresses.",
+            "options": [
+                "Switch",
+                "Modem",
+                "Router",
+                "Network Interface Card"
+            ],
+            "question": "Which networking device is responsible for routing data packets between different networks?"
+        },
+        {
+            "correctAnswer": "B",
+            "feedBack": "A worm replicates itself and spreads to other systems without needing user interaction.",
+            "options": [
+                "Trojan Horse",
+                "Worm",
+                "Virus",
+                "Ransomware"
+            ],
+            "question": "Which type of malware spreads by replicating itself across networks?"
+        },
+        {
+            "correctAnswer": "A",
+            "feedBack": "Antivirus software helps protect your system by detecting and removing malicious code.",
+            "options": [
+                "Install antivirus software",
+                "Avoid using the internet",
+                "Disable your firewall",
+                "Use a weak password"
+            ],
+            "question": "What is the most effective way to protect your computer from viruses?"
+        },
+        {
+            "correctAnswer": "D",
+            "feedBack": "Regular updates patch security vulnerabilities, reducing the risk of virus infections.",
+            "options": [
+                "Using a slow internet connection",
+                "Using an older operating system",
+                "Downloading files from untrusted sources",
+                "Keeping software up-to-date"
+            ],
+            "question": "Which of the following actions is LEAST likely to increase your computer's vulnerability to viruses?"
+        },
+        {
+            "correctAnswer": "C",
+            "feedBack": "Hexadecimal is a base-16 number system, using digits 0-9 and letters A-F.",
+            "options": [
+                "Binary",
+                "Octal",
+                "Hexadecimal",
+                "Decimal"
+            ],
+            "question": "Which number system uses sixteen distinct symbols?"
+        }
+    ]
+}
