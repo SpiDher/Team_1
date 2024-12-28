@@ -1,0 +1,225 @@
+{
+    "name": "COS121 Programming Fundamentals Quiz",
+    "questions": [
+        {
+            "correctAnswer": "B) To solve complex problems",
+            "feedBack": "Algorithms are designed to provide step-by-step solutions to problems, regardless of their complexity.",
+            "options": [
+                "A) To write efficient code",
+                "B) To solve complex problems",
+                "C) To design a user interface",
+                "D) To optimize memory usage"
+            ],
+            "question": "What is the primary goal of algorithm design in programming?"
+        },
+        {
+            "correctAnswer": "B) To design algorithms",
+            "feedBack": "Flowcharts visually represent the steps and logic of an algorithm, aiding in its design and understanding.",
+            "options": [
+                "A) To write code",
+                "B) To design algorithms",
+                "C) To debug programs",
+                "D) To test software"
+            ],
+            "question": "What is a flowchart used for in programming?"
+        },
+        {
+            "correctAnswer": "D) To identify reserved words",
+            "feedBack": "Keywords are reserved words with predefined meanings in a programming language; they cannot be used as variable names.",
+            "options": [
+                "A) To declare variables",
+                "B) To define functions",
+                "C) To control program flow",
+                "D) To identify reserved words"
+            ],
+            "question": "What is the purpose of keywords in programming?"
+        },
+        {
+            "correctAnswer": "A) Assignment assigns a value, while equality checks for equality",
+            "feedBack": "The assignment operator (=) assigns a value to a variable, while the equality operator (==) compares two values.",
+            "options": [
+                "A) Assignment assigns a value, while equality checks for equality",
+                "B) Assignment checks for equality, while equality assigns a value",
+                "C) Assignment and equality are the same",
+                "D) Assignment is used for arithmetic operations"
+            ],
+            "question": "What is the difference between assignment and equality operators?"
+        },
+        {
+            "correctAnswer": "B) Loop",
+            "feedBack": "Loops, such as for, while, and do-while loops, enable the repeated execution of a block of code.",
+            "options": [
+                "A) Conditional statement",
+                "B) Loop",
+                "C) Function",
+                "D) Array"
+            ],
+            "question": "What type of control structure is used to execute a block of code repeatedly?"
+        },
+        {
+            "correctAnswer": "B) To store a collection of values",
+            "feedBack": "Arrays efficiently store and manage multiple values of the same data type.",
+            "options": [
+                "A) To store a single value",
+                "B) To store a collection of values",
+                "C) To perform arithmetic operations",
+                "D) To control program flow"
+            ],
+            "question": "What is the purpose of an array in programming?"
+        },
+        {
+            "correctAnswer": "A) A block of code that performs a specific task",
+            "feedBack": "Functions encapsulate a specific task, improving code organization and reusability.",
+            "options": [
+                "A) A block of code that performs a specific task",
+                "B) A variable that stores a value",
+                "C) A control structure that executes code repeatedly",
+                "D) A data structure that stores a collection of values"
+            ],
+            "question": "What is a function in programming?"
+        },
+        {
+            "correctAnswer": "C) To promote code reusability",
+            "feedBack": "Functions promote code reusability by allowing the same code block to be called multiple times.",
+            "options": [
+                "A) To reduce code readability",
+                "B) To increase code complexity",
+                "C) To promote code reusability",
+                "D) To decrease code efficiency"
+            ],
+            "question": "What is the benefit of using functions in programming?"
+        },
+        {
+            "correctAnswer": "B) Local variables are accessible only within a function, while global variables are accessible throughout the program",
+            "feedBack": "The scope of a local variable is limited to the function where it's declared, while a global variable is accessible from anywhere in the program.",
+            "options": [
+                "A) Local variables are accessible globally, while global variables are accessible locally",
+                "B) Local variables are accessible only within a function, while global variables are accessible throughout the program",
+                "C) Local variables are used for arithmetic operations, while global variables are used for storing strings",
+                "D) Local variables are used for storing arrays, while global variables are used for storing single values"
+            ],
+            "question": "What is the difference between a local variable and a global variable?"
+        },
+        {
+            "correctAnswer": "C) To explain code functionality",
+            "feedBack": "Comments enhance code readability and understanding by providing explanations of the code's purpose and functionality.",
+            "options": [
+                "A) To execute code",
+                "B) To declare variables",
+                "C) To explain code functionality",
+                "D) To control program flow"
+            ],
+            "question": "What is the purpose of comments in programming?"
+        },
+        {
+            "correctAnswer": "An algorithm is a step-by-step procedure to solve a problem.",
+            "feedBack": "Algorithms provide a finite, definite, and effective set of instructions to achieve a specific goal.",
+            "options": [
+                "An algorithm is a type of programming language",
+                "An algorithm is a complex mathematical equation",
+                "An algorithm is a visual representation of code",
+                "An algorithm is a step-by-step procedure to solve a problem"
+            ],
+            "question": "What is an algorithm?"
+        },
+        {
+            "correctAnswer": "A flowchart uses symbols to visually represent the steps in an algorithm.",
+            "feedBack": "Flowcharts make it easier to understand and design algorithms by using graphical symbols to represent different operations and decisions.",
+            "options": [
+                "A flowchart is a type of programming language",
+                "A flowchart is a detailed description of code",
+                "A flowchart uses symbols to visually represent the steps in an algorithm",
+                "A flowchart is a type of data structure"
+            ],
+            "question": "What is a flowchart?"
+        },
+        {
+            "correctAnswer": "Variables store data values that can change during program execution.",
+            "feedBack": "Variables are essential for storing and manipulating data within a program.",
+            "options": [
+                "Variables are fixed values that cannot be changed",
+                "Variables are programming language keywords",
+                "Variables store data values that can change during program execution",
+                "Variables are used only for storing numbers"
+            ],
+            "question": "What are variables in programming?"
+        },
+        {
+            "correctAnswer": "Integer variables store whole numbers, floating-point variables store decimal numbers, and character variables store single characters.",
+            "feedBack": "These data types are fundamental to storing different kinds of numerical and textual data.",
+            "options": [
+                "Integer variables store only positive numbers",
+                "Floating-point variables cannot store whole numbers",
+                "Character variables can store multiple characters",
+                "Integer variables store whole numbers, floating-point variables store decimal numbers, and character variables store single characters"
+            ],
+            "question": "What are the differences between integer, floating-point, and character variables?"
+        },
+        {
+            "correctAnswer": "Assignment statements assign values to variables using the '=' operator.",
+            "feedBack": "This is a fundamental operation in programming for setting and modifying variable values.",
+            "options": [
+                "Assignment statements compare values",
+                "Assignment statements perform arithmetic operations",
+                "Assignment statements assign values to variables using the '=' operator",
+                "Assignment statements define functions"
+            ],
+            "question": "What are assignment statements?"
+        },
+        {
+            "correctAnswer": "Control structures determine the order of execution of program statements.",
+            "feedBack": "They manage the flow of control, allowing for decisions and repetitions within the program.",
+            "options": [
+                "Control structures define data types",
+                "Control structures are used only for input/output operations",
+                "Control structures determine the order of execution of program statements",
+                "Control structures are only used in loops"
+            ],
+            "question": "What is the purpose of control structures in programming?"
+        },
+        {
+            "correctAnswer": "Sequential, conditional, and repetitive control structures represent the basic flow patterns in a program.",
+            "feedBack": "These structures provide the building blocks for constructing complex program logic.",
+            "options": [
+                "Sequential, conditional, and repetitive control structures are types of data structures",
+                "Sequential, conditional, and repetitive control structures are programming languages",
+                "Sequential, conditional, and repetitive control structures represent the basic flow patterns in a program",
+                "Sequential, conditional, and repetitive control structures are used only in functions"
+            ],
+            "question": "What are the main types of control structures?"
+        },
+        {
+            "correctAnswer": "Arrays store collections of elements of the same data type.",
+            "feedBack": "Arrays provide an efficient way to manage and access multiple values of the same type.",
+            "options": [
+                "Arrays store elements of different data types",
+                "Arrays are used only for storing numbers",
+                "Arrays store collections of elements of the same data type",
+                "Arrays are a type of control structure"
+            ],
+            "question": "What are arrays in programming?"
+        },
+        {
+            "correctAnswer": "Functions are reusable blocks of code that perform specific tasks.",
+            "feedBack": "Functions enhance code organization, readability, and reusability by encapsulating specific operations.",
+            "options": [
+                "Functions are only used for input/output operations",
+                "Functions are a type of data structure",
+                "Functions are reusable blocks of code that perform specific tasks",
+                "Functions are used only in loops"
+            ],
+            "question": "What are functions in programming?"
+        },
+        {
+            "correctAnswer": "Functions improve code modularity and readability by breaking down complex tasks into smaller, manageable units.",
+            "feedBack": "This improves code organization and makes it easier to maintain and debug.",
+            "options": [
+                "Functions increase code complexity",
+                "Functions reduce code reusability",
+                "Functions improve code modularity and readability by breaking down complex tasks into smaller, manageable units",
+                "Functions are only used for simple tasks"
+            ],
+            "question": "How do functions improve code quality?"
+        }
+    ]
+}

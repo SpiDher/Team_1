@@ -1,0 +1,225 @@
+{
+    "name": "COS111 Quiz Challenge",
+    "questions": [
+        {
+            "correctAnswer": "B",
+            "feedBack": "The CPU's primary role is executing instructions and performing calculations, the core of computer processing.",
+            "options": [
+                "To store data",
+                "To perform calculations and execute instructions",
+                "To provide input/output operations",
+                "To manage memory"
+            ],
+            "question": "What is the primary function of the Central Processing Unit (CPU) in a computer system?"
+        },
+        {
+            "correctAnswer": "C",
+            "feedBack": "Vacuum tubes were the defining technology of the first generation of computers.",
+            "options": [
+                "Transistors",
+                "Integrated Circuits",
+                "Vacuum Tubes",
+                "Microprocessors"
+            ],
+            "question": "Which of the following is considered the first generation of computers?"
+        },
+        {
+            "correctAnswer": "C",
+            "feedBack": "The binary system uses only two digits (0 and 1) as its base.",
+            "options": [
+                "Base 8",
+                "Base 10",
+                "Base 2",
+                "Base 16"
+            ],
+            "question": "What is the binary number system based on?"
+        },
+        {
+            "correctAnswer": "B",
+            "feedBack": "Python is renowned for its straightforward syntax and readability, making it suitable for beginners.",
+            "options": [
+                "Java",
+                "Python",
+                "C++",
+                "BASIC"
+            ],
+            "question": "Which programming language is known for its simplicity and is often taught to beginners?"
+        },
+        {
+            "correctAnswer": "C",
+            "feedBack": "IP addresses are fundamental for identifying and locating devices on networks.",
+            "options": [
+                "To provide security",
+                "To manage data transmission",
+                "To assign IP addresses",
+                "To provide error correction"
+            ],
+            "question": "What is the primary function of the Internet Protocol (IP) in networking?"
+        },
+        {
+            "correctAnswer": "B",
+            "feedBack": "Worms are notorious for their self-replication and ability to spread across networks.",
+            "options": [
+                "Trojan",
+                "Worm",
+                "Spyware",
+                "Adware"
+            ],
+            "question": "What type of computer virus is designed to replicate itself and spread to other computers?"
+        },
+        {
+            "correctAnswer": "C",
+            "feedBack": "A network is a collection of interconnected devices that share resources.",
+            "options": [
+                "Internet",
+                "Intranet",
+                "Network",
+                "Database"
+            ],
+            "question": "What is the term for a group of computers connected together to share resources?"
+        },
+        {
+            "correctAnswer": "B",
+            "feedBack": "First-generation computers relied on vacuum tubes for their electronic components.",
+            "options": [
+                "Used integrated circuits",
+                "Used vacuum tubes",
+                "Used transistors",
+                "Used microprocessors"
+            ],
+            "question": "Which of the following is a characteristic of a first-generation computer?"
+        },
+        {
+            "correctAnswer": "D",
+            "feedBack": "Malware is a broad term encompassing various types of malicious software designed to harm computer systems.",
+            "options": [
+                "Virus",
+                "Worm",
+                "Trojan",
+                "Malware"
+            ],
+            "question": "What is the term for a program that is designed to damage or disrupt a computer system?"
+        },
+        {
+            "correctAnswer": "A",
+            "feedBack": "Java's platform independence is a key feature, enabling code execution across various systems without modification.",
+            "options": [
+                "Java",
+                "Python",
+                "C++",
+                "BASIC"
+            ],
+            "question": "Which of the following programming languages is known for its platform independence?"
+        },
+        {
+            "correctAnswer": "B",
+            "feedBack": "The Analytical Engine incorporated key features like conditional branching and loops, fundamental concepts in modern programming.",
+            "options": [
+                "It was the first electronic computer",
+                "It incorporated concepts like conditional branching and loops",
+                "It used vacuum tubes for processing",
+                "It was the first commercially available computer"
+            ],
+            "question": "What were some key innovations of Charles Babbage's Analytical Engine?"
+        },
+        {
+            "correctAnswer": "A",
+            "feedBack": "The introduction of the microprocessor marked a pivotal moment, enabling the creation of smaller, more affordable, and powerful computers.",
+            "options": [
+                "It led to the development of smaller, more affordable computers",
+                "It made computers less reliable",
+                "It increased the cost of computers",
+                "It had no significant impact on the computer industry"
+            ],
+            "question": "How did the development of the microprocessor impact the computer industry?"
+        },
+        {
+            "correctAnswer": "B",
+            "feedBack": "Transistors replaced vacuum tubes, resulting in smaller, faster, more reliable, and more energy-efficient computers.",
+            "options": [
+                "The use of punch cards for input",
+                "The replacement of vacuum tubes with transistors",
+                "The development of high-level programming languages",
+                "The invention of the integrated circuit"
+            ],
+            "question": "What were the key technological advancements of the second generation of computers?"
+        },
+        {
+            "correctAnswer": "A",
+            "feedBack": "Microprocessors were essential for the development of personal computers, making them compact and affordable.",
+            "options": [
+                "It enabled the development of personal computers",
+                "It made computers larger and more expensive",
+                "It had no impact on the development of personal computers",
+                "It made programming more difficult"
+            ],
+            "question": "How did the introduction of microprocessors impact the development of personal computers?"
+        },
+        {
+            "correctAnswer": "A",
+            "feedBack": "A Trojan horse disguises itself as a legitimate program to deceive users into installing it.",
+            "options": [
+                "A program disguised as legitimate software",
+                "A self-replicating program",
+                "A program that encrypts files",
+                "A program that monitors user activity"
+            ],
+            "question": "What is a Trojan horse computer virus?"
+        },
+        {
+            "correctAnswer": "B",
+            "feedBack": "A worm spreads through networks by exploiting vulnerabilities without requiring user interaction.",
+            "options": [
+                "A program that deletes files",
+                "A self-replicating program that spreads across networks",
+                "A program that encrypts files",
+                "A program that disguises itself as legitimate software"
+            ],
+            "question": "What is a worm computer virus?"
+        },
+        {
+            "correctAnswer": "D",
+            "feedBack": "Ransomware encrypts files and demands a ransom for decryption, causing significant data loss and disruption.",
+            "options": [
+                "A program that monitors user activity",
+                "A self-replicating program",
+                "A program that deletes files",
+                "A program that encrypts files and demands a ransom"
+            ],
+            "question": "What is ransomware computer virus?"
+        },
+        {
+            "correctAnswer": "A",
+            "feedBack": "Antivirus software plays a crucial role in detecting and removing viruses, protecting your system from harm.",
+            "options": [
+                "Install antivirus software",
+                "Avoid using the internet",
+                "Use a firewall",
+                "Disable your computer"
+            ],
+            "question": "What is the best way to protect your computer from virus attacks?"
+        },
+        {
+            "correctAnswer": "C",
+            "feedBack": "Regular updates patch security vulnerabilities, reducing the risk of virus infections.",
+            "options": [
+                "Use a weak password",
+                "Avoid using email",
+                "Keep your software up to date",
+                "Use a public Wi-Fi network"
+            ],
+            "question": "How can you minimize the risk of virus infections?"
+        },
+        {
+            "correctAnswer": "B",
+            "feedBack": "A WAN connects devices over a wide geographical area, unlike a LAN which is limited to a smaller area.",
+            "options": [
+                "Both connect devices within a small geographical area",
+                "A WAN connects devices over a large geographical area, while a LAN connects devices within a small area",
+                "Both connect devices wirelessly",
+                "A WAN is faster than a LAN"
+            ],
+            "question": "What is the difference between a LAN and a WAN?"
+        }
+    ]
+}
