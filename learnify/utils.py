@@ -32,8 +32,9 @@ def text_content():
 def save_quiz(object):
     date_time = datetime.now()
     time = date_time.time()
+    file_path = os.path.join(settings.MEDIA_ROOT,'quiz',f'quiz_{time.strftime("%H-%M")}.json')
     if file_list:= len(os.listdir(os.path.join(settings.MEDIA_ROOT,'quiz')))!=10:
-        with open(f'{settings.MEDIA_ROOT}/quiz/quiz_{time.strftime("%H-%M")}.json','w') as file:
+        with open(file_path,'w') as file:
             json.dump(object,file,indent=4)
     return True
 
