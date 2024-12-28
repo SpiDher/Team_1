@@ -12,8 +12,8 @@ logging.set_verbosity(logging.ERROR)
 logging.use_absl_handler()
 
 api_key = os.getenv("GEM_API_KEY")
-if not api_key:
-    raise ValueError("API key not found")
+'''if not api_key:
+    raise ValueError("API key not found")'''
 genai.configure(api_key=api_key)
 
 # Create the model
