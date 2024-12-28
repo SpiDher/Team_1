@@ -1,10 +1,11 @@
 from django.http import JsonResponse,HttpResponse,FileResponse
 from django.views.decorators.csrf import csrf_exempt
 from .utils import ExtractEngine,text_content
-from .ai.use_ai_gen_quiz import quiz_engine
+from .ai.ai_gen_quiz_model import quiz_engine
 import os
 import random
 from Backend import settings
+import asyncio 
 @csrf_exempt
 def gen_quiz(request):
     if request.method == "POST" and request.FILES.get('file'):
@@ -16,9 +17,9 @@ def gen_quiz(request):
         if file:
             extractor = ExtractEngine(file)
             # Process the extracted text to generate a quiz (you can customize this as needed)
-            quiz = quiz_engine(extractor, level)
+            quiz = asyncio.run(quiz_engine(extractor, level))
         else:
-            quiz= quiz_engine(desc,level)
+            quiz= asyncio.run(quiz_engine(desc,level))
 
         return JsonResponse({'quiz': quiz}, status=200)
 
@@ -53,9 +54,9 @@ def ran_quiz(request):
     ran_file= random.choice(file_name)
     extractor = ExtractEngine(ran_file)
     if level:
-        quiz = quiz_engine(extracted_text=extractor,difficult_level=level)
-        return JsonResponse({'quiz':quiz})
-    quiz = quiz_engine(extracted_text=ran_file)
+        quiz = asyncio.run(quiz_engine(extracted_text=extractor,difficult_level=level))
+        return JsonResponse({'quiz':quiz},status=200)
+    quiz = asyncio.run(quiz_engine(extracted_text=ran_file))
     return JsonResponse({'quiz':quiz},status= 200)
 
 @csrf_exempt
