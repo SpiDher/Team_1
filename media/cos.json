@@ -1,190 +1,26 @@
 {
   "Introduction To COS111": {
-    "content": [
-      {
-        "type": "header",
-        "level": 3,
-        "text": "Introduction to COS (Computer Organization and Systems)"
-      },
-      {
-        "type": "paragraph",
-        "text": "Computer Organization and Systems (COS) is a foundational subject in computer science and engineering that focuses on understanding the internal structure of computers and how software interacts with hardware."
-      },
-      {
-        "type": "paragraph",
-        "text": "The main goal of studying COS is to provide a detailed understanding of the system architecture and the interaction between hardware and software, which is crucial for designing efficient algorithms and systems. This knowledge is also important for developing operating systems, compilers, and other low-level software."
-      },
-      {
-        "type": "header",
-        "level": 3,
-        "text": "Key Concepts in Computer Organization and Systems"
-      },
-      {
-        "type": "list",
-        "items": [
-          {
-            "type": "list_item",
-            "text": "Computer Architecture: Refers to the design and structure of a computer system, which includes the central processing unit (CPU), memory hierarchy, and input/output (I/O) systems."
-          },
-          {
-            "type": "list_item",
-            "text": "Memory Systems: Primary memory like RAM and cache for fast data access, and secondary memory like hard drives and SSDs for persistent storage."
-          },
-          {
-            "type": "list_item",
-            "text": "Data Representation: Understanding binary, integers, floating-point numbers, characters, and strings in computers."
-          },
-          {
-            "type": "list_item",
-            "text": "Instruction Set Architecture (ISA): Defines the operations a processor can perform and specifies the machine language."
-          },
-          {
-            "type": "list_item",
-            "text": "Control Unit and CPU Design: Manages instruction execution, optimizing the datapath and control logic."
-          },
-          {
-            "type": "list_item",
-            "text": "Input/Output (I/O) Systems: Covers data transfer between computers and external devices, including interrupt handling and DMA."
-          },
-          {
-            "type": "list_item",
-            "text": "Pipelining and Parallelism: Techniques for simultaneous instruction processing and running multiple processes across processors."
-          },
-          {
-            "type": "list_item",
-            "text": "Operating System Interface: Introduces system calls, device drivers, and process management."
-          }
-        ]
-      },
-      {
-        "type": "header",
-        "level": 3,
-        "text": "Conclusion"
-      },
-      {
-        "type": "paragraph",
-        "text": "Computer Organization and Systems is a vital subject that bridges the gap between high-level programming and hardware, providing the foundation for system-level programming, hardware design, and efficient algorithm development."
-      }
-    ]
+    "content": "<h3>Introduction to COS (Computer Organization and Systems)</h3><p><strong>Computer Organization and Systems (COS)</strong> is a fundamental course that provides an in-depth understanding of how computers function at the hardware level and how software interacts with hardware. The course introduces key concepts like computer architecture, memory systems, and instruction set architecture (ISA), which are essential for building efficient software and understanding the internal workings of computer systems.</p><p>The subject matter is critical for anyone pursuing a career in systems programming, embedded systems, or hardware design. A strong grasp of COS ensures that one can optimize system performance and design more efficient programs at the low-level.</p><h3>Key Concepts</h3><ul><li><strong>Computer Architecture:</strong> This refers to the design and layout of the central processing unit (CPU), memory hierarchy, and other hardware components of a computer.</li><li><strong>Memory Systems:</strong> This involves understanding the structure and operation of both primary memory (RAM) and secondary storage (hard drives, SSDs) in a computer system.</li><li><strong>Data Representation:</strong> This concept explains how various types of data, including numbers and characters, are represented in binary form within a computer.</li><li><strong>Instruction Set Architecture (ISA):</strong> ISA is the interface between hardware and software that defines the set of instructions the CPU can execute.</li><li><strong>Control Unit:</strong> This unit manages the flow of data and controls the execution of instructions in the CPU.</li></ul><h3>Importance</h3><ul><li><strong>Optimizing Performance:</strong> A solid understanding of COS is essential for writing efficient and optimized software, particularly in performance-critical applications like gaming, scientific computing, and system software development.</li><li><strong>Low-level Programming:</strong> Systems programmers need to understand the interaction between hardware and software, which COS helps facilitate.</li><li><strong>System Design:</strong> COS provides the knowledge necessary to design hardware systems, including embedded devices, IoT systems, and computer hardware components.</li></ul>"
+  },
+  "Concept of Computer System": {
+    "content": "<h3>Concept of a Computer System</h3><p>A computer system is an integrated combination of hardware and software designed to process, store, and manage data. The hardware components include the central processing unit (CPU), memory (RAM), and input/output (I/O) devices, while the software encompasses operating systems, applications, and firmware that manage these components and allow the system to perform tasks.</p><h3>Key Components</h3><ul><li><strong>Hardware:</strong> The physical elements of a computer, including the CPU, memory, and storage devices. These are the building blocks of a computer system.</li><li><strong>Software:</strong> The programs and instructions that control and coordinate the hardware to perform specific tasks. Software can be categorized into system software (like operating systems) and application software (like word processors or games).</li><li><strong>Firmware:</strong> Software that is permanently stored in hardware, typically in ROM (Read-Only Memory). It controls low-level hardware operations and is crucial for devices like routers and printers.</li></ul><h3>Functions</h3><ul><li><strong>Input:</strong> This function refers to the process of receiving data from external sources (e.g., keyboards, sensors, and network connections).</li><li><strong>Processing:</strong> Data is processed by the CPU to execute instructions, perform calculations, or make decisions.</li><li><strong>Storage:</strong> Data and programs are stored in various storage media (e.g., hard drives, SSDs, and cloud storage) for later retrieval.</li><li><strong>Output:</strong> After processing, results are presented to the user or other systems through display screens, printers, or network communications.</li></ul>"
+  },
+  "Computer History": {
+    "content": "<h3>Computer History</h3><p>The history of computers dates back to ancient civilizations with the development of tools like the abacus and early mechanical calculating devices. However, the modern computer era began in the 20th century with the advent of electronic machines that could perform more complex calculations.</p><h3>Key Events</h3><ul><li><strong>Pascaline (1642):</strong> Blaise Pascal invented the Pascaline, a mechanical calculator that could add and subtract numbers.</li><li><strong>Difference Engine (1822):</strong> Charles Babbage designed the Difference Engine, which is often considered the first mechanical computer. His later design, the Analytical Engine, laid the groundwork for programmable computers.</li><li><strong>ENIAC (1945):</strong> The Electronic Numerical Integrator and Computer (ENIAC) was the first fully electronic general-purpose computer. It marked a turning point in the development of computing.</li></ul><h3>World War II Impact</h3><p>The Second World War had a significant influence on the development of computers. The need for faster calculations, such as for cryptography and artillery firing tables, led to the development of machines like Colossus, which was used to break codes. These advancements accelerated the transition from mechanical to electronic computing.</p>"
   },
   "Generations of Computers": {
-    "content": [
-      {
-        "type": "header",
-        "level": 3,
-        "text": "Generations of Computers"
-      },
-      {
-        "type": "paragraph",
-        "text": "Computers are divided into five generations, each marked by significant technological advancements:"
-      },
-      {
-        "type": "list",
-        "items": [
-          {
-            "type": "list_item",
-            "text": "First Generation (1940s-1950s): Vacuum tubes, machine language, and punch cards."
-          },
-          {
-            "type": "list_item",
-            "text": "Second Generation (1950s-1960s): Transistors, assembly language, and magnetic tapes."
-          },
-          {
-            "type": "list_item",
-            "text": "Third Generation (1960s-1970s): Integrated circuits, high-level languages, and operating systems."
-          },
-          {
-            "type": "list_item",
-            "text": "Fourth Generation (1970s-1980s): Microprocessors, graphical user interfaces (GUIs), and personal computers."
-          },
-          {
-            "type": "list_item",
-            "text": "Fifth Generation (1980s-present): Artificial intelligence (AI), parallel processing, and the internet."
-          }
-        ]
-      },
-      {
-        "type": "header",
-        "level": 3,
-        "text": "Evolution of Storage"
-      },
-      {
-        "type": "paragraph",
-        "text": "Each generation brought advancements in storage, from magnetic drums and tapes to SSDs and NVMe drives, with vastly increased speed and capacity."
-      }
-    ]
+    "content": "<h3>Generations of Computers</h3><p>Computer generations refer to the technological advancements that have been made in computer hardware and software since the invention of the first computers. Each generation is characterized by major innovations that have significantly improved the performance and capabilities of computers.</p><h3>Generations</h3><ol><li><strong>First Generation (1940s-1950s):</strong> This era used vacuum tubes for computation. Computers were large, expensive, and consumed a lot of power. Programming was done in machine language.</li><li><strong>Second Generation (1950s-1960s):</strong> Vacuum tubes were replaced by transistors, which were smaller, more reliable, and more energy-efficient. This generation also saw the introduction of assembly language and high-level programming languages.</li><li><strong>Third Generation (1960s-1970s):</strong> The development of integrated circuits (ICs) allowed computers to become even smaller and more affordable. These computers were faster and could handle multiple tasks at once.</li><li><strong>Fourth Generation (1970s-1980s):</strong> The invention of microprocessors brought about personal computers, leading to an explosion of computing power available to individuals and small businesses.</li><li><strong>Fifth Generation (1980s-present):</strong> Focus on artificial intelligence (AI), machine learning, and parallel processing. Computers are now becoming more specialized, and we continue to push the boundaries of computational power with quantum computing.</li></ol>"
+  },
+  "Number Systems": {
+    "content": "<h3>Number Systems</h3><p>Number systems are essential for representing data and performing calculations in computers. Computers use binary (base-2) to represent data, but other systems like decimal (base-10), octal (base-8), and hexadecimal (base-16) are also used for specific tasks like programming and data representation.</p><h3>Common Systems</h3><ul><li><strong>Decimal (Base 10):</strong> The system most commonly used by humans, with digits ranging from 0 to 9.</li><li><strong>Binary (Base 2):</strong> The system used by computers, which uses only 0 and 1 to represent all data.</li><li><strong>Hexadecimal (Base 16):</strong> A system used by programmers to simplify binary numbers. It includes digits 0-9 and letters A-F.</li></ul><h3>Importance</h3><p>Understanding number systems is crucial for low-level programming, debugging, and working with hardware, where data representation and conversion between systems are frequently required.</p>"
   },
   "Programming Languages": {
-    "content": [
-      {
-        "type": "header",
-        "level": 3,
-        "text": "Programming Languages"
-      },
-      {
-        "type": "paragraph",
-        "text": "Programming languages are tools to write software and can be categorized as:"
-      },
-      {
-        "type": "list",
-        "items": [
-          {
-            "type": "list_item",
-            "text": "Low-Level: Assembly language, close to hardware."
-          },
-          {
-            "type": "list_item",
-            "text": "High-Level: Python, Java, and C++."
-          },
-          {
-            "type": "list_item",
-            "text": "Scripting: JavaScript and PHP."
-          },
-          {
-            "type": "list_item",
-            "text": "Markup: HTML and XML."
-          }
-        ]
-      },
-      {
-        "type": "header",
-        "level": 3,
-        "text": "Emerging Trends"
-      },
-      {
-        "type": "paragraph",
-        "text": "Languages like Rust and Go are gaining popularity for their efficiency and safety, especially in systems programming and cloud-based applications."
-      }
-    ]
+    "content": "<h3>Programming Languages</h3><p>Programming languages are tools that allow developers to create software. They provide a way to write instructions for computers to execute, and they come in various types, each suited to different tasks.</p><h3>Types of Programming Languages</h3><ul><li><strong>Low-Level Languages:</strong> These languages, like assembly language, are closely tied to machine architecture and provide little abstraction from hardware.</li><li><strong>High-Level Languages:</strong> These are easier to use and abstract away most hardware details. Popular languages include Python, Java, and C++.</li><li><strong>Scripting Languages:</strong> These are often used for automation and web development, including JavaScript, PHP, and Ruby.</li></ul><h3>Trends</h3><p>In recent years, languages like Rust and Go have become popular for their safety and concurrency features. Understanding multiple languages is essential for adapting to new technologies and optimizing code for performance.</p>"
   },
-  "Additional Section": {
-    "content": [
-      {
-        "type": "header",
-        "level": 3,
-        "text": "Data Science and AI"
-      },
-      {
-        "type": "paragraph",
-        "text": "Data science and artificial intelligence are emerging fields that leverage machine learning and deep learning to extract insights from data."
-      },
-      {
-        "type": "list",
-        "items": [
-          {
-            "type": "list_item",
-            "text": "Supervised Learning: Training models with labeled data."
-          },
-          {
-            "type": "list_item",
-            "text": "Unsupervised Learning: Exploring patterns in unlabeled data."
-          },
-          {
-            "type": "list_item",
-            "text": "Deep Learning: Leveraging neural networks for tasks like image and speech recognition."
-          }
-        ]
-      }
-    ]
+  "Internet and Networking": {
+    "content": "<h3>Internet and Networking</h3><p>The internet is a global network that connects millions of devices, enabling communication and data exchange. Networking refers to the practice of connecting and managing these devices to allow them to share data.</p><h3>Components of Networking</h3><ul><li><strong>LAN and WAN:</strong> These are local and wide-area networks, respectively, that define the geographical scale of a network.</li><li><strong>Routers and Switches:</strong> Devices that manage traffic within and between networks, ensuring that data reaches its destination.</li><li><strong>Protocols:</strong> Standard rules, such as HTTP, TCP/IP, and DNS, that enable different devices to communicate effectively.</li></ul><h3>Emerging Technologies</h3><p>With the growth of IoT, 5G, and software-defined networking (SDN), networking is becoming more dynamic and complex, enabling faster and more efficient data transfer across the globe.</p>"
+  },
+  "Computer Viruses": {
+    "content": "<h3>Computer Viruses</h3><p>A computer virus is a malicious program designed to replicate itself and spread across systems, often with harmful effects like data loss, system crashes, or unauthorized access to sensitive information. They can be spread through email attachments, malicious websites, or infected software.</p><h3>Types of Viruses</h3><ul><li><strong>Worms:</strong> Self-replicating viruses that spread through networks without needing a host program.</li><li><strong>Trojans:</strong> Viruses disguised as legitimate software, often used to steal information or allow unauthorized access.</li><li><strong>Ransomware:</strong> A type of malware that encrypts a victim's files and demands payment for their release.</li></ul><h3>Protection</h3><p>To protect against viruses, it's crucial to use updated antivirus software, avoid suspicious links and email attachments, and back up important data regularly.</p>"
   }
 }

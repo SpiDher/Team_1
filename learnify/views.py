@@ -1,11 +1,10 @@
 from django.http import JsonResponse,HttpResponse,FileResponse
 from django.views.decorators.csrf import csrf_exempt
-from .utils import ExtractEngine,text_content
-from .ai.ai_gen_quiz_model import quiz_engine
+from .utils import ExtractEngine,text_content,quiz_result
 import os
 import random
 from Backend import settings
-import asyncio 
+
 @csrf_exempt
 def gen_quiz(request):
     if request.method == "POST" and request.FILES.get('file'):
@@ -17,11 +16,10 @@ def gen_quiz(request):
         if file:
             extractor = ExtractEngine(file)
             # Process the extracted text to generate a quiz (you can customize this as needed)
-            quiz = asyncio.run(quiz_engine(extractor, level))
+            quiz = quiz_result(extractor,level)
         else:
-            quiz= asyncio.run(quiz_engine(desc,level))
-
-        return JsonResponse({'quiz': quiz}, status=200)
+            quiz= quiz_result(desc,level)
+        return JsonResponse(quiz, status=200)
 
     return JsonResponse({'error': 'No file provided'}, status=400)
 
@@ -32,7 +30,7 @@ def home(request):
 @csrf_exempt
 def content(request):
     course_data = text_content()
-    return JsonResponse({'course_data':course_data}, status=200)
+    return JsonResponse(course_data, status=200)
 
 @csrf_exempt
 def topic_material(request):
@@ -51,13 +49,14 @@ def topic_material(request):
 def ran_quiz(request):
     level = request.GET.get('level')
     file_name = os.listdir(settings.MEDIA_ROOT)
+    file_name.remove('quiz')
     ran_file= random.choice(file_name)
-    extractor = ExtractEngine(ran_file)
+    extractor = ExtractEngine(os.path.join(settings.MEDIA_ROOT,ran_file))
     if level:
-        quiz = asyncio.run(quiz_engine(extracted_text=extractor,difficult_level=level))
-        return JsonResponse({'quiz':quiz},status=200)
-    quiz = asyncio.run(quiz_engine(extracted_text=ran_file))
-    return JsonResponse({'quiz':quiz},status= 200)
+        quiz=quiz_result(extractor,level)
+        return JsonResponse(quiz,status=200)
+    quiz = quiz_result(extractor)
+    return JsonResponse(quiz,status=200)
 
 @csrf_exempt
 def file_list(request):

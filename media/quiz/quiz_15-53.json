@@ -1,0 +1,199 @@
+{
+    "name": "Cosmology Quiz Challenge",
+    "questions": [
+        {
+            "correctAnswer": "Redshift",
+            "feedBack": "Redshift is the phenomenon where light from distant galaxies is stretched, increasing its wavelength and shifting it towards the red end of the spectrum. This is a key piece of evidence supporting the expansion of the universe.",
+            "options": [
+                "Blueshift",
+                "Redshift",
+                "Doppler effect",
+                "Gravitational lensing"
+            ],
+            "question": "What phenomenon provides crucial evidence for the expansion of the universe, where light from distant galaxies is stretched, increasing its wavelength?"
+        },
+        {
+            "correctAnswer": "Dark energy",
+            "feedBack": "Dark energy is a mysterious force that makes up about 68% of the universe and is responsible for its accelerated expansion.  Its nature is still largely unknown.",
+            "options": [
+                "Dark matter",
+                "Dark energy",
+                "Gravitational waves",
+                "Cosmic microwave background"
+            ],
+            "question": "What mysterious force constitutes about 68% of the universe and drives its accelerated expansion?"
+        },
+        {
+            "correctAnswer": "Cosmic Microwave Background (CMB)",
+            "feedBack": "The CMB is the afterglow of the Big Bang, a faint radiation permeating the universe. Its discovery provided strong support for the Big Bang theory.",
+            "options": [
+                "Cosmic Infrared Background",
+                "Cosmic X-ray Background",
+                "Cosmic Microwave Background (CMB)",
+                "Cosmic Ultraviolet Background"
+            ],
+            "question": "What is the faint radiation permeating the universe, considered the afterglow of the Big Bang and a key piece of evidence supporting the Big Bang theory?"
+        },
+        {
+            "correctAnswer": "General relativity",
+            "feedBack": "Einstein's theory of general relativity describes gravity as the curvature of spacetime caused by mass and energy. It's essential for understanding the large-scale structure of the universe.",
+            "options": [
+                "Newtonian gravity",
+                "Quantum mechanics",
+                "General relativity",
+                "Special relativity"
+            ],
+            "question": "Which theory of gravity, formulated by Einstein, is crucial for understanding the large-scale structure and evolution of the universe?"
+        },
+        {
+            "correctAnswer": "Supernovae Type Ia",
+            "feedBack": "Type Ia supernovae are stellar explosions with consistent intrinsic brightness, making them excellent standard candles for measuring cosmic distances and the expansion rate of the universe.",
+            "options": [
+                "Supernovae Type II",
+                "Supernovae Type Ia",
+                "Cepheid variables",
+                "Red giant stars"
+            ],
+            "question": "Which type of supernovae serves as a reliable standard candle for measuring cosmic distances due to their consistent intrinsic brightness?"
+        },
+        {
+            "correctAnswer": "Inflation",
+            "feedBack": "Inflation is a hypothetical period of extremely rapid expansion in the very early universe, resolving several cosmological puzzles like the horizon problem and flatness problem.",
+            "options": [
+                "Big Bang",
+                "Big Crunch",
+                "Inflation",
+                "Dark matter"
+            ],
+            "question": "What is the hypothetical period of extremely rapid expansion in the very early universe, addressing cosmological puzzles like the horizon problem?"
+        },
+        {
+            "correctAnswer": "False",
+            "feedBack": "The universe is not static; it is expanding, as evidenced by redshift and other observations.",
+            "options": [
+                "True",
+                "False"
+            ],
+            "question": "Is the universe static, or is it expanding?"
+        },
+        {
+            "correctAnswer": "True",
+            "feedBack": "Dark matter is a non-luminous substance that interacts gravitationally, making up a significant portion of the universe's mass and influencing its structure.",
+            "options": [
+                "True",
+                "False"
+            ],
+            "question": "Does dark matter significantly influence the structure and evolution of the universe?"
+        },
+        {
+            "correctAnswer": "4.65 Billion years",
+            "feedBack": "This is an approximation based on current scientific understanding and observations. The exact age is still being refined.",
+            "options": [
+                "13.8 Billion years",
+                "4.65 Billion years",
+                "9.3 Billion years",
+                "27.6 Billion years"
+            ],
+            "question": "What is the approximate age of the Earth?"
+        },
+        {
+            "correctAnswer": "13.8 Billion years",
+            "feedBack": "This is the current best estimate based on observations of the cosmic microwave background and other cosmological data.",
+            "options": [
+                "13.8 Billion years",
+                "4.65 Billion years",
+                "9.3 Billion years",
+                "27.6 Billion years"
+            ],
+            "question": "What is the approximate age of the Universe?"
+        },
+        {
+            "correctAnswer": "The Big Bang Theory",
+            "feedBack": "The Big Bang theory is the prevailing cosmological model for the universe. It posits that the universe originated from an extremely hot, dense state and has been expanding and cooling ever since.",
+            "options": [
+                "The Steady State Theory",
+                "The Big Bang Theory",
+                "The Oscillating Universe Theory",
+                "The Multiverse Theory"
+            ],
+            "question": "What is the prevailing cosmological model for the universe's origin and evolution?"
+        },
+        {
+            "correctAnswer": "Galaxies",
+            "feedBack": "Galaxies are vast collections of stars, gas, dust, and dark matter bound together by gravity. They are the fundamental building blocks of the large-scale structure of the universe.",
+            "options": [
+                "Stars",
+                "Planets",
+                "Galaxies",
+                "Nebulae"
+            ],
+            "question": "What are vast collections of stars, gas, dust, and dark matter, forming the fundamental building blocks of the universe's large-scale structure?"
+        },
+        {
+            "correctAnswer": "Spiral",
+            "feedBack": "Spiral galaxies are characterized by their spiral arms, which are regions of active star formation. Our own Milky Way galaxy is a spiral galaxy.",
+            "options": [
+                "Elliptical",
+                "Irregular",
+                "Spiral",
+                "Lenticular"
+            ],
+            "question": "What type of galaxy is characterized by spiral arms and active star formation, like our Milky Way?"
+        },
+        {
+            "correctAnswer": "Quasars",
+            "feedBack": "Quasars are extremely luminous and distant active galactic nuclei, powered by supermassive black holes at their centers.",
+            "options": [
+                "Pulsars",
+                "Quasars",
+                "Neutron stars",
+                "White dwarfs"
+            ],
+            "question": "What are extremely luminous and distant active galactic nuclei, powered by supermassive black holes?"
+        },
+        {
+            "correctAnswer": "Black holes",
+            "feedBack": "Black holes are regions of spacetime with such strong gravity that nothing, not even light, can escape. They form from the collapse of massive stars.",
+            "options": [
+                "White dwarfs",
+                "Neutron stars",
+                "Black holes",
+                "Red giants"
+            ],
+            "question": "What are regions of spacetime with gravity so strong that nothing, not even light, can escape?"
+        },
+        {
+            "correctAnswer": "Gravitational waves",
+            "feedBack": "Gravitational waves are ripples in spacetime caused by accelerating massive objects, like merging black holes or neutron stars.",
+            "options": [
+                "Electromagnetic waves",
+                "Sound waves",
+                "Gravitational waves",
+                "Seismic waves"
+            ],
+            "question": "What are ripples in spacetime generated by accelerating massive objects, like merging black holes?"
+        },
+        {
+            "correctAnswer": "Dark matter",
+            "feedBack": "Dark matter is a mysterious substance that doesn't interact with light but exerts gravitational influence, making up a significant part of the universe's mass.",
+            "options": [
+                "Dark energy",
+                "Dark matter",
+                "Antimatter",
+                "Exotic matter"
+            ],
+            "question": "What is the mysterious substance that doesn't interact with light but exerts gravitational influence, comprising a significant portion of the universe's mass?"
+        },
+        {
+            "correctAnswer": "Hubble's Law",
+            "feedBack": "Hubble's Law describes the relationship between a galaxy's distance and its recessional velocity, providing evidence for the expansion of the universe.",
+            "options": [
+                "Newton's Law of Universal Gravitation",
+                "Kepler's Laws of Planetary Motion",
+                "Hubble's Law",
+                "Einstein's Field Equations"
+            ],
+            "question": "What law describes the relationship between a galaxy's distance and its velocity, providing evidence for the expanding universe?"
+        }
+    ]
+}

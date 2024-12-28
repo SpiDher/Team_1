@@ -1,0 +1,225 @@
+{
+    "name": "COS121 Programming Concepts Quiz",
+    "questions": [
+        {
+            "correctAnswer": "B) To solve complex problems",
+            "feedBack": "Algorithms provide structured solutions to computational problems.",
+            "options": [
+                "A) To write efficient code",
+                "B) To solve complex problems",
+                "C) To design a user interface",
+                "D) To optimize memory usage"
+            ],
+            "question": "What is the primary goal of algorithm design in programming?"
+        },
+        {
+            "correctAnswer": "B) To design algorithms",
+            "feedBack": "Flowcharts visually represent the steps and logic of an algorithm.",
+            "options": [
+                "A) To write code",
+                "B) To design algorithms",
+                "C) To debug programs",
+                "D) To test software"
+            ],
+            "question": "What is a flowchart primarily used for?"
+        },
+        {
+            "correctAnswer": "D) To identify reserved words",
+            "feedBack": "Keywords have predefined meanings and cannot be used as identifiers.",
+            "options": [
+                "A) To declare variables",
+                "B) To define functions",
+                "C) To control program flow",
+                "D) To identify reserved words"
+            ],
+            "question": "What is the main purpose of keywords in programming languages?"
+        },
+        {
+            "correctAnswer": "A) Assignment assigns a value, while equality checks for equality",
+            "feedBack": "The assignment operator assigns, while the equality operator compares values.",
+            "options": [
+                "A) Assignment assigns a value, while equality checks for equality",
+                "B) Assignment checks for equality, while equality assigns a value",
+                "C) Assignment and equality are the same",
+                "D) Assignment is used for arithmetic operations"
+            ],
+            "question": "What's the difference between assignment and equality operators?"
+        },
+        {
+            "correctAnswer": "B) Loop",
+            "feedBack": "Loops enable repeated execution of code blocks.",
+            "options": [
+                "A) Conditional statement",
+                "B) Loop",
+                "C) Function",
+                "D) Array"
+            ],
+            "question": "Which control structure is used for repeated code execution?"
+        },
+        {
+            "correctAnswer": "B) To store a collection of values",
+            "feedBack": "Arrays store multiple elements of the same data type.",
+            "options": [
+                "A) To store a single value",
+                "B) To store a collection of values",
+                "C) To perform arithmetic operations",
+                "D) To control program flow"
+            ],
+            "question": "What is the main purpose of an array in programming?"
+        },
+        {
+            "correctAnswer": "A) A block of code that performs a specific task",
+            "feedBack": "Functions encapsulate code to perform specific operations.",
+            "options": [
+                "A) A block of code that performs a specific task",
+                "B) A variable that stores a value",
+                "C) A control structure that executes code repeatedly",
+                "D) A data structure that stores a collection of values"
+            ],
+            "question": "What is a function in programming?"
+        },
+        {
+            "correctAnswer": "C) To promote code reusability",
+            "feedBack": "Functions enhance code reusability and modularity.",
+            "options": [
+                "A) To reduce code readability",
+                "B) To increase code complexity",
+                "C) To promote code reusability",
+                "D) To decrease code efficiency"
+            ],
+            "question": "What is a key benefit of using functions in programming?"
+        },
+        {
+            "correctAnswer": "B) Local variables are accessible only within a function, while global variables are accessible throughout the program",
+            "feedBack": "Local variables have function scope; global variables have program scope.",
+            "options": [
+                "A) Local variables are accessible globally, while global variables are accessible locally",
+                "B) Local variables are accessible only within a function, while global variables are accessible throughout the program",
+                "C) Local variables are used for arithmetic operations, while global variables are used for storing strings",
+                "D) Local variables are used for storing arrays, while global variables are used for storing single values"
+            ],
+            "question": "What is the key difference between local and global variables?"
+        },
+        {
+            "correctAnswer": "C) To explain code functionality",
+            "feedBack": "Comments improve code readability and understanding.",
+            "options": [
+                "A) To execute code",
+                "B) To declare variables",
+                "C) To explain code functionality",
+                "D) To control program flow"
+            ],
+            "question": "What is the primary purpose of comments in programming?"
+        },
+        {
+            "correctAnswer": "int x = 10;",
+            "feedBack": "This correctly declares an integer variable and assigns it a value.",
+            "options": [
+                "int 10 x;",
+                "10 = int x;",
+                "int x = 10.5;",
+                "int x = \"ten\""
+            ],
+            "question": "Which of the following correctly declares an integer variable x and assigns it the value 10?"
+        },
+        {
+            "correctAnswer": "double y = 3.14;",
+            "feedBack": "This correctly declares a double-precision floating-point variable and assigns it a value.",
+            "options": [
+                "double y = 3,14;",
+                "double y = \"3.14\";",
+                "double 3.14 y;",
+                "double y = 3.14;"
+            ],
+            "question": "Which of the following correctly declares a double-precision floating-point variable y and assigns it the value 3.14?"
+        },
+        {
+            "correctAnswer": "char z = 'A';",
+            "feedBack": "This correctly declares a character variable and assigns it a character value.",
+            "options": [
+                "char z = A;",
+                "char z = \"A\";",
+                "char z = 'AB';",
+                "char z = 'A';"
+            ],
+            "question": "Which of the following correctly declares a character variable z and assigns it the value 'A'?"
+        },
+        {
+            "correctAnswer": "if (x > 5) { ... } else { ... }",
+            "feedBack": "This demonstrates a basic if-else structure for conditional execution.",
+            "options": [
+                "if (x = 5) { ... }",
+                "if x > 5 { ... }",
+                "if (x > 5) { ... } else { ... }",
+                "if (x > 5); { ... }"
+            ],
+            "question": "Which of the following represents a correct if-else statement in C?"
+        },
+        {
+            "correctAnswer": "for (int i = 0; i < 5; i++) { ... }",
+            "feedBack": "This shows a standard for loop structure for iterative execution.",
+            "options": [
+                "for (i = 0; i < 5; i++) { ... }",
+                "for (int i = 0; i <= 5; i++) { ... }",
+                "for (int i = 0; i < 5; i++) { ... }",
+                "for (int i = 1; i < 5; i--) { ... }"
+            ],
+            "question": "Which of the following represents a correct for loop structure in C?"
+        },
+        {
+            "correctAnswer": "while (condition) { ... }",
+            "feedBack": "This shows the basic structure of a while loop.",
+            "options": [
+                "while condition { ... }",
+                "while (condition); { ... }",
+                "while (condition) { ... }",
+                "while {condition} { ... }"
+            ],
+            "question": "Which of the following represents a correct while loop structure in C?"
+        },
+        {
+            "correctAnswer": "do { ... } while (condition);",
+            "feedBack": "This illustrates the structure of a do-while loop.",
+            "options": [
+                "do { ... } while condition;",
+                "do while (condition) { ... }",
+                "do { ... } while (condition);",
+                "do (condition) { ... } while;"
+            ],
+            "question": "Which of the following represents a correct do-while loop structure in C?"
+        },
+        {
+            "correctAnswer": "int numbers[5];",
+            "feedBack": "This correctly declares an integer array named 'numbers' with a size of 5.",
+            "options": [
+                "int numbers = 5;",
+                "int numbers[5];",
+                "int 5 numbers;",
+                "int numbers(5);"
+            ],
+            "question": "Which of the following correctly declares an integer array named 'numbers' with a size of 5?"
+        },
+        {
+            "correctAnswer": "numbers[2] = 10;",
+            "feedBack": "This correctly assigns the value 10 to the third element (index 2) of the array.",
+            "options": [
+                "numbers(2) = 10;",
+                "numbers[2] = 10;",
+                "numbers[3] = 10;",
+                "numbers{2} = 10;"
+            ],
+            "question": "Assuming 'numbers' is an integer array, which statement correctly assigns the value 10 to the third element?"
+        },
+        {
+            "correctAnswer": "int add(int a, int b){return a+b;}",
+            "feedBack": "This is a correct function definition in C that adds two integers.",
+            "options": [
+                "int add(int a, int b);",
+                "int add(a, b){return a+b;}",
+                "int add(int a, int b){return a+b;}",
+                "add(int a, int b){return a+b;}"
+            ],
+            "question": "Which of the following is a correct function definition in C that adds two integers?"
+        }
+    ]
+}

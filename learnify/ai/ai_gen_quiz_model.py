@@ -3,6 +3,7 @@ import google.generativeai as genai
 import asyncio
 from google.ai.generativelanguage_v1beta.types import content
 from absl import logging
+import json
 
 # Suppress gRPC logging
 os.environ["GRPC_VERBOSITY"] = "NONE"
@@ -82,8 +83,14 @@ async def quiz_engine(extracted_text=None, difficult_level=None):
     input_data = f"{extracted_text}\n{difficult_level}"
 
     loop = asyncio.get_event_loop()
-    response = await loop.run_in_executor(None, chat_session.send_message, input_data)
-    
-    return response.text
+    try:
+      response = await asyncio.wait_for(loop.run_in_executor(None, chat_session.send_message, input_data),timeout=15)
+      response = json.loads(response.text)
+      res = response if 'questions' in response else None
+      return res
+    except Exception as e:
+      print('Timed out')
+      return None
+
 
 
