@@ -50,6 +50,7 @@ def ran_quiz(request):
     level = request.GET.get('level')
     file_name = os.listdir(settings.MEDIA_ROOT)
     file_name.remove('quiz')
+    file_name.remove('cos.json')
     ran_file= random.choice(file_name)
     extractor = ExtractEngine(os.path.join(settings.MEDIA_ROOT,ran_file))
     if level:
