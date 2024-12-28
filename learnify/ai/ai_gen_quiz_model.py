@@ -2,14 +2,14 @@ import os
 import google.generativeai as genai
 import asyncio
 from google.ai.generativelanguage_v1beta.types import content
-import absl.logging
+from absl import logging
 
 # Suppress gRPC logging
 os.environ["GRPC_VERBOSITY"] = "NONE"
 
 # Suppress absl logging
-absl.logging.set_verbosity(absl.logging.ERROR)
-absl.logging.use_absl_handler()
+logging.set_verbosity(logging.ERROR)
+logging.use_absl_handler()
 
 api_key = os.getenv("GEM_API_KEY")
 if not api_key:
