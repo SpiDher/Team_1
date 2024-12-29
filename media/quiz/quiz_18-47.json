@@ -1,225 +1,225 @@
 {
-    "name": "COS121 Programming Concepts Quiz",
+    "name": "COS111 Computer Systems Quiz",
     "questions": [
         {
-            "correctAnswer": "B) To solve complex problems",
-            "feedBack": "Algorithms provide structured solutions to computational problems.",
+            "correctAnswer": "To perform calculations and execute instructions",
+            "feedBack": "The CPU is the brain of the computer, responsible for carrying out instructions and performing calculations.",
             "options": [
-                "A) To write efficient code",
-                "B) To solve complex problems",
-                "C) To design a user interface",
-                "D) To optimize memory usage"
+                "To store data",
+                "To perform calculations and execute instructions",
+                "To provide input/output operations",
+                "To manage memory"
             ],
-            "question": "What is the primary goal of algorithm design in programming?"
+            "question": "What is the primary function of the Central Processing Unit (CPU) in a computer system?"
         },
         {
-            "correctAnswer": "B) To design algorithms",
-            "feedBack": "Flowcharts visually represent the steps and logic of an algorithm.",
+            "correctAnswer": "Vacuum Tubes",
+            "feedBack": "First-generation computers relied on vacuum tubes for their electronic components.",
             "options": [
-                "A) To write code",
-                "B) To design algorithms",
-                "C) To debug programs",
-                "D) To test software"
+                "Transistors",
+                "Integrated Circuits",
+                "Vacuum Tubes",
+                "Microprocessors"
             ],
-            "question": "What is a flowchart primarily used for?"
+            "question": "Which of the following is considered the first generation of computers?"
         },
         {
-            "correctAnswer": "D) To identify reserved words",
-            "feedBack": "Keywords have predefined meanings and cannot be used as identifiers.",
+            "correctAnswer": "Base 2",
+            "feedBack": "The binary number system uses only two digits, 0 and 1.",
             "options": [
-                "A) To declare variables",
-                "B) To define functions",
-                "C) To control program flow",
-                "D) To identify reserved words"
+                "Base 8",
+                "Base 10",
+                "Base 2",
+                "Base 16"
             ],
-            "question": "What is the main purpose of keywords in programming languages?"
+            "question": "What is the binary number system based on?"
         },
         {
-            "correctAnswer": "A) Assignment assigns a value, while equality checks for equality",
-            "feedBack": "The assignment operator assigns, while the equality operator compares values.",
+            "correctAnswer": "BASIC",
+            "feedBack": "BASIC is known for its simple syntax and is often used to teach programming fundamentals.",
             "options": [
-                "A) Assignment assigns a value, while equality checks for equality",
-                "B) Assignment checks for equality, while equality assigns a value",
-                "C) Assignment and equality are the same",
-                "D) Assignment is used for arithmetic operations"
+                "Java",
+                "Python",
+                "C++",
+                "BASIC"
             ],
-            "question": "What's the difference between assignment and equality operators?"
+            "question": "Which programming language is known for its simplicity and is often taught to beginners?"
         },
         {
-            "correctAnswer": "B) Loop",
-            "feedBack": "Loops enable repeated execution of code blocks.",
+            "correctAnswer": "To assign IP addresses",
+            "feedBack": "IP addresses are crucial for routing data packets across networks.",
             "options": [
-                "A) Conditional statement",
-                "B) Loop",
-                "C) Function",
-                "D) Array"
+                "To provide security",
+                "To manage data transmission",
+                "To assign IP addresses",
+                "To provide error correction"
             ],
-            "question": "Which control structure is used for repeated code execution?"
+            "question": "What is the primary function of the Internet Protocol (IP) in networking?"
         },
         {
-            "correctAnswer": "B) To store a collection of values",
-            "feedBack": "Arrays store multiple elements of the same data type.",
+            "correctAnswer": "Worm",
+            "feedBack": "Worms are designed to spread and replicate themselves across networks.",
             "options": [
-                "A) To store a single value",
-                "B) To store a collection of values",
-                "C) To perform arithmetic operations",
-                "D) To control program flow"
+                "Trojan",
+                "Worm",
+                "Spyware",
+                "Adware"
             ],
-            "question": "What is the main purpose of an array in programming?"
+            "question": "What type of computer virus is designed to replicate itself and spread to other computers?"
         },
         {
-            "correctAnswer": "A) A block of code that performs a specific task",
-            "feedBack": "Functions encapsulate code to perform specific operations.",
+            "correctAnswer": "Network",
+            "feedBack": "A network is a collection of computers connected to share resources.",
             "options": [
-                "A) A block of code that performs a specific task",
-                "B) A variable that stores a value",
-                "C) A control structure that executes code repeatedly",
-                "D) A data structure that stores a collection of values"
+                "Internet",
+                "Intranet",
+                "Network",
+                "Database"
             ],
-            "question": "What is a function in programming?"
+            "question": "What is the term for a group of computers connected together to share resources?"
         },
         {
-            "correctAnswer": "C) To promote code reusability",
-            "feedBack": "Functions enhance code reusability and modularity.",
+            "correctAnswer": "Used vacuum tubes",
+            "feedBack": "First-generation computers used vacuum tubes as their primary electronic components.",
             "options": [
-                "A) To reduce code readability",
-                "B) To increase code complexity",
-                "C) To promote code reusability",
-                "D) To decrease code efficiency"
+                "Used integrated circuits",
+                "Used vacuum tubes",
+                "Used transistors",
+                "Used microprocessors"
             ],
-            "question": "What is a key benefit of using functions in programming?"
+            "question": "Which of the following is a characteristic of a first-generation computer?"
         },
         {
-            "correctAnswer": "B) Local variables are accessible only within a function, while global variables are accessible throughout the program",
-            "feedBack": "Local variables have function scope; global variables have program scope.",
+            "correctAnswer": "Malware",
+            "feedBack": "Malware is a broad term encompassing various types of malicious software designed to harm computer systems.",
             "options": [
-                "A) Local variables are accessible globally, while global variables are accessible locally",
-                "B) Local variables are accessible only within a function, while global variables are accessible throughout the program",
-                "C) Local variables are used for arithmetic operations, while global variables are used for storing strings",
-                "D) Local variables are used for storing arrays, while global variables are used for storing single values"
+                "Virus",
+                "Worm",
+                "Trojan",
+                "Malware"
             ],
-            "question": "What is the key difference between local and global variables?"
+            "question": "What is the term for a program that is designed to damage or disrupt a computer system?"
         },
         {
-            "correctAnswer": "C) To explain code functionality",
-            "feedBack": "Comments improve code readability and understanding.",
+            "correctAnswer": "Java",
+            "feedBack": "Java's platform independence allows it to run on various operating systems.",
             "options": [
-                "A) To execute code",
-                "B) To declare variables",
-                "C) To explain code functionality",
-                "D) To control program flow"
+                "Java",
+                "Python",
+                "C++",
+                "BASIC"
             ],
-            "question": "What is the primary purpose of comments in programming?"
+            "question": "Which of the following programming languages is known for its platform independence?"
         },
         {
-            "correctAnswer": "int x = 10;",
-            "feedBack": "This correctly declares an integer variable and assigns it a value.",
+            "correctAnswer": "Hardware",
+            "feedBack": "Hardware refers to the physical components of a computer system.",
             "options": [
-                "int 10 x;",
-                "10 = int x;",
-                "int x = 10.5;",
-                "int x = \"ten\""
+                "Software",
+                "Firmware",
+                "Hardware",
+                "Network"
             ],
-            "question": "Which of the following correctly declares an integer variable x and assigns it the value 10?"
+            "question": "What term refers to the physical components of a computer system, such as the CPU and memory?"
         },
         {
-            "correctAnswer": "double y = 3.14;",
-            "feedBack": "This correctly declares a double-precision floating-point variable and assigns it a value.",
+            "correctAnswer": "Software",
+            "feedBack": "Software comprises the programs and operating systems that manage and utilize hardware resources.",
             "options": [
-                "double y = 3,14;",
-                "double y = \"3.14\";",
-                "double 3.14 y;",
-                "double y = 3.14;"
+                "Hardware",
+                "Firmware",
+                "Software",
+                "Network"
             ],
-            "question": "Which of the following correctly declares a double-precision floating-point variable y and assigns it the value 3.14?"
+            "question": "What term refers to the programs and operating systems that run on a computer?"
         },
         {
-            "correctAnswer": "char z = 'A';",
-            "feedBack": "This correctly declares a character variable and assigns it a character value.",
+            "correctAnswer": "Input, Processing, Output",
+            "feedBack": "These three stages represent the fundamental operations of a computer system.",
             "options": [
-                "char z = A;",
-                "char z = \"A\";",
-                "char z = 'AB';",
-                "char z = 'A';"
+                "Input, Storage, Output",
+                "Input, Processing, Output",
+                "Storage, Processing, Control",
+                "Input, Control, Output"
             ],
-            "question": "Which of the following correctly declares a character variable z and assigns it the value 'A'?"
+            "question": "What are the three fundamental components of a computer system's operation?"
         },
         {
-            "correctAnswer": "if (x > 5) { ... } else { ... }",
-            "feedBack": "This demonstrates a basic if-else structure for conditional execution.",
+            "correctAnswer": "Charles Babbage",
+            "feedBack": "Babbage is credited with designing the Analytical Engine, a precursor to modern computers.",
             "options": [
-                "if (x = 5) { ... }",
-                "if x > 5 { ... }",
-                "if (x > 5) { ... } else { ... }",
-                "if (x > 5); { ... }"
+                "Ada Lovelace",
+                "Alan Turing",
+                "Grace Hopper",
+                "Charles Babbage"
             ],
-            "question": "Which of the following represents a correct if-else statement in C?"
+            "question": "Who is considered a pioneer in the early development of computers, known for the Analytical Engine?"
         },
         {
-            "correctAnswer": "for (int i = 0; i < 5; i++) { ... }",
-            "feedBack": "This shows a standard for loop structure for iterative execution.",
+            "correctAnswer": "Microprocessor",
+            "feedBack": "The invention of the microprocessor led to the development of smaller, more powerful computers.",
             "options": [
-                "for (i = 0; i < 5; i++) { ... }",
-                "for (int i = 0; i <= 5; i++) { ... }",
-                "for (int i = 0; i < 5; i++) { ... }",
-                "for (int i = 1; i < 5; i--) { ... }"
+                "Integrated Circuit",
+                "Transistor",
+                "Vacuum Tube",
+                "Microprocessor"
             ],
-            "question": "Which of the following represents a correct for loop structure in C?"
+            "question": "What key invention significantly reduced the size and increased the power of computers, leading to the personal computer era?"
         },
         {
-            "correctAnswer": "while (condition) { ... }",
-            "feedBack": "This shows the basic structure of a while loop.",
+            "correctAnswer": "Decimal",
+            "feedBack": "The decimal system is the most commonly used number system in everyday life.",
             "options": [
-                "while condition { ... }",
-                "while (condition); { ... }",
-                "while (condition) { ... }",
-                "while {condition} { ... }"
+                "Binary",
+                "Octal",
+                "Hexadecimal",
+                "Decimal"
             ],
-            "question": "Which of the following represents a correct while loop structure in C?"
+            "question": "Which number system is based on the number 10 and uses digits 0-9?"
         },
         {
-            "correctAnswer": "do { ... } while (condition);",
-            "feedBack": "This illustrates the structure of a do-while loop.",
+            "correctAnswer": "Binary",
+            "feedBack": "Computers use binary because it is efficient for representing on/off states of transistors.",
             "options": [
-                "do { ... } while condition;",
-                "do while (condition) { ... }",
-                "do { ... } while (condition);",
-                "do (condition) { ... } while;"
+                "Decimal",
+                "Octal",
+                "Hexadecimal",
+                "Binary"
             ],
-            "question": "Which of the following represents a correct do-while loop structure in C?"
+            "question": "Which number system is commonly used in computer systems and is based on two digits (0 and 1)?"
         },
         {
-            "correctAnswer": "int numbers[5];",
-            "feedBack": "This correctly declares an integer array named 'numbers' with a size of 5.",
+            "correctAnswer": "High-level languages",
+            "feedBack": "High-level languages are easier to learn and use compared to low-level languages.",
             "options": [
-                "int numbers = 5;",
-                "int numbers[5];",
-                "int 5 numbers;",
-                "int numbers(5);"
+                "Low-level languages",
+                "Machine languages",
+                "Assembly languages",
+                "High-level languages"
             ],
-            "question": "Which of the following correctly declares an integer array named 'numbers' with a size of 5?"
+            "question": "Which type of programming language is typically easier for humans to read and write, making them more user-friendly for software development?"
         },
         {
-            "correctAnswer": "numbers[2] = 10;",
-            "feedBack": "This correctly assigns the value 10 to the third element (index 2) of the array.",
+            "correctAnswer": "LAN",
+            "feedBack": "A LAN connects devices within a limited geographical area, such as a home or office.",
             "options": [
-                "numbers(2) = 10;",
-                "numbers[2] = 10;",
-                "numbers[3] = 10;",
-                "numbers{2} = 10;"
+                "WAN",
+                "MAN",
+                "WLAN",
+                "LAN"
             ],
-            "question": "Assuming 'numbers' is an integer array, which statement correctly assigns the value 10 to the third element?"
+            "question": "What type of network is typically used to connect devices within a small geographical area, such as a home or office?"
         },
         {
-            "correctAnswer": "int add(int a, int b){return a+b;}",
-            "feedBack": "This is a correct function definition in C that adds two integers.",
+            "correctAnswer": "Router",
+            "feedBack": "Routers forward data packets between networks, enabling communication across different networks.",
             "options": [
-                "int add(int a, int b);",
-                "int add(a, b){return a+b;}",
-                "int add(int a, int b){return a+b;}",
-                "add(int a, int b){return a+b;}"
+                "Switch",
+                "Modem",
+                "Network Interface Card",
+                "Router"
             ],
-            "question": "Which of the following is a correct function definition in C that adds two integers?"
+            "question": "Which networking device is primarily responsible for directing data packets between different networks?"
         }
     ]
 }

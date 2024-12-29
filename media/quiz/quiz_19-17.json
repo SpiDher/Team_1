@@ -1,225 +1,225 @@
 {
-    "name": "COS111 Comprehensive Quiz",
+    "name": "COS121 Programming Concepts Quiz",
     "questions": [
         {
-            "correctAnswer": "B",
-            "feedBack": "The CPU is the brain of the computer, responsible for processing instructions and performing calculations.",
+            "correctAnswer": "To solve complex problems",
+            "feedBack": "Algorithms are designed to provide step-by-step solutions to complex problems, breaking them down into manageable steps.",
             "options": [
-                "To store data",
-                "To perform calculations and execute instructions",
-                "To provide input/output operations",
-                "To manage memory"
+                "To write efficient code",
+                "To solve complex problems",
+                "To design a user interface",
+                "To optimize memory usage"
             ],
-            "question": "What is the primary function of the Central Processing Unit (CPU) in a computer system?"
+            "question": "What is the primary goal of algorithm design in programming?"
         },
         {
-            "correctAnswer": "C",
-            "feedBack": "First-generation computers relied on vacuum tubes for their electronic components.",
+            "correctAnswer": "To design algorithms",
+            "feedBack": "Flowcharts visually represent the steps and logic of an algorithm, aiding in its design and understanding.",
             "options": [
-                "Transistors",
-                "Integrated Circuits",
-                "Vacuum Tubes",
-                "Microprocessors"
+                "To write code",
+                "To design algorithms",
+                "To debug programs",
+                "To test software"
             ],
-            "question": "Which of the following is considered the first generation of computers?"
+            "question": "What is a flowchart used for in programming?"
         },
         {
-            "correctAnswer": "C",
-            "feedBack": "The binary number system uses only two digits, 0 and 1, to represent numbers.",
+            "correctAnswer": "To identify reserved words",
+            "feedBack": "Keywords are reserved words with special meanings; they define the program's structure and syntax and cannot be used as variable names.",
             "options": [
-                "Base 8",
-                "Base 10",
-                "Base 2",
-                "Base 16"
+                "To declare variables",
+                "To define functions",
+                "To control program flow",
+                "To identify reserved words"
             ],
-            "question": "What is the binary number system based on?"
+            "question": "What is the purpose of keywords in programming?"
         },
         {
-            "correctAnswer": "B",
-            "feedBack": "Python's clear syntax and extensive libraries make it beginner-friendly.",
+            "correctAnswer": "Assignment assigns a value, while equality checks for equality",
+            "feedBack": "The assignment operator (=) assigns a value, while the equality operator (==) compares values.",
             "options": [
-                "Java",
-                "Python",
-                "C++",
-                "BASIC"
+                "Assignment checks for equality, while equality assigns a value",
+                "Assignment and equality are the same",
+                "Assignment is used for arithmetic operations",
+                "Assignment assigns a value, while equality checks for equality"
             ],
-            "question": "Which programming language is known for its simplicity and is often taught to beginners?"
+            "question": "What is the difference between assignment and equality operators?"
         },
         {
-            "correctAnswer": "C",
-            "feedBack": "The Internet Protocol (IP) addresses devices on a network, enabling communication.",
+            "correctAnswer": "Loop",
+            "feedBack": "Loops are control structures that repeatedly execute a block of code until a condition is met.",
             "options": [
-                "To provide security",
-                "To manage data transmission",
-                "To assign IP addresses",
-                "To provide error correction"
+                "Conditional statement",
+                "Loop",
+                "Function",
+                "Array"
             ],
-            "question": "What is the primary function of the Internet Protocol (IP) in networking?"
+            "question": "What type of control structure is used to execute a block of code repeatedly?"
         },
         {
-            "correctAnswer": "B",
-            "feedBack": "Worms are self-replicating and spread without user intervention, unlike other viruses.",
+            "correctAnswer": "To store a collection of values",
+            "feedBack": "Arrays efficiently store and manage multiple values of the same data type.",
             "options": [
-                "Trojan",
-                "Worm",
-                "Spyware",
-                "Adware"
+                "To store a single value",
+                "To store a collection of values",
+                "To perform arithmetic operations",
+                "To control program flow"
             ],
-            "question": "What type of computer virus is designed to replicate itself and spread to other computers?"
+            "question": "What is the purpose of an array in programming?"
         },
         {
-            "correctAnswer": "C",
-            "feedBack": "A network connects devices to share resources and communicate.",
+            "correctAnswer": "A block of code that performs a specific task",
+            "feedBack": "Functions encapsulate a specific task, improving code organization and reusability.",
             "options": [
-                "Internet",
-                "Intranet",
-                "Network",
-                "Database"
+                "A variable that stores a value",
+                "A control structure that executes code repeatedly",
+                "A data structure that stores a collection of values",
+                "A block of code that performs a specific task"
             ],
-            "question": "What is the term for a group of computers connected together to share resources?"
+            "question": "What is a function in programming?"
         },
         {
-            "correctAnswer": "B",
-            "feedBack": "First-generation computers were characterized by the use of vacuum tubes.",
+            "correctAnswer": "To promote code reusability",
+            "feedBack": "Functions promote code reusability by allowing the same code block to be used multiple times, reducing redundancy.",
             "options": [
-                "Used integrated circuits",
-                "Used vacuum tubes",
-                "Used transistors",
-                "Used microprocessors"
+                "To reduce code readability",
+                "To increase code complexity",
+                "To promote code reusability",
+                "To decrease code efficiency"
             ],
-            "question": "Which of the following is a characteristic of a first-generation computer?"
+            "question": "What is the benefit of using functions in programming?"
         },
         {
-            "correctAnswer": "D",
-            "feedBack": "Malware is a broad term encompassing various types of malicious software designed to harm systems.",
+            "correctAnswer": "Local variables are accessible only within a function, while global variables are accessible throughout the program",
+            "feedBack": "Local variables have limited scope within a function, while global variables are accessible from anywhere in the program.",
             "options": [
-                "Virus",
-                "Worm",
-                "Trojan",
-                "Malware"
+                "Local variables are accessible globally, while global variables are accessible locally",
+                "Local variables are accessible only within a function, while global variables are accessible throughout the program",
+                "Local variables are used for arithmetic operations, while global variables are used for storing strings",
+                "Local variables are used for storing arrays, while global variables are used for storing single values"
             ],
-            "question": "What is the term for a program that is designed to damage or disrupt a computer system?"
+            "question": "What is the difference between a local variable and a global variable?"
         },
         {
-            "correctAnswer": "A",
-            "feedBack": "Java's platform independence allows code to run on various systems without modification.",
+            "correctAnswer": "To explain code functionality",
+            "feedBack": "Comments enhance code readability and understanding by explaining the purpose and functionality of code sections.",
             "options": [
-                "Java",
-                "Python",
-                "C++",
-                "BASIC"
+                "To execute code",
+                "To declare variables",
+                "To control program flow",
+                "To explain code functionality"
             ],
-            "question": "Which of the following programming languages is known for its platform independence?"
+            "question": "What is the purpose of comments in programming?"
         },
         {
-            "correctAnswer": "A",
-            "feedBack": "Ada Lovelace is credited with writing the first algorithm intended for processing by a machine.",
+            "correctAnswer": "Input, Processing, Output",
+            "feedBack": "An algorithm takes input, processes it, and produces output; these are fundamental steps in its operation.",
             "options": [
-                "Ada Lovelace",
-                "Charles Babbage",
-                "Alan Turing",
-                "Grace Hopper"
+                "Input, Processing, Output",
+                "Finiteness, Definiteness, Effectiveness",
+                "Start, Process, Stop",
+                "Decision, Loop, End"
             ],
-            "question": "Who is considered to be the first computer programmer?"
+            "question": "What are the three fundamental components of an algorithm?"
         },
         {
-            "correctAnswer": "C",
-            "feedBack": "The invention of the integrated circuit significantly advanced computer technology.",
+            "correctAnswer": "Oval",
+            "feedBack": "The oval shape is used to denote the start and end points of a flowchart.",
             "options": [
-                "Vacuum tubes",
-                "Transistors",
-                "Integrated circuits",
-                "Microprocessors"
+                "Rectangle",
+                "Diamond",
+                "Parallelogram",
+                "Oval"
             ],
-            "question": "Which technological advancement marked the beginning of the third generation of computers?"
+            "question": "Which flowchart symbol represents the start or end of a process?"
         },
         {
-            "correctAnswer": "B",
-            "feedBack": "The development of microprocessors led to smaller, more powerful computers.",
+            "correctAnswer": "Diamond",
+            "feedBack": "The diamond shape is used to represent decision points in a flowchart, where different paths are possible based on a condition.",
             "options": [
-                "The invention of the internet",
-                "The development of microprocessors",
-                "The creation of the first programming language",
-                "The use of transistors in computers"
+                "Rectangle",
+                "Oval",
+                "Parallelogram",
+                "Diamond"
             ],
-            "question": "What technological advancement was crucial to the development of personal computers?"
+            "question": "Which flowchart symbol represents a decision point?"
         },
         {
-            "correctAnswer": "A",
-            "feedBack": "High-level languages offer increased abstraction from machine code, simplifying programming.",
+            "correctAnswer": "Parallelogram",
+            "feedBack": "A parallelogram denotes input or output operations within a flowchart.",
             "options": [
-                "High-level languages",
-                "Low-level languages",
-                "Assembly languages",
-                "Machine code"
+                "Rectangle",
+                "Diamond",
+                "Parallelogram",
+                "Oval"
             ],
-            "question": "Which type of programming language is generally easier to learn and use?"
+            "question": "Which flowchart symbol represents input or output?"
         },
         {
-            "correctAnswer": "D",
-            "feedBack": "A WAN spans a wide geographical area, connecting networks across cities or countries.",
+            "correctAnswer": "int",
+            "feedBack": "The keyword \"int\" is used to declare integer variables in many programming languages.",
             "options": [
-                "LAN",
-                "MAN",
-                "WLAN",
-                "WAN"
+                "char",
+                "double",
+                "float",
+                "int"
             ],
-            "question": "What type of network covers a large geographical area, such as a country or continent?"
+            "question": "Which keyword is commonly used to declare integer variables?"
         },
         {
-            "correctAnswer": "C",
-            "feedBack": "A router forwards data packets between different networks based on their destination IP addresses.",
+            "correctAnswer": "double",
+            "feedBack": "The keyword \"double\" is used to declare variables that can store floating-point numbers with greater precision.",
             "options": [
-                "Switch",
-                "Modem",
-                "Router",
-                "Network Interface Card"
+                "int",
+                "char",
+                "float",
+                "double"
             ],
-            "question": "Which networking device is responsible for routing data packets between different networks?"
+            "question": "Which keyword is used to declare a variable that can store floating-point numbers?"
         },
         {
-            "correctAnswer": "B",
-            "feedBack": "A worm replicates itself and spreads to other systems without needing user interaction.",
+            "correctAnswer": "char",
+            "feedBack": "The keyword \"char\" is used to declare variables that can store single characters.",
             "options": [
-                "Trojan Horse",
-                "Worm",
-                "Virus",
-                "Ransomware"
+                "int",
+                "double",
+                "float",
+                "char"
             ],
-            "question": "Which type of malware spreads by replicating itself across networks?"
+            "question": "Which keyword is used to declare a variable that can store a single character?"
         },
         {
-            "correctAnswer": "A",
-            "feedBack": "Antivirus software helps protect your system by detecting and removing malicious code.",
+            "correctAnswer": "Variable names must start with a letter or underscore.",
+            "feedBack": "Variable names must adhere to specific rules to ensure clarity and avoid conflicts; they must start with a letter or underscore and cannot be keywords.",
             "options": [
-                "Install antivirus software",
-                "Avoid using the internet",
-                "Disable your firewall",
-                "Use a weak password"
+                "Variable names can contain spaces.",
+                "Variable names can start with a number.",
+                "Variable names can be keywords.",
+                "Variable names must start with a letter or underscore"
             ],
-            "question": "What is the most effective way to protect your computer from viruses?"
+            "question": "Which of the following is a rule for naming variables?"
         },
         {
-            "correctAnswer": "D",
-            "feedBack": "Regular updates patch security vulnerabilities, reducing the risk of virus infections.",
+            "correctAnswer": "if-else statement",
+            "feedBack": "The if-else statement allows for conditional execution of code blocks based on a condition's truth value.",
             "options": [
-                "Using a slow internet connection",
-                "Using an older operating system",
-                "Downloading files from untrusted sources",
-                "Keeping software up-to-date"
+                "for loop",
+                "while loop",
+                "switch statement",
+                "if-else statement"
             ],
-            "question": "Which of the following actions is LEAST likely to increase your computer's vulnerability to viruses?"
+            "question": "Which control structure allows for conditional execution of code blocks?"
         },
         {
-            "correctAnswer": "C",
-            "feedBack": "Hexadecimal is a base-16 number system, using digits 0-9 and letters A-F.",
+            "correctAnswer": "For loop",
+            "feedBack": "The for loop is designed for iterating a specific number of times, making it suitable for repetitive tasks with a known number of iterations.",
             "options": [
-                "Binary",
-                "Octal",
-                "Hexadecimal",
-                "Decimal"
+                "while loop",
+                "do-while loop",
+                "if-else statement",
+                "For loop"
             ],
-            "question": "Which number system uses sixteen distinct symbols?"
+            "question": "Which loop is best suited for iterating a specific number of times?"
         }
     ]
 }
