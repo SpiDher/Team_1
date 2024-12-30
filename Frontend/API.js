@@ -17,7 +17,7 @@ async function fetchCourseContent(contentToFetch) {
 
 
  function downloadMaterials(filename) {
-  fetch(`http://cos1.vercel.app/api/materials/?filename=${filename}`)
+  fetch(`https://cos1.vercel.app/api/materials/?filename=${filename}`)
   .then((response) => {
     if (response.ok) {
       return response.blob();
