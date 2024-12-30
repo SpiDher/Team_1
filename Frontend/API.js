@@ -10,9 +10,12 @@ async function fetchCourseContent(contentToFetch) {
   
       if (response.ok) {
         const data = await response.json();
-        const courseData = data.course_data;
-        console.log('Course Content:', courseData[contentToFetch]);
-        localStorage.setItem("Content", JSON.stringify(courseData[contentToFetch]));
+        // const courseData = data.course_data;
+        // const keys = Object.keys(courseData);
+        // console.log(data);
+        // console.log(response);
+        console.log('Course Content:', data[contentToFetch].content);
+        localStorage.setItem("Content", JSON.stringify(data[contentToFetch].content));
         window.location.href = "Details.html";
       } else {
         console.error('Failed to fetch course content:', await response.json());
