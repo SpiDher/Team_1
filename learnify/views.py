@@ -7,10 +7,11 @@ from Backend import settings
 
 @csrf_exempt
 def gen_quiz(request):
-    if request.method == "POST" and request.FILES.get('file'):
-        file = request.FILES.get['file']
-        level = request.POST.get('level', None)
-        desc=request.POST.get('quiz-desc',None)
+    get_param = lambda key: request.POST.get(key, None) or request.GET.get(key, None)
+    if get_param('file') or get_param('content'):
+        file = get_param('file')
+        level = get_param('level')
+        desc = get_param('content')
 
         # Create an instance and parse to the ExtractEngine
         if file:
@@ -18,10 +19,10 @@ def gen_quiz(request):
             # Process the extracted text to generate a quiz (you can customize this as needed)
             quiz = quiz_result(extractor,level)
         else:
-            quiz= quiz_result(desc,level)
+            quiz= quiz_result(desc[:25000],level)
         return JsonResponse(quiz, status=200)
 
-    return JsonResponse({'error': 'No file provided'}, status=400)
+    return JsonResponse({'error': 'No File or Content provided'}, status=400)
 
 @csrf_exempt
 def home(request):
