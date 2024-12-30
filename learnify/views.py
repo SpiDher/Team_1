@@ -9,7 +9,7 @@ from Backend import settings
 def gen_quiz(request):
     get_param = lambda key: request.POST.get(key, None) or request.GET.get(key, None)
     if get_param('file') or get_param('content'):
-        file = get_param('file')
+        file = request.FILES.get('file',None)
         level = get_param('level')
         desc = get_param('content')
 
