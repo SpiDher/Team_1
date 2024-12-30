@@ -1,19 +1,9 @@
-// document.addEventListener('DOMContentLoaded', () => {
-//  document.getElementById("contentOne").addEventListener('click', fetchCourseContent("Introduction To COS111"));
-// })
-
-// console.log(document.getElementById("contentOne"))
-
 async function fetchCourseContent(contentToFetch) {
     try {
       const response = await fetch('https://cos1.vercel.app/api/content');
   
       if (response.ok) {
         const data = await response.json();
-        // const courseData = data.course_data;
-        // const keys = Object.keys(courseData);
-        // console.log(data);
-        // console.log(response);
         console.log('Course Content:', data[contentToFetch].content);
         localStorage.setItem("Content", JSON.stringify(data[contentToFetch].content));
         window.location.href = "Details.html";
@@ -25,11 +15,24 @@ async function fetchCourseContent(contentToFetch) {
     }
   }
 
-//   async function fetchCourseContent1 () {
-//     await fetchCourseContent("Introduction To COS111");
-//   }
 
-
-// buttons.addEventListener('click', fetchCourseContent1);
-
-//   fetchCourseContent();
+ function downloadMaterials(filename) {
+  fetch(`http://cos1.vercel.app/api/materials/?filename=${filename}`)
+  .then((response) => {
+    if (response.ok) {
+      return response.blob();
+    } else {
+      throw new Error("File not found");
+    }
+  })
+  .then((blob) => {
+    const url = window.URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = filename;
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+  })
+  .catch((error) => console.error("Error:", error));
+}

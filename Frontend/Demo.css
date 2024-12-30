@@ -467,7 +467,33 @@ padding-top: 0.3em;
 font-family: Monteserrat;
 }
 
+section.download-materials {
+    text-align: center;
+    margin-top: 3em;
+}
 
+section.download-materials h2{
+    font-size: 2rem;
+    font-family: Monteserrat-Black;
+}
+
+section.download-materials div {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+section.download-materials div h4{
+margin-top: 1em;
+font-size: 1.5rem;
+}
+
+section.download-materials div button{
+margin-top: 1em;
+background-color: orange;
+padding: .5em 1em;
+font-family: Monteserrat-Black;
+border-radius: 30px;
+}
 
 
 .footerH1{
