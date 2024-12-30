@@ -21,11 +21,8 @@ class ExtractEngine:
         text = ""
         for page in doc:
             text += page.get_text()  # Extract text from each page
+        return text[:25000] or None # Limit the text to 25000 characters
 
-        if len(text) > 25000:
-            return text[:25000]  # Limit the text to 25000 characters
-
-        return text or None
 
 
 # get json file content
