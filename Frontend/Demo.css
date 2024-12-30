@@ -53,13 +53,17 @@ header.desktop-nav nav ul li:hover{
     color: orange;
 }
 header.desktop-nav {
-    padding:  0 1rem;
+    padding:0 1em;
     height: 7rem;
+    width: 100%;
     background: #000;
     /* border: 2px solid; */
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    /* top: 50px; */
+    z-index: 900;
 }
 
 header.desktop-nav .hamburger > div{
@@ -102,12 +106,13 @@ header.desktop-nav .reverse-hamburger {
 }
 
 .mobile-nav nav{
-    position: absolute;
-    height: 100vh;
+    position: fixed;
+    height: 85vh;
     background-color: #000;
     width: 100%;
-    z-index: 999;
+    z-index: 1000;
     animation: animateNav .5s;
+    bottom: 0;
 }
 
 @keyframes animateNav {
@@ -135,13 +140,22 @@ header.desktop-nav .reverse-hamburger {
     cursor: pointer;
 }
 
+@media only screen and (min-height:768px){
+    .mobile-nav nav{
+        height: 91vh;
+    }        
+}
+
 .HomeContent1{
     height: 5rem;
     padding: 2em;
+    position: relative;
+    top: 80px;
+    margin-bottom: 5.5em;
 }
 .Lectures-Overview{
     padding: 2rem;
-    
+    margin-top: 1em;
 }
 .lectures-overview-header{
     display: flex;
@@ -191,7 +205,8 @@ header.desktop-nav .reverse-hamburger {
 }
 
 .template1 p{
-    font-family: Monteserrat-Light;
+    font-family: Monteserrat;
+    font-size: 1.2rem;
     margin: .8em 0;
 }
 
@@ -250,7 +265,7 @@ header.desktop-nav .reverse-hamburger {
     }
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:992px) {
     .templates{
         grid-template-columns: repeat(1, 1fr);
     }
@@ -272,6 +287,8 @@ header.desktop-nav .reverse-hamburger {
 }
 
 .GoBack {
+    position: relative;
+    top: 120px;
     display: flex;
     justify-content: space-between;
     padding: 0 2em;
@@ -293,7 +310,8 @@ transition: .3s;
 }
 
 section.content {
-    margin-top: 3em;
+    position: relative;
+    top: 150px;
     padding: 0 2em;
 }
 
@@ -301,38 +319,45 @@ section.content .cos {
     font-family: Monteserrat-Light;
 }
 
-section.content h3 {
-    font-family: Monteserrat;
+section.content .fetched-content h3{
+    font-family: Monteserrat-Black;
+    font-size: 1.8em;
+    margin-top: 1em;
+    margin-bottom: .5em;
 }
 
-
-section.content h2{
-    margin-top: .3em;
+section.content .fetched-content h3:first-child {
+    margin-top: 0;
     margin-bottom: 1em;
-    font-family: Monteserrat-Black;
 }
 
 section p {
     font-family: Monteserrat-Light;
+    font-size: 1.1rem;
 }
 
-section.content ol{
-    margin-top: 3em;
-}
-
-section.content ol ul li{
+section.content ul li{
     margin-top: 1em;
-    list-style-type:lower-roman;
+    list-style-type:decimal;
+    font-size: 1.1rem;
 }
 
 .pagination {
     display: flex;
     justify-content: space-between;
     margin-top: 3em;
+}
+
+.pagination2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3em;
+    position: relative;
+    bottom: -200px;
     padding: 0 2em;
 }
 
-.pagination .prev {
+.pagination .prev, .pagination2 .prev {
 width: 30%;
 text-align: right;
 padding: .2em .5em;
@@ -345,7 +370,7 @@ justify-content: space-between;
 align-items: center;
 }
 
-.pagination .next {
+.pagination .next, .pagination2 .next {
 width: 30%;
 text-align: left;
 padding: .2em .5em;
@@ -374,6 +399,8 @@ section.question-area {
     justify-content: space-between;
     align-items: center;
     margin: 0 2em;
+    position: relative;
+    top: 170px;
 }
 
 section.question-area .options div {
