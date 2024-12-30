@@ -89,5 +89,6 @@ def quiz_result(text, level="MEDIUM"):
     quiz = asyncio.run(quiz_engine(extracted_text=text, difficult_level=level))
     if quiz is not None:
         # save_quiz(quiz) #Only remove this comment in development
+        logging.log(logging.INFO, "Quiz generated successfully")
         return restructure_quiz_data(quiz)
     return contingency()
