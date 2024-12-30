@@ -1,225 +1,226 @@
 {
     "name": "COS111 Computer Systems Quiz",
+    "time": 1800,
     "questions": [
         {
-            "correctAnswer": "To perform calculations and execute instructions",
-            "feedBack": "The CPU is the brain of the computer, responsible for carrying out instructions and performing calculations.",
+            "question": "What is the primary function of the Central Processing Unit (CPU) in a computer system?",
             "options": [
                 "To store data",
                 "To perform calculations and execute instructions",
                 "To provide input/output operations",
                 "To manage memory"
             ],
-            "question": "What is the primary function of the Central Processing Unit (CPU) in a computer system?"
+            "correct": "To perform calculations and execute instructions",
+            "feedback": "The CPU is the brain of the computer, responsible for carrying out instructions and performing calculations."
         },
         {
-            "correctAnswer": "Vacuum Tubes",
-            "feedBack": "First-generation computers relied on vacuum tubes for their electronic components.",
+            "question": "Which of the following is considered the first generation of computers?",
             "options": [
                 "Transistors",
                 "Integrated Circuits",
                 "Vacuum Tubes",
                 "Microprocessors"
             ],
-            "question": "Which of the following is considered the first generation of computers?"
+            "correct": "Vacuum Tubes",
+            "feedback": "First-generation computers relied on vacuum tubes for their electronic components."
         },
         {
-            "correctAnswer": "Base 2",
-            "feedBack": "The binary number system uses only two digits, 0 and 1.",
+            "question": "What is the binary number system based on?",
             "options": [
                 "Base 8",
                 "Base 10",
                 "Base 2",
                 "Base 16"
             ],
-            "question": "What is the binary number system based on?"
+            "correct": "Base 2",
+            "feedback": "The binary number system uses only two digits, 0 and 1."
         },
         {
-            "correctAnswer": "BASIC",
-            "feedBack": "BASIC is known for its simple syntax and is often used to teach programming fundamentals.",
+            "question": "Which programming language is known for its simplicity and is often taught to beginners?",
             "options": [
                 "Java",
                 "Python",
                 "C++",
                 "BASIC"
             ],
-            "question": "Which programming language is known for its simplicity and is often taught to beginners?"
+            "correct": "BASIC",
+            "feedback": "BASIC is known for its simple syntax and is often used to teach programming fundamentals."
         },
         {
-            "correctAnswer": "To assign IP addresses",
-            "feedBack": "IP addresses are crucial for routing data packets across networks.",
+            "question": "What is the primary function of the Internet Protocol (IP) in networking?",
             "options": [
                 "To provide security",
                 "To manage data transmission",
                 "To assign IP addresses",
                 "To provide error correction"
             ],
-            "question": "What is the primary function of the Internet Protocol (IP) in networking?"
+            "correct": "To assign IP addresses",
+            "feedback": "IP addresses are crucial for routing data packets across networks."
         },
         {
-            "correctAnswer": "Worm",
-            "feedBack": "Worms are designed to spread and replicate themselves across networks.",
+            "question": "What type of computer virus is designed to replicate itself and spread to other computers?",
             "options": [
                 "Trojan",
                 "Worm",
                 "Spyware",
                 "Adware"
             ],
-            "question": "What type of computer virus is designed to replicate itself and spread to other computers?"
+            "correct": "Worm",
+            "feedback": "Worms are designed to spread and replicate themselves across networks."
         },
         {
-            "correctAnswer": "Network",
-            "feedBack": "A network is a collection of computers connected to share resources.",
+            "question": "What is the term for a group of computers connected together to share resources?",
             "options": [
                 "Internet",
                 "Intranet",
                 "Network",
                 "Database"
             ],
-            "question": "What is the term for a group of computers connected together to share resources?"
+            "correct": "Network",
+            "feedback": "A network is a collection of computers connected to share resources."
         },
         {
-            "correctAnswer": "Used vacuum tubes",
-            "feedBack": "First-generation computers used vacuum tubes as their primary electronic components.",
+            "question": "Which of the following is a characteristic of a first-generation computer?",
             "options": [
                 "Used integrated circuits",
                 "Used vacuum tubes",
                 "Used transistors",
                 "Used microprocessors"
             ],
-            "question": "Which of the following is a characteristic of a first-generation computer?"
+            "correct": "Used vacuum tubes",
+            "feedback": "First-generation computers used vacuum tubes as their primary electronic components."
         },
         {
-            "correctAnswer": "Malware",
-            "feedBack": "Malware is a broad term encompassing various types of malicious software designed to harm computer systems.",
+            "question": "What is the term for a program that is designed to damage or disrupt a computer system?",
             "options": [
                 "Virus",
                 "Worm",
                 "Trojan",
                 "Malware"
             ],
-            "question": "What is the term for a program that is designed to damage or disrupt a computer system?"
+            "correct": "Malware",
+            "feedback": "Malware is a broad term encompassing various types of malicious software designed to harm computer systems."
         },
         {
-            "correctAnswer": "Java",
-            "feedBack": "Java's platform independence allows it to run on various operating systems.",
+            "question": "Which of the following programming languages is known for its platform independence?",
             "options": [
                 "Java",
                 "Python",
                 "C++",
                 "BASIC"
             ],
-            "question": "Which of the following programming languages is known for its platform independence?"
+            "correct": "Java",
+            "feedback": "Java's platform independence allows it to run on various operating systems."
         },
         {
-            "correctAnswer": "Hardware",
-            "feedBack": "Hardware refers to the physical components of a computer system.",
+            "question": "What term refers to the physical components of a computer system, such as the CPU and memory?",
             "options": [
                 "Software",
                 "Firmware",
                 "Hardware",
                 "Network"
             ],
-            "question": "What term refers to the physical components of a computer system, such as the CPU and memory?"
+            "correct": "Hardware",
+            "feedback": "Hardware refers to the physical components of a computer system."
         },
         {
-            "correctAnswer": "Software",
-            "feedBack": "Software comprises the programs and operating systems that manage and utilize hardware resources.",
+            "question": "What term refers to the programs and operating systems that run on a computer?",
             "options": [
                 "Hardware",
                 "Firmware",
                 "Software",
                 "Network"
             ],
-            "question": "What term refers to the programs and operating systems that run on a computer?"
+            "correct": "Software",
+            "feedback": "Software comprises the programs and operating systems that manage and utilize hardware resources."
         },
         {
-            "correctAnswer": "Input, Processing, Output",
-            "feedBack": "These three stages represent the fundamental operations of a computer system.",
+            "question": "What are the three fundamental components of a computer system's operation?",
             "options": [
                 "Input, Storage, Output",
                 "Input, Processing, Output",
                 "Storage, Processing, Control",
                 "Input, Control, Output"
             ],
-            "question": "What are the three fundamental components of a computer system's operation?"
+            "correct": "Input, Processing, Output",
+            "feedback": "These three stages represent the fundamental operations of a computer system."
         },
         {
-            "correctAnswer": "Charles Babbage",
-            "feedBack": "Babbage is credited with designing the Analytical Engine, a precursor to modern computers.",
+            "question": "Who is considered a pioneer in the early development of computers, known for the Analytical Engine?",
             "options": [
                 "Ada Lovelace",
                 "Alan Turing",
                 "Grace Hopper",
                 "Charles Babbage"
             ],
-            "question": "Who is considered a pioneer in the early development of computers, known for the Analytical Engine?"
+            "correct": "Charles Babbage",
+            "feedback": "Babbage is credited with designing the Analytical Engine, a precursor to modern computers."
         },
         {
-            "correctAnswer": "Microprocessor",
-            "feedBack": "The invention of the microprocessor led to the development of smaller, more powerful computers.",
+            "question": "What key invention significantly reduced the size and increased the power of computers, leading to the personal computer era?",
             "options": [
                 "Integrated Circuit",
                 "Transistor",
                 "Vacuum Tube",
                 "Microprocessor"
             ],
-            "question": "What key invention significantly reduced the size and increased the power of computers, leading to the personal computer era?"
+            "correct": "Microprocessor",
+            "feedback": "The invention of the microprocessor led to the development of smaller, more powerful computers."
         },
         {
-            "correctAnswer": "Decimal",
-            "feedBack": "The decimal system is the most commonly used number system in everyday life.",
+            "question": "Which number system is based on the number 10 and uses digits 0-9?",
             "options": [
                 "Binary",
                 "Octal",
                 "Hexadecimal",
                 "Decimal"
             ],
-            "question": "Which number system is based on the number 10 and uses digits 0-9?"
+            "correct": "Decimal",
+            "feedback": "The decimal system is the most commonly used number system in everyday life."
         },
         {
-            "correctAnswer": "Binary",
-            "feedBack": "Computers use binary because it is efficient for representing on/off states of transistors.",
+            "question": "Which number system is commonly used in computer systems and is based on two digits (0 and 1)?",
             "options": [
                 "Decimal",
                 "Octal",
                 "Hexadecimal",
                 "Binary"
             ],
-            "question": "Which number system is commonly used in computer systems and is based on two digits (0 and 1)?"
+            "correct": "Binary",
+            "feedback": "Computers use binary because it is efficient for representing on/off states of transistors."
         },
         {
-            "correctAnswer": "High-level languages",
-            "feedBack": "High-level languages are easier to learn and use compared to low-level languages.",
+            "question": "Which type of programming language is typically easier for humans to read and write, making them more user-friendly for software development?",
             "options": [
                 "Low-level languages",
                 "Machine languages",
                 "Assembly languages",
                 "High-level languages"
             ],
-            "question": "Which type of programming language is typically easier for humans to read and write, making them more user-friendly for software development?"
+            "correct": "High-level languages",
+            "feedback": "High-level languages are easier to learn and use compared to low-level languages."
         },
         {
-            "correctAnswer": "LAN",
-            "feedBack": "A LAN connects devices within a limited geographical area, such as a home or office.",
+            "question": "What type of network is typically used to connect devices within a small geographical area, such as a home or office?",
             "options": [
                 "WAN",
                 "MAN",
                 "WLAN",
                 "LAN"
             ],
-            "question": "What type of network is typically used to connect devices within a small geographical area, such as a home or office?"
+            "correct": "LAN",
+            "feedback": "A LAN connects devices within a limited geographical area, such as a home or office."
         },
         {
-            "correctAnswer": "Router",
-            "feedBack": "Routers forward data packets between networks, enabling communication across different networks.",
+            "question": "Which networking device is primarily responsible for directing data packets between different networks?",
             "options": [
                 "Switch",
                 "Modem",
                 "Network Interface Card",
                 "Router"
             ],
-            "question": "Which networking device is primarily responsible for directing data packets between different networks?"
+            "correct": "Router",
+            "feedback": "Routers forward data packets between networks, enabling communication across different networks."
         }
     ]
 }

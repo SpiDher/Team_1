@@ -91,6 +91,5 @@ async def quiz_engine(extracted_text=None, difficult_level=None):
         response = json.loads(response.text)
         res = response if "questions" in response else None
         return res
-    except Exception as e:
-        print("Timed out")
+    except Exception:
         return None

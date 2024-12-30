@@ -49,10 +49,9 @@ def topic_material(request):
 @csrf_exempt
 def ran_quiz(request):
     level = request.GET.get('level')
-    file_name = os.listdir(settings.MEDIA_ROOT)
-    file_name.remove('quiz')
-    file_name.remove('cos.json')
-    ran_file= random.choice(file_name)
+    dir = os.listdir(settings.MEDIA_ROOT)
+    file_list= [file for file in dir if file not in ['cos.json','quiz']]
+    ran_file= random.choice(file_list)
     extractor = ExtractEngine(os.path.join(settings.MEDIA_ROOT,ran_file))
     if level:
         quiz=quiz_result(extractor,level)
@@ -62,7 +61,7 @@ def ran_quiz(request):
 
 @csrf_exempt
 def file_list(request):
-    file_list = os.listdir(settings.MEDIA_ROOT)
+    file_list = [file for file in os.listdir(settings.MEDIA_ROOT) if file not in ['quiz']]
     return JsonResponse({'Materials':file_list})
 
 

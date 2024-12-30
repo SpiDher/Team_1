@@ -1,225 +1,226 @@
 {
     "name": "COS111 Comprehensive Quiz",
+    "time": 1800,
     "questions": [
         {
-            "correctAnswer": "B",
-            "feedBack": "The CPU's primary role is executing instructions and performing calculations, forming the core of a computer's processing power.",
+            "question": "What is the primary function of the Central Processing Unit (CPU) in a computer system?",
             "options": [
                 "To store data",
                 "To perform calculations and execute instructions",
                 "To provide input/output operations",
                 "To manage memory"
             ],
-            "question": "What is the primary function of the Central Processing Unit (CPU) in a computer system?"
+            "correct": "B",
+            "feedback": "The CPU's primary role is executing instructions and performing calculations, forming the core of a computer's processing power."
         },
         {
-            "correctAnswer": "C",
-            "feedBack": "Vacuum tubes were the defining technological component of the first generation of computers.",
+            "question": "Which of the following is considered the first generation of computers?",
             "options": [
                 "Transistors",
                 "Integrated Circuits",
                 "Vacuum Tubes",
                 "Microprocessors"
             ],
-            "question": "Which of the following is considered the first generation of computers?"
+            "correct": "C",
+            "feedback": "Vacuum tubes were the defining technological component of the first generation of computers."
         },
         {
-            "correctAnswer": "C",
-            "feedBack": "The binary number system uses only two digits (0 and 1) as its base, fundamental to digital computing.",
+            "question": "What is the binary number system based on?",
             "options": [
                 "Base 8",
                 "Base 10",
                 "Base 2",
                 "Base 16"
             ],
-            "question": "What is the binary number system based on?"
+            "correct": "C",
+            "feedback": "The binary number system uses only two digits (0 and 1) as its base, fundamental to digital computing."
         },
         {
-            "correctAnswer": "B",
-            "feedBack": "Python's clear syntax and extensive libraries make it beginner-friendly and widely used in introductory programming courses.",
+            "question": "Which programming language is known for its simplicity and is often taught to beginners?",
             "options": [
                 "Java",
                 "Python",
                 "C++",
                 "BASIC"
             ],
-            "question": "Which programming language is known for its simplicity and is often taught to beginners?"
+            "correct": "B",
+            "feedback": "Python's clear syntax and extensive libraries make it beginner-friendly and widely used in introductory programming courses."
         },
         {
-            "correctAnswer": "C",
-            "feedBack": "The Internet Protocol (IP) is crucial for assigning unique addresses to devices, enabling communication on networks.",
+            "question": "What is the primary function of the Internet Protocol (IP) in networking?",
             "options": [
                 "To provide security",
                 "To manage data transmission",
                 "To assign IP addresses",
                 "To provide error correction"
             ],
-            "question": "What is the primary function of the Internet Protocol (IP) in networking?"
+            "correct": "C",
+            "feedback": "The Internet Protocol (IP) is crucial for assigning unique addresses to devices, enabling communication on networks."
         },
         {
-            "correctAnswer": "B",
-            "feedBack": "Worms are notorious for their self-replicating nature, enabling them to spread rapidly across networks without user intervention.",
+            "question": "What type of computer virus is designed to replicate itself and spread to other computers?",
             "options": [
                 "Trojan",
                 "Worm",
                 "Spyware",
                 "Adware"
             ],
-            "question": "What type of computer virus is designed to replicate itself and spread to other computers?"
+            "correct": "B",
+            "feedback": "Worms are notorious for their self-replicating nature, enabling them to spread rapidly across networks without user intervention."
         },
         {
-            "correctAnswer": "C",
-            "feedBack": "A network is a collection of interconnected devices designed to share resources and facilitate communication.",
+            "question": "What is the term for a group of computers connected together to share resources?",
             "options": [
                 "Internet",
                 "Intranet",
                 "Network",
                 "Database"
             ],
-            "question": "What is the term for a group of computers connected together to share resources?"
+            "correct": "C",
+            "feedback": "A network is a collection of interconnected devices designed to share resources and facilitate communication."
         },
         {
-            "correctAnswer": "B",
-            "feedBack": "First-generation computers relied on vacuum tubes for their electronic components.",
+            "question": "Which of the following is a characteristic of a first-generation computer?",
             "options": [
                 "Used integrated circuits",
                 "Used vacuum tubes",
                 "Used transistors",
                 "Used microprocessors"
             ],
-            "question": "Which of the following is a characteristic of a first-generation computer?"
+            "correct": "B",
+            "feedback": "First-generation computers relied on vacuum tubes for their electronic components."
         },
         {
-            "correctAnswer": "D",
-            "feedBack": "Malware is a broad term encompassing various types of malicious software, including viruses, worms, and Trojans, all designed to harm computer systems.",
+            "question": "What is the term for a program that is designed to damage or disrupt a computer system?",
             "options": [
                 "Virus",
                 "Worm",
                 "Trojan",
                 "Malware"
             ],
-            "question": "What is the term for a program that is designed to damage or disrupt a computer system?"
+            "correct": "D",
+            "feedback": "Malware is a broad term encompassing various types of malicious software, including viruses, worms, and Trojans, all designed to harm computer systems."
         },
         {
-            "correctAnswer": "A",
-            "feedBack": "Java's platform independence, meaning it can run on various systems without modification, is a key feature.",
+            "question": "Which of the following programming languages is known for its platform independence?",
             "options": [
                 "Java",
                 "Python",
                 "C++",
                 "BASIC"
             ],
-            "question": "Which of the following programming languages is known for its platform independence?"
+            "correct": "A",
+            "feedback": "Java's platform independence, meaning it can run on various systems without modification, is a key feature."
         },
         {
-            "correctAnswer": "B",
-            "feedBack": "The Analytical Engine was notable for its design incorporating key features of modern computers such as memory and a processing unit.",
+            "question": "What were the key innovations of Charles Babbage's Analytical Engine?",
             "options": [
                 "It was the first electronic computer",
                 "It incorporated key features of modern computers such as memory and a processing unit",
                 "It was the first commercially available computer",
                 "It used transistors for processing"
             ],
-            "question": "What were the key innovations of Charles Babbage's Analytical Engine?"
+            "correct": "B",
+            "feedback": "The Analytical Engine was notable for its design incorporating key features of modern computers such as memory and a processing unit."
         },
         {
-            "correctAnswer": "A",
-            "feedBack": "The introduction of microprocessors led to smaller, more affordable, and powerful computers, paving the way for the personal computer revolution.",
+            "question": "How did the development of the microprocessor impact the computer industry?",
             "options": [
                 "It led to the development of smaller, more affordable, and powerful computers",
                 "It made computers more reliable",
                 "It increased the speed of calculations",
                 "It allowed for the development of high-level programming languages"
             ],
-            "question": "How did the development of the microprocessor impact the computer industry?"
+            "correct": "A",
+            "feedback": "The introduction of microprocessors led to smaller, more affordable, and powerful computers, paving the way for the personal computer revolution."
         },
         {
-            "correctAnswer": "C",
-            "feedBack": "Transistors replaced vacuum tubes, leading to more compact, efficient, and reliable computers.",
+            "question": "What were the key technological advancements of the second generation of computers?",
             "options": [
                 "The use of integrated circuits",
                 "The development of high-level programming languages",
                 "The replacement of vacuum tubes with transistors",
                 "The invention of the microprocessor"
             ],
-            "question": "What were the key technological advancements of the second generation of computers?"
+            "correct": "C",
+            "feedback": "Transistors replaced vacuum tubes, leading to more compact, efficient, and reliable computers."
         },
         {
-            "correctAnswer": "A",
-            "feedBack": "Microprocessors were fundamental to the development of personal computers, making them smaller, more affordable, and accessible.",
+            "question": "How did the introduction of microprocessors impact the development of personal computers?",
             "options": [
                 "It enabled the development of personal computers",
                 "It improved the speed of calculations",
                 "It made computers more reliable",
                 "It allowed for the development of high-level programming languages"
             ],
-            "question": "How did the introduction of microprocessors impact the development of personal computers?"
+            "correct": "A",
+            "feedback": "Microprocessors were fundamental to the development of personal computers, making them smaller, more affordable, and accessible."
         },
         {
-            "correctAnswer": "10110",
-            "feedBack": "Adding binary numbers involves carrying over values similar to decimal addition, resulting in the correct binary sum.",
+            "question": "Perform binary addition: 1010 + 1100",
             "options": [
                 "10000",
                 "11000",
                 "10110",
                 "11100"
             ],
-            "question": "Perform binary addition: 1010 + 1100"
+            "correct": "10110",
+            "feedback": "Adding binary numbers involves carrying over values similar to decimal addition, resulting in the correct binary sum."
         },
         {
-            "correctAnswer": "162",
-            "feedBack": "Converting hexadecimal to decimal involves multiplying each digit by the corresponding power of 16 and summing the results.",
+            "question": "Convert the hexadecimal number A2 to decimal.",
             "options": [
                 "102",
                 "162",
                 "202",
                 "262"
             ],
-            "question": "Convert the hexadecimal number A2 to decimal."
+            "correct": "162",
+            "feedback": "Converting hexadecimal to decimal involves multiplying each digit by the corresponding power of 16 and summing the results."
         },
         {
-            "correctAnswer": "101000",
-            "feedBack": "Converting decimal to binary involves repeatedly dividing by 2 and reading the remainders in reverse order.",
+            "question": "Convert the decimal number 40 to binary.",
             "options": [
                 "100000",
                 "101000",
                 "110000",
                 "111000"
             ],
-            "question": "Convert the decimal number 40 to binary."
+            "correct": "101000",
+            "feedback": "Converting decimal to binary involves repeatedly dividing by 2 and reading the remainders in reverse order."
         },
         {
-            "correctAnswer": "Python",
-            "feedBack": "Python is a high-level language known for its versatility, readability, and extensive libraries, making it suitable for diverse applications.",
+            "question": "What are the advantages and disadvantages of using a high-level programming language like Python?",
             "options": [
                 "Java",
                 "C++",
                 "Python",
                 "JavaScript"
             ],
-            "question": "What are the advantages and disadvantages of using a high-level programming language like Python?"
+            "correct": "Python",
+            "feedback": "Python is a high-level language known for its versatility, readability, and extensive libraries, making it suitable for diverse applications."
         },
         {
-            "correctAnswer": "A",
-            "feedBack": "The choice of programming language depends on factors like project requirements, performance needs, developer expertise, and available libraries.",
+            "question": "How does a programmer choose the most suitable programming language for a specific project?",
             "options": [
                 "Project requirements, performance needs, developer expertise, and available libraries",
                 "Ease of learning, speed of development, and cost",
                 "Popularity, community support, and available documentation",
                 "Platform compatibility, security considerations, and scalability"
             ],
-            "question": "How does a programmer choose the most suitable programming language for a specific project?"
+            "correct": "A",
+            "feedback": "The choice of programming language depends on factors like project requirements, performance needs, developer expertise, and available libraries."
         },
         {
-            "correctAnswer": "A",
-            "feedBack": "A LAN connects devices within a limited area, while a WAN spans a wider geographical range, connecting networks across distances.",
+            "question": "What is the difference between a LAN and a WAN?",
             "options": [
                 "LAN connects devices within a limited area, while a WAN spans a wider geographical range",
                 "LAN uses wireless technology, while a WAN uses wired technology",
                 "LAN is faster than a WAN, while a WAN is more secure",
                 "LAN is used for personal computers, while a WAN is used for servers"
             ],
-            "question": "What is the difference between a LAN and a WAN?"
+            "correct": "A",
+            "feedback": "A LAN connects devices within a limited area, while a WAN spans a wider geographical range, connecting networks across distances."
         }
     ]
 }
