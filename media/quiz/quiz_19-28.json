@@ -1,225 +1,226 @@
 {
     "name": "Coding Concepts Quiz",
+    "time": 1800,
     "questions": [
         {
-            "correctAnswer": "A step-by-step procedure to solve a problem",
-            "feedBack": "An algorithm is a precise sequence of instructions designed to solve a specific problem.",
+            "question": "What is an algorithm?",
             "options": [
                 "A programming language",
                 "A type of data structure",
                 "A step-by-step procedure to solve a problem",
                 "A computer program"
             ],
-            "question": "What is an algorithm?"
+            "correct": "A step-by-step procedure to solve a problem",
+            "feedback": "An algorithm is a precise sequence of instructions designed to solve a specific problem."
         },
         {
-            "correctAnswer": "Visual representation of an algorithm",
-            "feedBack": "A flowchart uses symbols to visually represent the steps and logic of an algorithm.",
+            "question": "What is a flowchart?",
             "options": [
                 "A type of programming language",
                 "A visual representation of an algorithm",
                 "A written description of an algorithm",
                 "A computer program"
             ],
-            "question": "What is a flowchart?"
+            "correct": "Visual representation of an algorithm",
+            "feedback": "A flowchart uses symbols to visually represent the steps and logic of an algorithm."
         },
         {
-            "correctAnswer": "A high-level description of an algorithm",
-            "feedBack": "Pseudocode uses a combination of natural language and programming-like constructs to represent an algorithm.",
+            "question": "What is pseudocode?",
             "options": [
                 "A type of programming language",
                 "A visual representation of an algorithm",
                 "A high-level description of an algorithm",
                 "A low-level description of an algorithm"
             ],
-            "question": "What is pseudocode?"
+            "correct": "A high-level description of an algorithm",
+            "feedback": "Pseudocode uses a combination of natural language and programming-like constructs to represent an algorithm."
         },
         {
-            "correctAnswer": "An event-driven programming language",
-            "feedBack": "Visual Basic is known for its event-driven programming model, where code execution is triggered by events.",
+            "question": "What type of programming language is Visual Basic?",
             "options": [
                 "A procedural programming language",
                 "An object-oriented programming language",
                 "An event-driven programming language",
                 "A functional programming language"
             ],
-            "question": "What type of programming language is Visual Basic?"
+            "correct": "An event-driven programming language",
+            "feedback": "Visual Basic is known for its event-driven programming model, where code execution is triggered by events."
         },
         {
-            "correctAnswer": "Integrated circuits",
-            "feedBack": "Computer circuits are primarily implemented using integrated circuits (ICs) that contain millions of transistors.",
+            "question": "What are computer circuits primarily made of?",
             "options": [
                 "Transistors",
                 "Resistors",
                 "Integrated circuits",
                 "Capacitors"
             ],
-            "question": "What are computer circuits primarily made of?"
+            "correct": "Integrated circuits",
+            "feedback": "Computer circuits are primarily implemented using integrated circuits (ICs) that contain millions of transistors."
         },
         {
-            "correctAnswer": "Central Processing Unit (CPU)",
-            "feedBack": "The CPU is the brain of the computer, responsible for executing instructions.",
+            "question": "What is the brain of a computer called?",
             "options": [
                 "Random Access Memory (RAM)",
                 "Hard Disk Drive (HDD)",
                 "Central Processing Unit (CPU)",
                 "Graphics Processing Unit (GPU)"
             ],
-            "question": "What is the brain of a computer called?"
+            "correct": "Central Processing Unit (CPU)",
+            "feedback": "The CPU is the brain of the computer, responsible for executing instructions."
         },
         {
-            "correctAnswer": "To store data temporarily",
-            "feedBack": "RAM is volatile memory, meaning data is lost when power is turned off.",
+            "question": "What is the main purpose of RAM?",
             "options": [
                 "To store data permanently",
                 "To process data",
                 "To store data temporarily",
                 "To control the computer"
             ],
-            "question": "What is the main purpose of RAM?"
+            "correct": "To store data temporarily",
+            "feedback": "RAM is volatile memory, meaning data is lost when power is turned off."
         },
         {
-            "correctAnswer": "Hard Disk Drive (HDD)",
-            "feedBack": "HDDs are used for long-term storage of data, even when the computer is off.",
+            "question": "Which component provides permanent data storage?",
             "options": [
                 "Central Processing Unit (CPU)",
                 "Random Access Memory (RAM)",
                 "Hard Disk Drive (HDD)",
                 "Graphics Processing Unit (GPU)"
             ],
-            "question": "Which component provides permanent data storage?"
+            "correct": "Hard Disk Drive (HDD)",
+            "feedback": "HDDs are used for long-term storage of data, even when the computer is off."
         },
         {
-            "correctAnswer": "Motherboard",
-            "feedBack": "The motherboard connects all the components of the computer together.",
+            "question": "What connects all the components of a computer?",
             "options": [
                 "CPU",
                 "GPU",
                 "RAM",
                 "Motherboard"
             ],
-            "question": "What connects all the components of a computer?"
+            "correct": "Motherboard",
+            "feedback": "The motherboard connects all the components of the computer together."
         },
         {
-            "correctAnswer": "Input and output devices",
-            "feedBack": "Input devices allow data entry, while output devices display results.",
+            "question": "What are peripherals that interact directly with the user?",
             "options": [
                 "Storage devices",
                 "Processing units",
                 "Input and output devices",
                 "Network components"
             ],
-            "question": "What are peripherals that interact directly with the user?"
+            "correct": "Input and output devices",
+            "feedback": "Input devices allow data entry, while output devices display results."
         },
         {
-            "correctAnswer": "Sequential",
-            "feedBack": "Algorithms follow a step-by-step process, executing instructions in a specific order.",
+            "question": "What is the typical execution order of an algorithm?",
             "options": [
                 "Parallel",
                 "Random",
                 "Sequential",
                 "Concurrent"
             ],
-            "question": "What is the typical execution order of an algorithm?"
+            "correct": "Sequential",
+            "feedback": "Algorithms follow a step-by-step process, executing instructions in a specific order."
         },
         {
-            "correctAnswer": "To represent logical decisions",
-            "feedBack": "Diamonds in flowcharts represent conditional statements or decision points.",
+            "question": "What is the purpose of a diamond shape in a flowchart?",
             "options": [
                 "To represent processes",
                 "To represent input/output",
                 "To represent logical decisions",
                 "To represent the start/end"
             ],
-            "question": "What is the purpose of a diamond shape in a flowchart?"
+            "correct": "To represent logical decisions",
+            "feedback": "Diamonds in flowcharts represent conditional statements or decision points."
         },
         {
-            "correctAnswer": "Rectangle",
-            "feedBack": "Rectangles are used to represent processing steps or actions in a flowchart.",
+            "question": "What flowchart symbol represents a process?",
             "options": [
                 "Diamond",
                 "Oval",
                 "Parallelogram",
                 "Rectangle"
             ],
-            "question": "What flowchart symbol represents a process?"
+            "correct": "Rectangle",
+            "feedback": "Rectangles are used to represent processing steps or actions in a flowchart."
         },
         {
-            "correctAnswer": "Parallelogram",
-            "feedBack": "Parallelograms denote input or output operations.",
+            "question": "What flowchart symbol represents input/output?",
             "options": [
                 "Oval",
                 "Rectangle",
                 "Diamond",
                 "Parallelogram"
             ],
-            "question": "What flowchart symbol represents input/output?"
+            "correct": "Parallelogram",
+            "feedback": "Parallelograms denote input or output operations."
         },
         {
-            "correctAnswer": "To improve code readability",
-            "feedBack": "Comments help explain the purpose and functionality of code sections.",
+            "question": "What is a primary benefit of using comments in code?",
             "options": [
                 "To improve code execution speed",
                 "To improve code compilation speed",
                 "To improve code readability",
                 "To improve code security"
             ],
-            "question": "What is a primary benefit of using comments in code?"
+            "correct": "To improve code readability",
+            "feedback": "Comments help explain the purpose and functionality of code sections."
         },
         {
-            "correctAnswer": "Variables",
-            "feedBack": "Variables are used to store and manipulate data during program execution.",
+            "question": "What are named memory locations used to store data called?",
             "options": [
                 "Constants",
                 "Functions",
                 "Operators",
                 "Variables"
             ],
-            "question": "What are named memory locations used to store data called?"
+            "correct": "Variables",
+            "feedback": "Variables are used to store and manipulate data during program execution."
         },
         {
-            "correctAnswer": "Data types define how data is stored and manipulated",
-            "feedBack": "Data types determine the kind of values a variable can hold and the operations that can be performed on it.",
+            "question": "Why are data types important in programming?",
             "options": [
                 "Data types are not important",
                 "Data types define how data is stored and manipulated",
                 "Data types determine the size of a program",
                 "Data types are only used in object-oriented programming"
             ],
-            "question": "Why are data types important in programming?"
+            "correct": "Data types define how data is stored and manipulated",
+            "feedback": "Data types determine the kind of values a variable can hold and the operations that can be performed on it."
         },
         {
-            "correctAnswer": "A function is a self-contained block of code",
-            "feedBack": "Functions promote code reusability and organization.",
+            "question": "What is a function in programming?",
             "options": [
                 "A function is a type of data structure",
                 "A function is a type of loop",
                 "A function is a self-contained block of code",
                 "A function is a type of variable"
             ],
-            "question": "What is a function in programming?"
+            "correct": "A function is a self-contained block of code",
+            "feedback": "Functions promote code reusability and organization."
         },
         {
-            "correctAnswer": "To organize and reuse code",
-            "feedBack": "Functions help break down complex tasks into smaller, manageable units.",
+            "question": "What is the main advantage of using functions?",
             "options": [
                 "To make code harder to read",
                 "To increase program size",
                 "To organize and reuse code",
                 "To slow down program execution"
             ],
-            "question": "What is the main advantage of using functions?"
+            "correct": "To organize and reuse code",
+            "feedback": "Functions help break down complex tasks into smaller, manageable units."
         },
         {
-            "correctAnswer": "Arrays store collections of data of the same type",
-            "feedBack": "Arrays provide efficient ways to manage and access multiple data elements.",
+            "question": "What is a key characteristic of arrays?",
             "options": [
                 "Arrays store data of different types",
                 "Arrays are not useful for storing data",
                 "Arrays store collections of data of the same type",
                 "Arrays are only used in object-oriented programming"
             ],
-            "question": "What is a key characteristic of arrays?"
+            "correct": "Arrays store collections of data of the same type",
+            "feedback": "Arrays provide efficient ways to manage and access multiple data elements."
         }
     ]
 }
