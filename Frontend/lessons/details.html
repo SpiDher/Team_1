@@ -4,17 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>COS111</title>
-    <link rel="stylesheet" href="Demo.css">
+    <link rel="stylesheet" href="../styles/demo.css">
 </head>
 <body>
     <header class="desktop-nav">
-        <h1><span id="Learn">Learn</span>ify</h1>
+        <h1><span id="Learn">Module</span> 1</h1>
         <nav>
-            <ul>
-              <li>Home</li>
-                <li>Topics</li>
-                <li>Module Quiz</li>
-                <li>About/Feedback</li>
+            <ul class="nav-links">
+                <li onclick="location.href='./../../index.html'">Home</li>
+                <li onclick="location.href='./quizzes/quiz.quiz.html'">Module Quiz</li>
             </ul>
         </nav>
 
@@ -27,28 +25,26 @@
         <div class="reverse-hamburger" onclick="hideNav()">
             <div></div>
             <div></div>
-            <!-- <div></div> -->
         </div>
     </header>
 
     <div class="mobile-nav">
         <nav>
             <ul>
-              <li>Home <span>></span></li>
-                <li>Topics <span>></span></li>
-                <li>Module Quiz <span>></span></li>
-                <li>About/Feedback <span>></span></li>
+                <li onclick="location.href='./../../index.html'">Home <span>></span></li>
+                <li onclick="location.href='../quizzes/quiz.quiz.html'">Module Quiz <span>></span></li>
             </ul>
         </nav>
 
     </div>
 <div class="GoBack">
-<a href="index.html"><button class="goBackButton">< Go back</button></a>
-<a href="Quiz.html"><button class="quizButton"> Module quiz</button></a>
+<a href="../index.html"><button class="goBackButton">< Go back</button></a>
+<a href="../quizzes/Quiz.html"><button class="quizButton"> Module quiz</button></a>
 </div>
 
 <section class="content">
-<h4 class="cos">COS112</h4>
+<h4 class="cos">COS111</h4>
+<div class="fetched-content">
 <h2>Innovation in Artificial Intelligence and Human-Computer Interaction</h2>
 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A maiores eos corporis quas. Beatae iusto esse placeat fugiat laudantium ullam distinctio labore adipisci, cumque, necessitatibus ab voluptates. Suscipit tempora culpa cumque, ut laudantium consectetur incidunt? Reiciendis accusamus nihil explicabo eius.</p>
 
@@ -65,6 +61,7 @@
 </li>
 </ul>
 </ol>
+</div>
 
 <div class="pagination">
 <button class="prev"><span><</span> Prev Lecture</button>
@@ -72,6 +69,16 @@
 </div>
 </section>
 
-<script src="App.js"></script>
+<script src="../scripts/App.js"></script>
+<!-- <script src="API.js"></script> -->
+<script>
+let fetchedContent = JSON.parse(localStorage.getItem("Content"));
+if (fetchedContent) {
+    document.querySelector(".fetched-content").innerHTML = fetchedContent;
+}
+else {
+    document.querySelector(".fetched-content").textContent = "No data found";
+}
+</script>
 </body>
 </html>

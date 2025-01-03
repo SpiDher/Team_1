@@ -1,0 +1,226 @@
+{
+    "name": "COS111 Comprehensive Quiz",
+    "time": 1800,
+    "questions": [
+        {
+            "question": "What is the primary function of the Central Processing Unit (CPU) in a computer system?",
+            "options": [
+                "To store data",
+                "To perform calculations and execute instructions",
+                "To provide input/output operations",
+                "To manage memory"
+            ],
+            "correct": "B",
+            "feedback": "The CPU's primary role is executing instructions and performing calculations, forming the core of a computer's processing power."
+        },
+        {
+            "question": "Which of the following is considered the first generation of computers?",
+            "options": [
+                "Transistors",
+                "Integrated Circuits",
+                "Vacuum Tubes",
+                "Microprocessors"
+            ],
+            "correct": "C",
+            "feedback": "Vacuum tubes were the defining technological component of the first generation of computers."
+        },
+        {
+            "question": "What is the binary number system based on?",
+            "options": [
+                "Base 8",
+                "Base 10",
+                "Base 2",
+                "Base 16"
+            ],
+            "correct": "C",
+            "feedback": "The binary number system uses only two digits (0 and 1) as its base, fundamental to digital computing."
+        },
+        {
+            "question": "Which programming language is known for its simplicity and is often taught to beginners?",
+            "options": [
+                "Java",
+                "Python",
+                "C++",
+                "BASIC"
+            ],
+            "correct": "B",
+            "feedback": "Python's clear syntax and extensive libraries make it beginner-friendly and widely used in introductory programming courses."
+        },
+        {
+            "question": "What is the primary function of the Internet Protocol (IP) in networking?",
+            "options": [
+                "To provide security",
+                "To manage data transmission",
+                "To assign IP addresses",
+                "To provide error correction"
+            ],
+            "correct": "C",
+            "feedback": "The Internet Protocol (IP) is crucial for assigning unique addresses to devices, enabling communication on networks."
+        },
+        {
+            "question": "What type of computer virus is designed to replicate itself and spread to other computers?",
+            "options": [
+                "Trojan",
+                "Worm",
+                "Spyware",
+                "Adware"
+            ],
+            "correct": "B",
+            "feedback": "Worms are notorious for their self-replicating nature, enabling them to spread rapidly across networks without user intervention."
+        },
+        {
+            "question": "What is the term for a group of computers connected together to share resources?",
+            "options": [
+                "Internet",
+                "Intranet",
+                "Network",
+                "Database"
+            ],
+            "correct": "C",
+            "feedback": "A network is a collection of interconnected devices designed to share resources and facilitate communication."
+        },
+        {
+            "question": "Which of the following is a characteristic of a first-generation computer?",
+            "options": [
+                "Used integrated circuits",
+                "Used vacuum tubes",
+                "Used transistors",
+                "Used microprocessors"
+            ],
+            "correct": "B",
+            "feedback": "First-generation computers relied on vacuum tubes for their electronic components."
+        },
+        {
+            "question": "What is the term for a program that is designed to damage or disrupt a computer system?",
+            "options": [
+                "Virus",
+                "Worm",
+                "Trojan",
+                "Malware"
+            ],
+            "correct": "D",
+            "feedback": "Malware is a broad term encompassing various types of malicious software, including viruses, worms, and Trojans, all designed to harm computer systems."
+        },
+        {
+            "question": "Which of the following programming languages is known for its platform independence?",
+            "options": [
+                "Java",
+                "Python",
+                "C++",
+                "BASIC"
+            ],
+            "correct": "A",
+            "feedback": "Java's platform independence, meaning it can run on various systems without modification, is a key feature."
+        },
+        {
+            "question": "What were the key innovations of Charles Babbage's Analytical Engine?",
+            "options": [
+                "It was the first electronic computer",
+                "It incorporated key features of modern computers such as memory and a processing unit",
+                "It was the first commercially available computer",
+                "It used transistors for processing"
+            ],
+            "correct": "B",
+            "feedback": "The Analytical Engine was notable for its design incorporating key features of modern computers such as memory and a processing unit."
+        },
+        {
+            "question": "How did the development of the microprocessor impact the computer industry?",
+            "options": [
+                "It led to the development of smaller, more affordable, and powerful computers",
+                "It made computers more reliable",
+                "It increased the speed of calculations",
+                "It allowed for the development of high-level programming languages"
+            ],
+            "correct": "A",
+            "feedback": "The introduction of microprocessors led to smaller, more affordable, and powerful computers, paving the way for the personal computer revolution."
+        },
+        {
+            "question": "What were the key technological advancements of the second generation of computers?",
+            "options": [
+                "The use of integrated circuits",
+                "The development of high-level programming languages",
+                "The replacement of vacuum tubes with transistors",
+                "The invention of the microprocessor"
+            ],
+            "correct": "C",
+            "feedback": "Transistors replaced vacuum tubes, leading to more compact, efficient, and reliable computers."
+        },
+        {
+            "question": "How did the introduction of microprocessors impact the development of personal computers?",
+            "options": [
+                "It enabled the development of personal computers",
+                "It improved the speed of calculations",
+                "It made computers more reliable",
+                "It allowed for the development of high-level programming languages"
+            ],
+            "correct": "A",
+            "feedback": "Microprocessors were fundamental to the development of personal computers, making them smaller, more affordable, and accessible."
+        },
+        {
+            "question": "Perform binary addition: 1010 + 1100",
+            "options": [
+                "10000",
+                "11000",
+                "10110",
+                "11100"
+            ],
+            "correct": "10110",
+            "feedback": "Adding binary numbers involves carrying over values similar to decimal addition, resulting in the correct binary sum."
+        },
+        {
+            "question": "Convert the hexadecimal number A2 to decimal.",
+            "options": [
+                "102",
+                "162",
+                "202",
+                "262"
+            ],
+            "correct": "162",
+            "feedback": "Converting hexadecimal to decimal involves multiplying each digit by the corresponding power of 16 and summing the results."
+        },
+        {
+            "question": "Convert the decimal number 40 to binary.",
+            "options": [
+                "100000",
+                "101000",
+                "110000",
+                "111000"
+            ],
+            "correct": "101000",
+            "feedback": "Converting decimal to binary involves repeatedly dividing by 2 and reading the remainders in reverse order."
+        },
+        {
+            "question": "What are the advantages and disadvantages of using a high-level programming language like Python?",
+            "options": [
+                "Java",
+                "C++",
+                "Python",
+                "JavaScript"
+            ],
+            "correct": "Python",
+            "feedback": "Python is a high-level language known for its versatility, readability, and extensive libraries, making it suitable for diverse applications."
+        },
+        {
+            "question": "How does a programmer choose the most suitable programming language for a specific project?",
+            "options": [
+                "Project requirements, performance needs, developer expertise, and available libraries",
+                "Ease of learning, speed of development, and cost",
+                "Popularity, community support, and available documentation",
+                "Platform compatibility, security considerations, and scalability"
+            ],
+            "correct": "A",
+            "feedback": "The choice of programming language depends on factors like project requirements, performance needs, developer expertise, and available libraries."
+        },
+        {
+            "question": "What is the difference between a LAN and a WAN?",
+            "options": [
+                "LAN connects devices within a limited area, while a WAN spans a wider geographical range",
+                "LAN uses wireless technology, while a WAN uses wired technology",
+                "LAN is faster than a WAN, while a WAN is more secure",
+                "LAN is used for personal computers, while a WAN is used for servers"
+            ],
+            "correct": "A",
+            "feedback": "A LAN connects devices within a limited area, while a WAN spans a wider geographical range, connecting networks across distances."
+        }
+    ]
+}

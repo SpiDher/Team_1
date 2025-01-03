@@ -1,385 +1,316 @@
-SEN Project for Group 1 🚀
+# **API Documentation: Backend**
 
-Django Course Content and Quiz API
-
-This project provides an API built with Django for extracting course content, generating quizzes, and serving downloadable course materials. It leverages custom utilities for file processing, OCR, and AI-based quiz generation.
-
+This README provides an overview of the available API endpoints, their functionality, and how to interact with them. It is tailored for intermediate frontend developers.
 
 ---
 
-Features
+## **Base URL**
+The base URL for all endpoints is:
 
-Course Content Extraction: Fetches course content from a JSON file (cos.json) in a structured format.
-
-Quiz Generation: Generates quizzes based on uploaded files (e.g., PDFs) or input descriptions.
-
-Material Download: Serves downloadable course materials (PDFs or other files).
-
-
+```
+http://<server-domain>/api/
+```
 
 ---
 
-Project Structure
+## **Endpoints**
 
-Backend/
-│
-├── Backend/
-│   ├── settings.py
-│   ├── urls.py
-│   └── wsgi.py
-│
-├── media/
-│   └── cos.json   # JSON file containing course content
-│
-├── learnify/
-│   ├── __init__.py
-│   ├── models.py
-│   ├── views.py   # API views for handling requests
-│   ├── utils.py   # Utility functions for text extraction
-│   └── ai/
-│       └── use_ai_gen_quiz.py  # AI logic for quiz generation
-│
-└── manage.py
-
+### 1. **Home**
+- **URL**: `/api/`
+- **Method**: `GET`
+- **Description**: A simple welcome endpoint to check the API status.
+- **Response**:
+  ```plaintext
+  Welcome
+  ```
 
 ---
 
-API Documentation
-
-1. GET /
-
-Description: Returns a welcome message.
-Response:
-
-Welcome
-
+### 2. **Generate Quiz**
+- **URL**: `/api/quiz/`
+- **Method**: `POST` or `GET`
+- **Description**: Generates a quiz based on either uploaded content or a text description.
+- **Request Parameters**:
+  - **`file`** (optional): A file to process (PDF or similar).
+  - **`content`** (optional): A string description (max length: 25,000 characters).
+  - **`level`** (required): The difficulty level (e.g., `easy`, `medium`, `hard`).
+- **Response**:
+  - **Success**: Returns the generated quiz in JSON format.
+  - **Error**: 
+    ```json
+    {"error": "No File or Content provided"}
+    ```
 
 ---
 
-2. POST /api/quiz/
-
-Description: Generates a quiz based on a provided file or description.
-Parameters:
-
-file (optional): File to generate quiz content.
-
-level (optional): Difficulty level of the quiz.
-
-quiz-desc (optional): Quiz description if no file is provided.
-
-
-Response:
-
-Success:
-
-{
-  "quiz": {
-    "name": "Quiz Title",
-    "questions": [...]
+### 3. **Fetch Course Content**
+- **URL**: `/api/content/`
+- **Method**: `GET`
+- **Description**: Retrieves course data in JSON format for frontend display.
+- **Response**: 
+  ```json
+  {
+    "topic_1": {"content": "<h3>Introduction</h3><p>...</p>"},
+    "topic_2": {"content": "<h3>Advanced Concepts</h3><p>...</p>"}
   }
-}
-
-Error:
-
-{
-  "error": "No file provided"
-}
-
-
+  ```
 
 ---
 
-3. GET /api/content/
-
-Description: Retrieves course data from the backend.
-Response:
-
-{
-  "course_data": { ... }
-}
-
-
----
-
-4. GET /api/materials/
-
-Description: Downloads a specific material file.
-Parameters:
-
-filename: Name of the file to retrieve.
-
-
-Response:
-
-Success: File download.
-
-Error:
-
-{
-  "error": "File not found"
-}
-
-
+### 4. **Download Topic Material**
+- **URL**: `/api/materials/`
+- **Method**: `GET`
+- **Description**: Downloads a file (e.g., lecture notes or supplementary material) from the backend.
+- **Request Parameters**:
+  - **`filename`** (required): The name of the file to download.
+- **Response**:
+  - **Success**: Returns the file as an attachment.
+  - **Error**: 
+    ```json
+    {"error": "file not found"}
+    ```
 
 ---
 
-5. GET /api/ran_quiz/
-
-Description: Generates a quiz based on a randomly selected file.
-Parameters:
-
-level (optional): Difficulty level of the quiz.
-
-
-Response:
-
-{
-  "quiz": {
-    "name": "Quiz Title",
-    "questions": [...]
-  }
-}
-
+### 5. **Generate Random Quiz**
+- **URL**: `/api/ran_quiz/`
+- **Method**: `GET`
+- **Description**: Randomly selects a file and generates a quiz based on its content.
+- **Request Parameters**:
+  - **`level`** (optional): The difficulty level.
+- **Response**: Returns the generated quiz in JSON format.
 
 ---
 
-6. GET /api/list/
-
-Description: Lists all available materials in the media directory.
-Response:
-
-{
-  "Materials": ["file1.pdf", "file2.docx", ...]
-}
-
+### 6. **List Available Files**
+- **URL**: `/api/list/`
+- **Method**: `GET`
+- **Description**: Lists all available files stored on the server.
+- **Response**:
+  ```json
+  {"Materials": ["file1.pdf", "file2.docx", "file3.txt"]}
+  ```
 
 ---
 
-Example JavaScript Usage
+## **How to Use**
 
-Generate Quiz
+### **Making Requests**
+- Use `fetch`, `Axios`, or any HTTP client to interact with these endpoints.
+- Ensure to send the correct headers and data format (e.g., multipart form-data for file uploads).
 
-async function generateQuiz(file, level, desc) {
+### **Example: Generate Quiz**
+#### Using `fetch`:
+```javascript
+const formData = new FormData();
+formData.append("file", fileInput.files[0]);
+formData.append("level", "medium");
+
+fetch("http://<server-domain>/api/quiz/", {
+  method: "POST",
+  body: formData,
+})
+  .then((response) => response.json())
+  .then((data) => console.log(data))
+  .catch((error) => console.error("Error:", error));
+```
+
+---
+
+## **Error Handling**
+- Always handle error responses gracefully.
+- Common errors include:
+  - Missing required parameters.
+  - File not found for downloads.
+  - Backend exceptions (e.g., read-only filesystem in production).
+
+---
+
+## **Notes for Integration**
+- Ensure `level` values are standardized (e.g., `easy`, `medium`, `hard`).
+- Verify filenames before requesting `/api/materials/` to avoid errors.
+- `/api/quiz/` supports both file-based and text-based input; choose appropriately based on user input.
+
+```markdown
+# **API Documentation: Backend**
+
+This README provides an overview of the available API endpoints, their functionality, and how to interact with them. It is tailored for intermediate frontend developers.
+
+---
+
+## **Base URL**
+The base URL for all endpoints is:
+
+```
+http://<server-domain>/api/
+```
+
+---
+
+## **Endpoints and Example Fetch Requests**
+
+### 1. **Home**
+- **URL**: `/api/`
+- **Method**: `GET`
+- **Description**: A simple welcome endpoint to check the API status.
+- **Response**:
+  ```plaintext
+  Welcome
+  ```
+- **Fetch Request**:
+  ```javascript
+  fetch("http://<server-domain>/api/")
+    .then((response) => response.text())
+    .then((data) => console.log(data))
+    .catch((error) => console.error("Error:", error));
+  ```
+
+---
+
+### 2. **Generate Quiz**
+- **URL**: `/api/quiz/`
+- **Method**: `POST` or `GET`
+- **Description**: Generates a quiz based on either uploaded content or a text description.
+- **Request Parameters**:
+  - **`file`** (optional): A file to process (PDF or similar).
+  - **`content`** (optional): A string description (max length: 25,000 characters).
+  - **`level`** (required): The difficulty level (e.g., `easy`, `medium`, `hard`).
+- **Response**:
+  - **Success**: Returns the generated quiz in JSON format.
+  - **Error**: 
+    ```json
+    {"error": "No File or Content provided"}
+    ```
+- **Fetch Request**:
+  ```javascript
   const formData = new FormData();
-  if (file) formData.append('file', file);
-  if (level) formData.append('level', level);
-  if (desc) formData.append('quiz-desc', desc);
+  formData.append("file", fileInput.files[0]);
+  formData.append("level", "medium");
 
-  try {
-    const response = await fetch('/api/quiz/', {
-      method: 'POST',
-      body: formData,
-    });
-
-    if (response.ok) {
-      const data = await response.json();
-      console.log('Generated Quiz:', data.quiz);
-    } else {
-      console.error('Failed to generate quiz:', await response.json());
-    }
-  } catch (error) {
-    console.error('Error:', error);
-  }
-}
-
-Fetch Course Content
-
-async function fetchCourseContent() {
-  try {
-    const response = await fetch('/api/content/');
-
-    if (response.ok) {
-      const data = await response.json();
-      console.log('Course Content:', data.course_data);
-    } else {
-      console.error('Failed to fetch course content:', await response.json());
-    }
-  } catch (error) {
-    console.error('Error:', error);
-  }
-}
-
-Download Material
-
-async function downloadMaterial(filename) {
-  try {
-    const response = await fetch(`/api/materials/?filename=${filename}`);
-
-    if (response.ok) {
-      const blob = await response.blob();
-      const url = URL.createObjectURL(blob);
-      const link = document.createElement('a');
-      link.href = url;
-      link.download = filename;
-      document.body.appendChild(link);
-      link.click();
-      link.remove();
-    } else {
-      console.error('Failed to download material:', await response.json());
-    }
-  } catch (error) {
-    console.error('Error:', error);
-  }
-}
-
-Generate Random Quiz
-
-async function generateRandomQuiz(level) {
-  try {
-    const response = await fetch(`/api/ran_quiz/?level=${level}`);
-
-    if (response.ok) {
-      const data = await response.json();
-      console.log('Random Quiz:', data.quiz);
-    } else {
-      console.error('Failed to generate random quiz:', await response.json());
-    }
-  } catch (error) {
-    console.error('Error:', error);
-  }
-}
-
-List Materials
-
-async function listAvailableMaterials() {
-  try {
-    const response = await fetch('/api/list/');
-
-    if (response.ok) {
-      const data = await response.json();
-      console.log('Available Materials:', data.Materials);
-    } else {
-      console.error('Failed to fetch materials:', await response.json());
-    }
-  } catch (error) {
-    console.error('Error:', error);
-  }
-}
-
+  fetch("http://<server-domain>/api/quiz/", {
+    method: "POST",
+    body: formData,
+  })
+    .then((response) => response.json())
+    .then((data) => console.log(data))
+    .catch((error) => console.error("Error:", error));
+  ```
 
 ---
 
-Backend JSON Response Documentation
+### 3. **Fetch Course Content**
+- **URL**: `/api/content/`
+- **Method**: `GET`
+- **Description**: Retrieves course data in JSON format for frontend display.
+- **Response**:
+  ```json
+  {
+    "topic_1": {"content": "<h3>Introduction</h3><p>...</p>"},
+    "topic_2": {"content": "<h3>Advanced Concepts</h3><p>...</p>"}
+  }
+  ```
+- **Fetch Request**:
+  ```javascript
+  fetch("http://<server-domain>/api/content/")
+    .then((response) => response.json())
+    .then((data) => console.log(data))
+    .catch((error) => console.error("Error:", error));
+  ```
 
-Overview
+---
 
-The backend JSON provides data for rendering quizzes dynamically, including questions, options, correct answers, and feedback.
-
-Example JSON
-
-{
-  "quiz": {
-    "name": "Sample Quiz",
-    "questions": [
-      {
-        "question": "What is Django?",
-        "options": ["A framework", "A database", "A programming language"],
-        "correctAnswer": "A framework",
-        "feedBack": "Django is a high-level Python web framework."
-      },
-      {
-        "question": "Which database does Django use by default?",
-        "options": ["MySQL", "SQLite", "PostgreSQL"],
-        "correctAnswer": "SQLite",
-        "feedBack": "Django uses SQLite as its default database."
+### 4. **Download Topic Material**
+- **URL**: `/api/materials/`
+- **Method**: `GET`
+- **Description**: Downloads a file (e.g., lecture notes or supplementary material) from the backend.
+- **Request Parameters**:
+  - **`filename`** (required): The name of the file to download.
+- **Response**:
+  - **Success**: Returns the file as an attachment.
+  - **Error**: 
+    ```json
+    {"error": "file not found"}
+    ```
+- **Fetch Request**:
+  ```javascript
+  const filename = "lecture_notes.pdf";
+  fetch(`http://<server-domain>/api/materials/?filename=${filename}`)
+    .then((response) => {
+      if (response.ok) {
+        return response.blob();
+      } else {
+        throw new Error("File not found");
       }
-    ]
-  }
-}
-
-
-# Course Data JSON Object Documentation endpoint = /api/content
-
-## Overview
-The `course_data` JSON object contains structured information about various computer science topics. It is designed to provide content and examples for educational purposes. Each topic includes detailed explanations and examples to aid in understanding the subject matter.
-
----
-
-## Structure
-The `course_data` object is organized as follows:
-
-- **Key (Topic Name)**: Represents the name of the topic (e.g., "Introduction To COS111").
-  - If the value is a **string**, it contains the content for the topic.
-  - If the value is a **nested object**, it includes:
-    - `content`: Detailed textual explanation of the topic.
-    - `examples`: An array of example questions or scenarios related to the topic.
-
-### Example Structure
-```json
-{
-  "course_data": {
-    "Topic Name": {
-      "content": "Detailed description of the topic.",
-      "examples": [
-        "Example question or scenario 1",
-        "Example question or scenario 2"
-      ]
-    }
-  }
-}
-```
+    })
+    .then((blob) => {
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = filename;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+    })
+    .catch((error) => console.error("Error:", error));
+  ```
 
 ---
 
-## How to Use
-### Accessing Topics
-To access the content of a specific topic:
-```javascript
-const courseData = data.course_data; // Replace 'data' with your JSON object
-const topicContent = courseData["Introduction To COS111"];
-console.log(topicContent); // Outputs the content as a string
-```
-
-### Accessing Nested Content
-For topics with nested objects:
-```javascript
-const topicDetails = courseData["Concept of Computer System"];
-console.log(topicDetails.content); // Outputs the detailed content
-console.log(topicDetails.examples); // Outputs the examples array
-```
-
-### Iterating Through All Topics
-```javascript
-for (const topic in courseData) {
-    if (courseData.hasOwnProperty(topic)) {
-        const details = courseData[topic];
-        console.log(`Topic: ${topic}`);
-        if (typeof details === "object") {
-            console.log("Content:", details.content);
-            console.log("Examples:", details.examples);
-        } else {
-            console.log("Content:", details); // For string-based topics
-        }
-    }
-}
-```
+### 5. **Generate Random Quiz**
+- **URL**: `/api/ran_quiz/`
+- **Method**: `GET`
+- **Description**: Randomly selects a file and generates a quiz based on its content.
+- **Request Parameters**:
+  - **`level`** (optional): The difficulty level.
+- **Response**: Returns the generated quiz in JSON format.
+- **Fetch Request**:
+  ```javascript
+  const level = "medium";
+  fetch(`http://<server-domain>/api/ran_quiz/?level=${level}`)
+    .then((response) => response.json())
+    .then((data) => console.log(data))
+    .catch((error) => console.error("Error:", error));
+  ```
 
 ---
 
-## Example Use Case
-A frontend developer can use this object to dynamically render educational content on a webpage. For instance:
-
-1. Display all topic names as clickable links.
-2. Show the `content` when a topic is selected.
-3. Provide `examples` as interactive quiz questions or discussion prompts.
+### 6. **List Available Files**
+- **URL**: `/api/list/`
+- **Method**: `GET`
+- **Description**: Lists all available files stored on the server.
+- **Response**:
+  ```json
+  {"Materials": ["file1.pdf", "file2.docx", "file3.txt"]}
+  ```
+- **Fetch Request**:
+  ```javascript
+  fetch("http://<server-domain>/api/list/")
+    .then((response) => response.json())
+    .then((data) => console.log(data))
+    .catch((error) => console.error("Error:", error));
+  ```
 
 ---
 
-## Notes
-- Ensure that all keys in the JSON object are correctly referenced.
-- Use appropriate error handling to manage cases where fields like `content` or `examples` may be missing.
-- For better readability, format content fields (e.g., using Markdown parsers for styled output).
+## **How to Use**
+
+### **Making Requests**
+- Use `fetch`, `Axios`, or any HTTP client to interact with these endpoints.
+- Ensure to send the correct headers and data format (e.g., multipart form-data for file uploads).
 
 ---
 
-## Future Enhancements
-- Add metadata fields (e.g., difficulty level, estimated reading time) to each topic.
-- Include multimedia resources (e.g., images, videos) to complement the textual content.
-- Provide a search feature to quickly locate topics or concepts.
+## **Error Handling**
+- Always handle error responses gracefully.
+- Common errors include:
+  - Missing required parameters.
+  - File not found for downloads.
+  - Backend exceptions (e.g., read-only filesystem in production).
 
+---
 
-
-
-
-
+## **Notes for Integration**
+- Ensure `level` values are standardized (e.g., `easy`, `medium`, `hard`).
+- Verify filenames before requesting `/api/materials/` to avoid errors.
+- `/api/quiz/` supports both file-based and text-based input; choose appropriately based on user input.
 

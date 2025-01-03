@@ -36,7 +36,7 @@ ALLOWED_HOSTS = ['.vercel.app','.onrender.com', '127.0.0.1', 'localhost']
 
 INSTALLED_APPS = [
     'corsheaders',
-    'django.contrib.contenttypes',  # Essential for Django core features
+    'django.contrib.contenttypes',
     'django.contrib.staticfiles', 
     'learnify',
 ]
@@ -48,6 +48,13 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_METHODS = [
+    "GET",
+    "POST",
+    "PUT",
+    "DELETE",
+    "OPTIONS",
+]
 
 
 

@@ -1,0 +1,226 @@
+{
+    "name": "COS121 Programming Concepts Quiz",
+    "time": 1800,
+    "questions": [
+        {
+            "question": "What is the primary goal of algorithm design in programming?",
+            "options": [
+                "To write efficient code",
+                "To solve complex problems",
+                "To design a user interface",
+                "To optimize memory usage"
+            ],
+            "correct": "To solve complex problems",
+            "feedback": "Algorithms are designed to provide step-by-step solutions to complex problems, breaking them down into manageable steps."
+        },
+        {
+            "question": "What is a flowchart used for in programming?",
+            "options": [
+                "To write code",
+                "To design algorithms",
+                "To debug programs",
+                "To test software"
+            ],
+            "correct": "To design algorithms",
+            "feedback": "Flowcharts visually represent the steps and logic of an algorithm, aiding in its design and understanding."
+        },
+        {
+            "question": "What is the purpose of keywords in programming?",
+            "options": [
+                "To declare variables",
+                "To define functions",
+                "To control program flow",
+                "To identify reserved words"
+            ],
+            "correct": "To identify reserved words",
+            "feedback": "Keywords are reserved words with special meanings; they define the program's structure and syntax and cannot be used as variable names."
+        },
+        {
+            "question": "What is the difference between assignment and equality operators?",
+            "options": [
+                "Assignment checks for equality, while equality assigns a value",
+                "Assignment and equality are the same",
+                "Assignment is used for arithmetic operations",
+                "Assignment assigns a value, while equality checks for equality"
+            ],
+            "correct": "Assignment assigns a value, while equality checks for equality",
+            "feedback": "The assignment operator (=) assigns a value, while the equality operator (==) compares values."
+        },
+        {
+            "question": "What type of control structure is used to execute a block of code repeatedly?",
+            "options": [
+                "Conditional statement",
+                "Loop",
+                "Function",
+                "Array"
+            ],
+            "correct": "Loop",
+            "feedback": "Loops are control structures that repeatedly execute a block of code until a condition is met."
+        },
+        {
+            "question": "What is the purpose of an array in programming?",
+            "options": [
+                "To store a single value",
+                "To store a collection of values",
+                "To perform arithmetic operations",
+                "To control program flow"
+            ],
+            "correct": "To store a collection of values",
+            "feedback": "Arrays efficiently store and manage multiple values of the same data type."
+        },
+        {
+            "question": "What is a function in programming?",
+            "options": [
+                "A variable that stores a value",
+                "A control structure that executes code repeatedly",
+                "A data structure that stores a collection of values",
+                "A block of code that performs a specific task"
+            ],
+            "correct": "A block of code that performs a specific task",
+            "feedback": "Functions encapsulate a specific task, improving code organization and reusability."
+        },
+        {
+            "question": "What is the benefit of using functions in programming?",
+            "options": [
+                "To reduce code readability",
+                "To increase code complexity",
+                "To promote code reusability",
+                "To decrease code efficiency"
+            ],
+            "correct": "To promote code reusability",
+            "feedback": "Functions promote code reusability by allowing the same code block to be used multiple times, reducing redundancy."
+        },
+        {
+            "question": "What is the difference between a local variable and a global variable?",
+            "options": [
+                "Local variables are accessible globally, while global variables are accessible locally",
+                "Local variables are accessible only within a function, while global variables are accessible throughout the program",
+                "Local variables are used for arithmetic operations, while global variables are used for storing strings",
+                "Local variables are used for storing arrays, while global variables are used for storing single values"
+            ],
+            "correct": "Local variables are accessible only within a function, while global variables are accessible throughout the program",
+            "feedback": "Local variables have limited scope within a function, while global variables are accessible from anywhere in the program."
+        },
+        {
+            "question": "What is the purpose of comments in programming?",
+            "options": [
+                "To execute code",
+                "To declare variables",
+                "To control program flow",
+                "To explain code functionality"
+            ],
+            "correct": "To explain code functionality",
+            "feedback": "Comments enhance code readability and understanding by explaining the purpose and functionality of code sections."
+        },
+        {
+            "question": "What are the three fundamental components of an algorithm?",
+            "options": [
+                "Input, Processing, Output",
+                "Finiteness, Definiteness, Effectiveness",
+                "Start, Process, Stop",
+                "Decision, Loop, End"
+            ],
+            "correct": "Input, Processing, Output",
+            "feedback": "An algorithm takes input, processes it, and produces output; these are fundamental steps in its operation."
+        },
+        {
+            "question": "Which flowchart symbol represents the start or end of a process?",
+            "options": [
+                "Rectangle",
+                "Diamond",
+                "Parallelogram",
+                "Oval"
+            ],
+            "correct": "Oval",
+            "feedback": "The oval shape is used to denote the start and end points of a flowchart."
+        },
+        {
+            "question": "Which flowchart symbol represents a decision point?",
+            "options": [
+                "Rectangle",
+                "Oval",
+                "Parallelogram",
+                "Diamond"
+            ],
+            "correct": "Diamond",
+            "feedback": "The diamond shape is used to represent decision points in a flowchart, where different paths are possible based on a condition."
+        },
+        {
+            "question": "Which flowchart symbol represents input or output?",
+            "options": [
+                "Rectangle",
+                "Diamond",
+                "Parallelogram",
+                "Oval"
+            ],
+            "correct": "Parallelogram",
+            "feedback": "A parallelogram denotes input or output operations within a flowchart."
+        },
+        {
+            "question": "Which keyword is commonly used to declare integer variables?",
+            "options": [
+                "char",
+                "double",
+                "float",
+                "int"
+            ],
+            "correct": "int",
+            "feedback": "The keyword \"int\" is used to declare integer variables in many programming languages."
+        },
+        {
+            "question": "Which keyword is used to declare a variable that can store floating-point numbers?",
+            "options": [
+                "int",
+                "char",
+                "float",
+                "double"
+            ],
+            "correct": "double",
+            "feedback": "The keyword \"double\" is used to declare variables that can store floating-point numbers with greater precision."
+        },
+        {
+            "question": "Which keyword is used to declare a variable that can store a single character?",
+            "options": [
+                "int",
+                "double",
+                "float",
+                "char"
+            ],
+            "correct": "char",
+            "feedback": "The keyword \"char\" is used to declare variables that can store single characters."
+        },
+        {
+            "question": "Which of the following is a rule for naming variables?",
+            "options": [
+                "Variable names can contain spaces.",
+                "Variable names can start with a number.",
+                "Variable names can be keywords.",
+                "Variable names must start with a letter or underscore"
+            ],
+            "correct": "Variable names must start with a letter or underscore.",
+            "feedback": "Variable names must adhere to specific rules to ensure clarity and avoid conflicts; they must start with a letter or underscore and cannot be keywords."
+        },
+        {
+            "question": "Which control structure allows for conditional execution of code blocks?",
+            "options": [
+                "for loop",
+                "while loop",
+                "switch statement",
+                "if-else statement"
+            ],
+            "correct": "if-else statement",
+            "feedback": "The if-else statement allows for conditional execution of code blocks based on a condition's truth value."
+        },
+        {
+            "question": "Which loop is best suited for iterating a specific number of times?",
+            "options": [
+                "while loop",
+                "do-while loop",
+                "if-else statement",
+                "For loop"
+            ],
+            "correct": "For loop",
+            "feedback": "The for loop is designed for iterating a specific number of times, making it suitable for repetitive tasks with a known number of iterations."
+        }
+    ]
+}

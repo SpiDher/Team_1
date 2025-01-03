@@ -1,47 +1,47 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: Monteserrat;
+    
 }
-body{
+
+body {
     color: white;
     background: black;
-    font-family: "Roboto";
     position: relative;
-}
-.body{
-    padding: 2rem;
-    
 }
 
 @font-face {
     font-family: Monteserrat;
-    src: url(./Fonts/Montserrat-Regular.ttf);
-}
-@font-face {
-    font-family: Monteserrat-Black;
-    src: url(./Fonts/Montserrat-Black.ttf);
-}
-@font-face {
-    font-family: Monteserrat-Light;
-    src: url(./Fonts/Montserrat-Light.ttf);
-}
-.content{
-    width: 100%;
-    padding-top: 5rem;
+    src: url(../Fonts/Montserrat-Regular.ttf);
 }
 
-#Learn{
+@font-face {
+    font-family: Monteserrat-Black;
+    src: url(../Fonts/Montserrat-Black.ttf);
+}
+
+@font-face {
+    font-family: Monteserrat-Light;
+    src: url(../Fonts/Montserrat-Light.ttf);
+}
+
+#Learn {
     background-color: orange;
     color: black;
     font-family: Monteserrat-Black;
 }
 
+header.desktop-nav a {
+    text-decoration: none;
+    color: #fff;
+}
 header.desktop-nav h1 {
     font-family: Monteserrat-Black;
 }
-header.desktop-nav nav ul{
+
+header.desktop-nav nav ul {
     display: flex;
     /* border: 2px solid white; */
     justify-content: space-around;
@@ -52,52 +52,53 @@ header.desktop-nav nav ul li {
     list-style-type: none;
 }
 
-header.desktop-nav nav ul li{
+header.desktop-nav nav ul li {
     font-size: 1em;
     transition: 0.3s;
-    cursor: pointer;    
+    cursor: pointer;
 }
 
-header.desktop-nav nav ul li:hover{
+header.desktop-nav nav ul li:hover {
     color: orange;
 }
+
 header.desktop-nav {
-    margin:  0 0 2rem 0;
-    width: 99%;
-    position: fixed; top: 0;
-    z-index: 1000;
+    padding: 0 1em;
     height: 7rem;
-    background: black;
-    padding: 1rem 0 2rem 0;
+    width: 100%;
+    background: #000;
     /* border: 2px solid; */
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    /* top: 50px; */
+    z-index: 900;
 }
 
-header.desktop-nav .hamburger > div{
-width: 50px;
-height: 3px;
-background-color: #fff;
+header.desktop-nav .hamburger>div {
+    width: 50px;
+    height: 3px;
+    background-color: #fff;
 }
 
-header.desktop-nav .hamburger > div:nth-child(2) {
+header.desktop-nav .hamburger>div:nth-child(2) {
     margin-top: .3em;
     margin-bottom: .3em;
 }
 
-header.desktop-nav .reverse-hamburger > div{
+header.desktop-nav .reverse-hamburger>div {
     width: 50px;
     height: 3px;
     background-color: #fff;
-    }
-    
-header.desktop-nav .reverse-hamburger > div:nth-child(1) {
-    transform:rotate(-35deg);
 }
 
-header.desktop-nav .reverse-hamburger > div:nth-child(2) {
-    transform:rotate(35deg);
+header.desktop-nav .reverse-hamburger>div:nth-child(1) {
+    transform: rotate(-35deg);
+}
+
+header.desktop-nav .reverse-hamburger>div:nth-child(2) {
+    transform: rotate(35deg);
 }
 
 header.desktop-nav .hamburger {
@@ -111,31 +112,24 @@ header.desktop-nav .reverse-hamburger {
 }
 
 .mobile-nav {
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    background: black;
-    width: 100%;
-    top: 10%;
     display: none;
 }
 
-.mobile-nav nav{
-    height: 50vh;
-    position: absolute;
+.mobile-nav nav {
+    position: fixed;
+    height: 85vh;
     background-color: #000;
     width: 100%;
-    left: 0;
-    /* top: 0; */
-    z-index: 999;
+    z-index: 1000;
     animation: animateNav .5s;
+    bottom: 0;
 }
 
 @keyframes animateNav {
     0% {
         transform: translateX(-100%);
     }
-    
+
     100% {
         transform: translateX(0%);
     }
@@ -156,21 +150,34 @@ header.desktop-nav .reverse-hamburger {
     cursor: pointer;
 }
 
-.HomeContent1{
+@media only screen and (min-height:768px) {
+    .mobile-nav nav {
+        height: 91vh;
+    }
+}
+
+.HomeContent1 {
     height: 5rem;
+    padding: 2em;
+    position: relative;
+    top: 80px;
+    margin-bottom: 5.5em;
 }
-.Lectures-Overview{
-    margin:  2rem 0 2rem 0;
-    
+
+.Lectures-Overview {
+    padding: 2rem;
+    margin-top: 1em;
 }
-.lectures-overview-header{
+
+.lectures-overview-header {
     display: flex;
     height: 4rem;
     margin: 0 0 1rem 0;
     align-items: center;
     justify-content: space-between;
 }
-.module-quiz{
+
+.module-quiz {
     width: 10rem;
     height: 3rem;
     background-color: transparent;
@@ -181,7 +188,8 @@ header.desktop-nav .reverse-hamburger {
     border-radius: 30px;
     transition: .3s;
 }
-.quizButton:hover{
+
+.quizButton:hover {
     padding: .5em .8em;
     background-color: orange;
     color: black;
@@ -189,13 +197,14 @@ header.desktop-nav .reverse-hamburger {
     cursor: pointer;
 }
 
-.templates{
+.templates {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
     /* border: 1px solid; */
 }
-.template1{
+
+.template1 {
     width: 90%;
     background: rgb(38, 31, 31);
     margin: .5rem 0 0.5rem 0;
@@ -210,23 +219,25 @@ header.desktop-nav .reverse-hamburger {
     cursor: pointer;
 }
 
-.template1 p{
-    font-family: Monteserrat-Light;
+.template1 p {
+    font-family: Monteserrat;
+    font-size: 1.2rem;
     margin: .8em 0;
 }
 
-.template1:hover{
+.template1:hover {
     transform: scale(1.05);
 }
 
-.templates .template1 img{
-    width: 100%;    
+.templates .template1 img {
+    width: 100%;
 }
 
-.templates .template1 img.svg{
+.templates .template1 img.svg {
     width: 20px;
 }
-.readmore{
+
+.readmore {
     position: relative;
     width: 7rem;
     height: 2rem;
@@ -242,13 +253,14 @@ header.desktop-nav .reverse-hamburger {
     left: 50%;
     cursor: pointer;
 }
-.readmore:hover{
-   background-color: orange;
-   color: black;
-   font-weight: bold;
+
+.readmore:hover {
+    background-color: orange;
+    color: black;
+    font-weight: bold;
 }
 
-.readmore a {
+.template1 a {
     color: #fff;
     text-decoration: none;
     display: flex;
@@ -262,41 +274,43 @@ header.desktop-nav .reverse-hamburger {
 
 @media only screen and (max-width:1300px) {
 
-    .templates{
+    .templates {
         grid-template-columns: repeat(2, 1fr);
     }
-    header.desktop-nav{
+
+    header.desktop-nav {
         width: 97%;
     }
 }
 
-@media only screen and (max-width:890px) {
-    .templates{
+@media only screen and (max-width:992px) {
+    .templates {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    header.desktop-nav  nav ul {
-       display: none;
-    }
-    header.desktop-nav{
-        width: 90%;
+    header.desktop-nav nav ul {
+        display: none;
     }
 
-.showOnMobile {
+    .showOnMobile {
         display: block !important;
     }
 
-    .readmore{
+    .readmore {
         left: 50%;
     }
+
     section.question-area {
         flex-direction: column;
     }
 }
 
 .GoBack {
+    position: relative;
+    top: 120px;
     display: flex;
     justify-content: space-between;
+    padding: 0 2em;
 }
 
 .GoBack .goBackButton {
@@ -306,45 +320,60 @@ header.desktop-nav .reverse-hamburger {
     cursor: pointer;
 }
 
- .quizButton {
-padding: .3em .5em;
-border: 2px solid orange;
-border-radius: 10px;
-background: none;
-color: orange;
-transition: .3s;
+.quizButton {
+    padding: .3em .5em;
+    border: 1px solid orange;
+    background: none;
+    color: orange;
+    transition: .3s;
 }
 
 section.content {
-    margin-top: 3em;
+    position: relative;
+    top: 150px;
+    padding: 0 2em;
 }
 
 section.content .cos {
     font-family: Monteserrat-Light;
 }
 
-section.content h3 {
-    font-family: Monteserrat;
+section.content .fetched-content h3 {
+    font-family: Monteserrat-Black;
+    font-size: 1.8em;
+    margin-top: 1em;
+    margin-bottom: .5em;
 }
 
-
-section.content h2{
-    margin-top: .3em;
+section.content .fetched-content h3:first-child {
+    margin-top: 0;
     margin-bottom: 1em;
+}
+
+section.content .fetched-content a {
+    text-decoration: none;
+    color: #000;
+    background-color: orange;
+    padding: .5em;
+    /* margin-top: 2em; */
     font-family: Monteserrat-Black;
+    border-radius: 20px;
 }
 
 section p {
     font-family: Monteserrat-Light;
+    font-size: 1.1rem;
 }
 
-section.content ol{
-    margin-top: 3em;
-}
-
-section.content ol ul li{
+section.content ul li {
     margin-top: 1em;
-    list-style-type:lower-roman;
+    margin-bottom: 1em;
+    list-style-type: decimal;
+    font-size: 1.1rem;
+}
+
+section.content ul {
+    margin-bottom: 2em;
 }
 
 .pagination {
@@ -353,37 +382,48 @@ section.content ol ul li{
     margin-top: 3em;
 }
 
-.pagination .prev {
-width: 30%;
-text-align: right;
-padding: .2em .5em;
-border: 1px solid #fff;
-background: none;
-color: #fff;
-border-radius: 5px;
-display: flex;
-justify-content: space-between;
-align-items: center;
+.pagination2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3em;
+    position: relative;
+    bottom: -200px;
+    padding: 0 2em;
 }
 
-.pagination .next {
-width: 30%;
-text-align: left;
-padding: .2em .5em;
-border: 1px solid orange;
-background: none;
-color: orange;
-border-radius: 5px;
-display: flex;
-justify-content: space-between;
-align-items: center;
+.pagination .prev,
+.pagination2 .prev {
+    width: 30%;
+    text-align: right;
+    padding: .2em .5em;
+    border: 1px solid #fff;
+    background: none;
+    color: #fff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-@media only screen and (min-width: 992px){
-    
-section.content {
-    max-width: 70%;
+.pagination .next,
+.pagination2 .next {
+    width: 30%;
+    text-align: left;
+    padding: .2em .5em;
+    border: 1px solid orange;
+    background: none;
+    color: orange;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+@media only screen and (min-width: 992px) {
+
+    section.content {
+        max-width: 70%;
+    }
 }
 
 .GoBack .time span {
@@ -394,6 +434,9 @@ section.question-area {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 2em;
+    position: relative;
+    top: 170px;
 }
 
 section.question-area .options div {
@@ -417,53 +460,53 @@ section.question-area .indicator .bottom {
 }
 
 section.question-area .indicator .bottom div {
-display: flex;
-align-items: center;
-gap: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 section.question-area .indicator .bottom div div.answered {
-width: 10px;
-height: 10px;
-background-color: lime;
-border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: lime;
+    border-radius: 50%;
 }
 
 section.question-area .indicator .bottom div div.skipped {
-width: 10px;
-height: 10px;
-background-color: blue;
-border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: blue;
+    border-radius: 50%;
 }
 
 section.question-area .indicator .bottom div span {
-font-size: .8rem;
-font-family: Monteserrat-Light;
+    font-size: .8rem;
+    font-family: Monteserrat-Light;
 }
 
-section.question-area .answered-questions{
-    display:grid;
+section.question-area .answered-questions {
+    display: grid;
     grid-template-columns: repeat(5, 1fr);
     column-gap: 10px;
 }
 
-section.question-area .answered-questions div{
-width: 35px;
-height: 35px;
-border: 1px solid #777;
-margin-top: .5em;
-text-align: center;
-color: #fff;
-border-radius: 3px;
-font-size: 1.1em;
-padding-top: 0.3em;
-font-family: Monteserrat;
+section.question-area .answered-questions div {
+    width: 35px;
+    height: 35px;
+    border: 1px solid #777;
+    margin-top: .5em;
+    text-align: center;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 1.1em;
+    padding-top: 0.3em;
+    font-family: Monteserrat;
 }
 
 
 
 
-.footerH1{
+.footerH1 {
     font-family: Monteserrat-Black;
     font-weight: bold;
     font-size: 30px;
@@ -476,65 +519,86 @@ footer {
     color: #ecf0f1;
     padding: 20px 0;
     font-family: 'Arial', sans-serif;
-  }
-  
-  .footer-container {
+}
+
+.footer-container {
     display: flex;
     justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-  }
-  
-  .footer-column {
-   
+}
+
+.footer-column {
+
     padding: 0 20px;
-  }
-  
-  .footer-column h3 {
+}
+
+.footer-column h3 {
     margin-bottom: 10px;
     color: orange;
     font-size: 20px;
-  }
-  
-  .footer-column p {
+}
+
+.footer-column p {
     margin: 5px 0;
-  }
-  
-  .social-media {
+}
+
+.social-media {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
     display: flex;
     flex-direction: column;
-  }
-  
- 
-  
-  .social-media a {
+}
+
+
+
+.social-media a {
     color: #ecf0f1;
     text-decoration: none;
     font-size: 18px;
-  }
-  
-  .social-media a:hover {
+}
+
+.social-media a:hover {
     color: #3498db;
-  }
-  
+}
 
-  @media screen and (max-width:790px) {
 
-    footer{
+.nav-links {
+    max-width: fit-content;
+    display: grid;
+    gap: 18px
+}
+
+.link-part.end.go.start.hide {
+    visibility: hidden;
+    display: none;
+}
+
+.loading-gif.hide {
+    visibility: hidden;
+    display: none;
+}
+
+.question {
+    margin-block: 30px;
+}
+
+@media screen and (max-width:790px) {
+
+    footer {
         width: 100%;
         height: 30rem;
     }
-    .footer-container{
+
+    .footer-container {
         height: 25rem;
 
         display: flex;
         flex-direction: column;
         /* justify-content: space-between; */
     }
-    
-  }
+
+}
