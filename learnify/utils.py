@@ -27,7 +27,7 @@ class ExtractEngine:
         return text[:40000] or None  # Limit the text to 25000 characters
 
 
-#def restructure_quiz_data(input_data):
+def restructure_quiz_data(input_data):
     """
     Restructures the input quiz data to the desired format.
 
@@ -38,29 +38,29 @@ class ExtractEngine:
         dict: Restructured quiz data in the desired format.
     """
     # Extract the name and questions from the input
-    #name = input_data.get("name", "Quiz")
-    #questions = input_data.get("questions", [])
+    name = input_data.get("name", "Quiz")
+    questions = input_data.get("questions", [])
 
     # Restructure the questions
-    #restructured_questions = []
-    #for question in questions:
-        #restructured_questions.append(
-           # {
-   #             "question": question["question"],
-          #      "options": question["options"],
-      #          "correct": question["correctAnswer"],
-          #      "feedback": question["feedBack"],
-          #  }
-   #     )
+    restructured_questions = []
+    for question in questions:
+        restructured_questions.append(
+            {
+                "question": question["question"],
+                "options": question["options"],
+                "correct": question["correctAnswer"],
+                "feedback": question["feedBack"],
+            }
+        )
 
-    # Build the final structure
-   # output_data = {
-      #  "name": name,
-      #  "time": 1800,  # Default time set to 1800 seconds (30 minutes)
-        #"questions": restructured_questions,
-   # }
+     #Build the final structure
+    output_data = {
+        "name": name,
+        "time": 1800,  # Default time set to 1800 seconds (30 minutes)
+        "questions": restructured_questions,
+    }
 
-   # return output_data
+    return output_data
 
 
 # get json file content
@@ -96,5 +96,5 @@ def quiz_result(text, level="MEDIUM"):
     if quiz is not None:
         # save_quiz(quiz) #Only remove this comment in development
         logging.log(logging.INFO, "Quiz generated successfully")
-        return restructure_quiz_data(quiz)
+        return quiz#restructure_quiz_data(quiz)
     return contingency()
