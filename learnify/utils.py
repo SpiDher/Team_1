@@ -96,5 +96,5 @@ def quiz_result(text, level="MEDIUM"):
     if quiz is not None:
         # save_quiz(quiz) #Only remove this comment in development
         logging.log(logging.INFO, "Quiz generated successfully")
-        return quiz#restructure_quiz_data(quiz)
+        return restructure_quiz_data(quiz)
     return contingency()
