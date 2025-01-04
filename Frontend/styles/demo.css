@@ -372,7 +372,7 @@ section.content ul li {
     font-size: 1.1rem;
 }
 
-section.content ul {
+section.content ul, p {
     margin-bottom: 2em;
 }
 
