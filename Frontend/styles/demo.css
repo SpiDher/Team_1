@@ -240,7 +240,7 @@ header.desktop-nav .reverse-hamburger {
 
 .readmore {
     position: relative;
-    width: 7rem;
+    width: 5.5rem;
     height: 2rem;
     background: black;
     color: white;
@@ -642,4 +642,14 @@ footer {
 }
 .loading-icon{
     width: 5rem;
+}
+
+#error{
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 4rem 0;
+    align-items: center;
+    /* border: 1px solid; */
+    width: 100%;
+    height: 100%;
 }
