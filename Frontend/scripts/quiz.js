@@ -1,6 +1,6 @@
 // @ts-check
 
-import { getUser, saveResult } from "../../../scripts/firebase.js";
+import { getUser, saveResult } from "../../scripts/firebase.js";
 
 /** @type {string} */
 let performanceUrl;
