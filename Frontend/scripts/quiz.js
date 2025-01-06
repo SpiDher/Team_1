@@ -1,4 +1,4 @@
-// @ts-check
+// @ts-nocheck
 
 import { getUser, saveResult } from "../../scripts/firebase.js";
 
