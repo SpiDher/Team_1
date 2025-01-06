@@ -29,7 +29,7 @@ async function fetchCourseContent(contentToFetch) {
          document.getElementById('loadingIndicator').style.display = 'none';
 
         // window.location.href = "../../lessons/details.html";
-        window.location.href= "./lessons/details.html";
+        window.location.href= "../COS111/lessons/details.html";
       } else {
         console.error('Failed to fetch course content:', await response.json());
         document.getElementById('loading-icon').style.display='none'
