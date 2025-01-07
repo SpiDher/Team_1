@@ -316,6 +316,7 @@ header.desktop-nav .reverse-hamburger {
     position: relative;
     top: 120px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     padding: 0 2em;
 }
@@ -337,8 +338,9 @@ header.desktop-nav .reverse-hamburger {
 
 section.content {
     position: relative;
-    top: 150px;
-    padding: 2rem 2em;
+    top: 6rem;
+    padding: 0rem 0 3rem 0;
+    margin: 2rem ;
 }
 
 section.content .cos {
