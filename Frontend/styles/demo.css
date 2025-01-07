@@ -540,7 +540,7 @@ footer {
 }
 
 .footer-column {
-
+    
     padding: 0 20px;
 }
 
@@ -575,6 +575,22 @@ footer {
     color: #3498db;
 }
 
+footer img{
+    width: 1.5rem;
+}
+
+footer ul li{
+    display: flex;
+    align-items: center;
+}
+
+.footer-column ul{
+    display: flex;
+    flex-direction: row;
+    width: 6rem;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+}
 
 .nav-links {
     max-width: fit-content;
@@ -609,6 +625,10 @@ footer {
         display: flex;
         flex-direction: column;
         /* justify-content: space-between; */
+    }
+    .footer-column ul{
+        display: flex;
+        flex-direction: column;
     }
 
 }
