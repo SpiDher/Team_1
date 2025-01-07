@@ -123,7 +123,7 @@ header.desktop-nav .reverse-hamburger {
     width: 100%;
     z-index: 1000;
     animation: animateNav .5s;
-    bottom: 0;
+   top: 100px;
 }
 
 @keyframes animateNav {
@@ -345,6 +345,7 @@ section.content {
 
 section.content .cos {
     font-family: Monteserrat-Light;
+    margin: 1.5rem 0;
 }
 
 section.content .fetched-content h3 {
@@ -662,15 +663,10 @@ footer {
     height: 100%;
 }
 
-.cos{
-    font-family: Monteserrat-Light;
-    font-size: 2.1rem;
-    margin: 1em 0;
-
-}
-
 
 .GoBack:hover {
     color: orange;
     
 }
+
+
