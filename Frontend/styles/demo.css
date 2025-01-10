@@ -382,8 +382,18 @@ section.content ol li {
     font-size: 1.1rem;
 }
 
-section.content ol, p {
+section.content ol {
     margin-bottom: 2em;
+}
+
+@counter-style dash {
+    system: cyclic;
+    symbols: "-";
+    suffix: "  ";
+  }
+
+section.content ul li {
+    list-style-type:dash;
 }
 
 .pagination {
