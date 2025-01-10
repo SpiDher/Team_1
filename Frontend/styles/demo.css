@@ -374,6 +374,7 @@ section.content .fetched-content a {
 section p {
     font-family: Monteserrat-Light;
     font-size: 1.1rem;
+    margin-bottom: 2em;
 }
 
 section.content ol li {
