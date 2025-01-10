@@ -341,6 +341,7 @@ section.content {
     top: 7rem;
     padding: 0rem 0 3rem 0;
     margin: 2rem ;
+    font-size: 1.1em;
 }
 
 section.content .cos {
@@ -384,6 +385,7 @@ section.content ol li {
 
 section.content ol {
     margin-bottom: 2em;
+    margin-left: 1em;
 }
 
 @counter-style dash {
@@ -392,8 +394,11 @@ section.content ol {
     suffix: "  ";
   }
 
+
 section.content ul li {
     list-style-type:dash;
+    margin: 1em 0;
+    font-size: 1.1rem;
 }
 
 .pagination {
